@@ -1,11 +1,50 @@
 {{UCL}}
 <html>
 
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: inline;
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+li a:hover {
+    background-color: #tomato;
+}
+
+</style>
+</head>
+
+<body>
 <div class="column full_size" >
 <h1><center><font size="30" face="futura" color="Tomato">2018 UCL iGEM Team </center></font></h1>
+
+<ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="project.asp">Project</a></li>
+    <li><a href="modelling.asp">Modelling</a></li>
+    <li><a href="team.asp">Team</a></li>
+</ul>
+
 <div class="clear extra_space"></div>
 <p><font size="5" face="avenir">Thank you for checking out our Wiki page. It is still under construction.</font></p>
+
 
 
 <img src="http://2018.igem.org/wiki/images/a/a3/T--UCL--logo1.jpg" alt="our logo"/>
@@ -48,5 +87,5 @@
 
 
 
-
+</body>
 </html>
