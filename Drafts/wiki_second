@@ -20,8 +20,8 @@ li {
     text-align: center;
 }
 
-li a {
-    display: block;
+li a, .dropbtn {
+    display: inline-block;
     border-right: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     border-left: 1px solid #bbb;
@@ -31,7 +31,7 @@ li a {
     color: black;
 }
 
-li a:hover {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: tomato;
 }
 
