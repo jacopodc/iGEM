@@ -8,61 +8,78 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
-    position: fixed;
-    top: 0;
+    background-color: transparent;
+    position: none;
+    top: 10;
     width: 100%;
 }
 
 li {
+    display: inline;
     float: left;
+    text-align: center;
 }
 
 li a {
     display: block;
     border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    border-left: 1px solid #bbb;
     float: left;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 li a:hover {
-    background-color: #tomato;
+    background-color: tomato;
 }
 
 </style>
-</head>
 
-<body>
-<div class="column full_size" >
-<h1><center><font size="30" face="futura" color="Tomato">2018 UCL iGEM Team </center></font></h1>
-
-<ul>
+<ul><font size="5" face="futura">
     <li><a href="default.asp">Home</a></li>
     <li><a href="project.asp">Project</a></li>
     <li><a href="modelling.asp">Modelling</a></li>
     <li><a href="team.asp">Team</a></li>
-</ul>
+</font></ul>
+
+</head>
+
+<body>
+<style>
+
+h1 {
+    margin-top: 50;
+    font-family: futura;
+    font-size: 40;
+    color: tomato;
+}
+
+p {
+
+}
+</style>
+<div class="column full_size" >
+<h1><center>2018 UCL iGEM Team </center></h1>
 
 <div class="clear extra_space"></div>
 <p><font size="5" face="avenir">Thank you for checking out our Wiki page. It is still under construction.</font></p>
 
-
-
 <img src="http://2018.igem.org/wiki/images/a/a3/T--UCL--logo1.jpg" alt="our logo"/>
-
 
 </div>
 
-
 <div class="column full_size">
 
-  <h1><font face="futura" style="color:Tomato;">Spider silk as a biomaterial</font></h1>
+  <h2><font face="futura" style="color:Tomato;">Spider silk as a biomaterial</font></h2>
   <p><font size="3" face="avenir">Spider silk is famous for its mechanical properties including strength and toughness, but it is also biodegradable and biocompatible. The cannibalistic nature of spiders renders the harvesting challenging. Therefore, recombinant spider silks have been developed to produce synthetic spider silks in bacteria. <br></br>
 
   The spider silk fibres can be arranged in a variety of biomaterial structures such as hydrogels, non-woven filters, spheres and capsules, and biofilms. These can be used as cell scaffolds, wound healing, drug delivery, cosmetics and textiles.<br></br>
 
   The structure of the encoded protein guarantees a direct control of its self-assembly through pH changes, hence preventing aggregation of the final fibre. While this occurs naturally in silk-producing spiders, it can be effectively replicated in the lab via controlling the production with targeted PI control systems.
   </font></p>
-  <h1><font face="futura" style="color:Tomato;">Our approach</font></h1>
+  <h2><font face="futura" style="color:Tomato;">Our approach</font></h2>
 
   <p><font size="3" face="avenir">Previous iGEM teams have focused on the possibilities linked with spider silk for biomaterial applications, the UCL iGEM 2018 team, however wants to explore the properties of spider silk for the creation of widely applicable biomaterials, spanning from recovery of metals to tissue engineering.<br></br>
 
