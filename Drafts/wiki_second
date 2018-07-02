@@ -1,50 +1,51 @@
-{{UCL}}
+<!DOCTYPE html>
+<html lang="en">
 <html>
-
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-    position: none;
-    top: 10;
-    width: 100%;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-li {
-    display: inline;
-    float: left;
-    text-align: center;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    border-right: 1px solid #bbb;
-    border-bottom: 1px solid #bbb;
-    border-left: 1px solid #bbb;
-    float: left;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+.topnav a {
+  float: bottom;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: tomato;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 </style>
-
-<ul><font size="5" face="futura">
-    <li><a href="default.asp">Home</a></li>
-    <li><a href="project.asp">Project</a></li>
-    <li><a href="modelling.asp">Modelling</a></li>
-    <li><a href="team.asp">Team</a></li>
-</font></ul>
-
 </head>
+<body>
+
+<div class="topnav">
+  <a href="http://2018.igem.org/Team:UCL">
+		<img src="http://placehold.it/100x100/e4dede/c4baba">
+	</a>
+  <a href="#news">Team</a>
+  <a href="#contact">Project</a>
+  <a href="#about">Human Practices</a>
+</div>
+
+</body>
 
 <body>
 <style>
