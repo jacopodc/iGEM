@@ -85,12 +85,21 @@ li a:hover, .dropdown:hover .dropbtn{
     display: inline-grid;
 }
 
-#rcorners {
+#rcorners1 {
     border-radius: 25px;
     border: 2px solid tomato;
     padding: 3px;
-    width: 700px;
-    height: 100px;
+    width: 140px;
+    height: 180px;
+}
+
+#rcorners2 {
+    border-radius: 17px;
+    padding: 0px;
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    background-position: center;
 }
 
 </style>
@@ -101,10 +110,10 @@ li a:hover, .dropdown:hover .dropbtn{
         <img src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" width="70" align="middle"></a></li>
     <li class="dropdown">
       <a href="#project" class="dropdown">Project</a>
-        <div class="dropdown-content" id="rcorners">
-            <a href="#description">Project Description</a>
-            <a href="#parts">BioBricks</a>
-            <a href="#results">Results</a>
+        <div class="dropdown-content" id="rcorners1">
+            <a href="#description" id="rcorners2">Project Description</a>
+            <a href="#parts" id="rcorners2">BioBricks</a>
+            <a href="#results" id="rcorners2">Results</a>
         </div>
     </li>
     <li><a href="#modelling">Modelling</a></li>
