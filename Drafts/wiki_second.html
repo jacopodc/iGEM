@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-<body>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head style="margin: 0;">
 <style>
 
 ul {
@@ -20,6 +18,7 @@ li {
 .topnav {
   overflow: hidden;
   background-color: white;
+  width: 100%;
 }
 
 .topnav a {
@@ -43,13 +42,6 @@ li {
   color: white;
 }
 
-li a, .dropbtn {
-    display: inline-block;;
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-}
 
 li .dropdown {
     position: relative;
@@ -57,7 +49,21 @@ li .dropdown {
 }
 
 li a:hover, .dropdown:hover .dropbtn{
-    background-color: tomato;
+    color: tomato;
+    background-color: white;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: futura;
+    margin: 0;
+    background-color: white;
 }
 
 .dropdown-content {
@@ -66,13 +72,13 @@ li a:hover, .dropdown:hover .dropbtn{
     background-color: tomato;
     min-width: 90px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
-    z-index: 1;
 }
 
 .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
+    font-size: 15px;
     display: block;
     text-align: left;
 }
@@ -82,22 +88,22 @@ li a:hover, .dropdown:hover .dropbtn{
 }
 
 .dropdown:hover .dropdown-content {
-    display: inline-grid;
+    display: block;
 }
 
 #rcorners1 {
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid tomato;
     padding: 3px;
-    width: 140px;
-    height: 135px;
+    width: 90px;
+    height: 76px;
 }
 
 #rcorners2 {
     border-radius: 17px;
     padding: 0px;
-    width: 140px;
-    height: 60px;
+    width: 90px;
+    height: 25px;
     text-align: center;
     background-position: center;
 }
@@ -105,10 +111,36 @@ li a:hover, .dropdown:hover .dropbtn{
 #rcorners3 {
     border-radius: 17px;
     padding: 0px;
-    width: 140px;
-    height: 30px;
+    width: 90px;
+    height: 25px;
     text-align: center;
     background-position: center;
+}
+
+footer {
+    background-color: tomato;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+    table-layout:fixed;
+}
+
+table {
+    font-family: avenir;
+    color: white;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%
+}
+
+td, th {
+    border: 1px solid tomato;
+    background-color: tomato;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
 }
 
 </style>
@@ -118,9 +150,11 @@ li a:hover, .dropdown:hover .dropbtn{
     <li><a href="http://2018.igem.org/Team:UCL">
         <img src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" width="70" align="middle"></a></li>
     <li class="dropdown">
-      <a href="#project" class="dropdown">Project</a>
+      <button class="dropbtn">Project
+        <i class="fa fa-caret-down"></i>
+      </button>
         <div class="dropdown-content" class="center" id="rcorners1">
-            <a href="#description" id="rcorners2">Project Description</a>
+            <a href="#description" id="rcorners2">Description</a>
             <a href="#parts" id="rcorners3">BioBricks</a>
             <a href="#results" id="rcorners3">Results</a>
         </div>
@@ -131,9 +165,9 @@ li a:hover, .dropdown:hover .dropbtn{
 </ul>
 </div>
 
-</body>
+</head>
 
-<body>
+<body style="margin: 0;">
 <style>
 
 h1 {
@@ -154,6 +188,8 @@ h2 {
 
 p {
     margin-top: 10;
+    margin-left: 10;
+    margin-right: 10;
     font-family: avenir;
     font-size: 16;
 }
@@ -180,7 +216,7 @@ p {
 
   <h2>Our approach</h2>
 
-  <p>Previous iGEM teams have focused on the possibilities linked with spider silk for biomaterial applications, the UCL iGEM 2018 team, however wants to explore the properties of spider silk for the creation of widely applicable biomaterials, spanning from recovery of metals to tissue engineering.<br></br>
+  <p style="margin-bottom: 50">Previous iGEM teams have focused on the possibilities linked with spider silk for biomaterial applications, the UCL iGEM 2018 team, however wants to explore the properties of spider silk for the creation of widely applicable biomaterials, spanning from recovery of metals to tissue engineering.<br></br>
 
   Our initial design is to use a SpyCatcher-Silk fusion protein to create a modular platform for the functionalisation of spider silk proteins. This can be expanded upon to create engineered spider silk with metal binding proteins for metal recovery or growth factors for tissue engineering and regenerative medicine. <br></br>
 
@@ -190,10 +226,31 @@ p {
 </div>
 
 <div class="clear extra_space"></div>
-<div class="line_divider"></div>
-<div class="clear extra_space"></div>
-<div class="clear extra_space"></div>
-<div class="column third_size"></div>
+
+<footer>
+ <table>
+   <tr>
+     <th style="font-size: 20">CONTACT US</th>
+       <th style="font-size: 20">SPONSERS</th>
+        <th style="font-size: 20">FOLLOW US</th>
+   </tr>
+   <tr>
+     <th style="line-height: 0.8em">University College London
+       <br></br>Gower Street - London
+       <br></br>WC1E 6BT
+       <br></br>Biochemical Engineering Department
+       <br></br>Phone: +44 (0)20 7679 2000
+       <br></br>Email: ucligem2014@gmail.com </th>
+       <th><img src="http://placehold.it/200x100/e4dede/c4baba"></th>
+        <th style="line-height: 0.8em"><img src="http://placehold.it/60x60/e4dede/c4baba"><br></br>
+          <img src="http://placehold.it/60x60/e4dede/c4baba"><br></br>
+          <img src="http://placehold.it/60x60/e4dede/c4baba"><br></br>
+
+        </th>
+   </tr>
+ </table>
+
+</footer>
 
 </body>
 </html>
