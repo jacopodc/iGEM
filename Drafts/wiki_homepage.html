@@ -1,7 +1,11 @@
 <html>
-
 <head>
+<<<<<<< HEAD
     <title>UCL iGEM 2018</title>
+=======
+  <title>UCL iGEM 2018</title>
+</head>
+>>>>>>> da30fd8f9d4c0aaa93192eba2d6d6c90b8774555
 <style>
 
 #sideMenu,
@@ -29,20 +33,14 @@
     height: 0px !important;
 }
 
-ul {
-    list-style-image: none; //removes the iGEM wiki bullets
-}
-
 .MathJax nobr>span.math>span {
     border-left-width: 0 !important;
 }
-
 
 body {
     position:relative;
     height:100% !important;
 }
-
 
 .container-fluid {
     padding-right:0;
@@ -84,6 +82,11 @@ body {
     text-decoration: none;
 }
 
+/* ----------------------------------------------------------------*/
+/* For the content part*/
+/* ----------------------------------------------------------------*/
+
+
 /* this is where text content will go - occasionally, one image can be put*/
 /* TO BE USED in combination with col-sm- from bootstrap */
 /* when we don't want the top border line, we can use the style tag in the html document*/
@@ -115,6 +118,16 @@ body {
     z-index:3;
 }
 
+
+/* ----------------------------------------------------------------*/
+
+
+
+/* this is for the <p> elements that contain text */
+/* TO BE USED only for ps */
+/* don't use the <br> tag, just add a new p with this class */
+/* The first class will be the standard Medium-like format, which will not be use when we have a picture on that row*/
+
 .text-content {
     position:relative;
     margin:0 !important;
@@ -136,6 +149,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
+    list-style-image: none; //removes the iGEM wiki bullets
 }
 
 li {
@@ -244,7 +258,11 @@ li a:hover, .dropdown:hover .dropbtn{
     background-position: center;
 }
 
+<<<<<<< HEAD
 /* Content */
+=======
+/*Content*/
+>>>>>>> da30fd8f9d4c0aaa93192eba2d6d6c90b8774555
 
 h1 {
     margin-top: 100;
@@ -273,34 +291,41 @@ p {
     padding: 20px !important;
 }
 
+<<<<<<< HEAD
 /* Footer */
+=======
+/*Footer*/
+>>>>>>> da30fd8f9d4c0aaa93192eba2d6d6c90b8774555
 
 footer {
-    background-color: tomato;
+    background-color: white !important;
     padding: 0px;
     text-align: center;
     margin: 0;
     table-layout:fixed;
     font-size: 30 !important;
-    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 table {
     font-family: avenir;
-    color: white !important;
-    border-collapse: collapse;
+    color: black !important;
+    border-style: hidden;
     table-layout: fixed;
-    font-size: 30 !important;
-    background-color: tomato;
-    width: 99%;
+    font-size: 16 !important;
+    background-color: transparent;
+    width: 100%;
 }
 
-td, th {
-    border: 1px solid tomato;
-    background-color: tomato;
+tr, th {
+    font-family: avenir;
+    border: 1px solid transparent;
+    background-color: white;
     text-align: left;
     padding: 5px;
     text-align: center;
+    text-decoration: none;
 }
 
 </style>
@@ -332,6 +357,15 @@ td, th {
         <i class="fa fa-caret-down"></i>
       </button>
     </li>
+    <li class="dropdown">
+          <button class="dropbtn">Team
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content" class="center" id="rcorners1">
+                <a href="#description" id="rcorners2">People</a>
+                <a href="#description" id="rcorners2">Attributions</a>
+            </div>
+        </li>
 <li class="dropdown">
       <button class="dropbtn">Awards
         <i class="fa fa-caret-down"></i>
@@ -376,46 +410,33 @@ td, th {
 
 <div class="clear extra_space"></div>
 
+</body>
 
 <footer>
  <table>
    <tr>
-     <th style="color: white; border: 1px solid tomato;
-    background-color: tomato;"><font size="5">CONTACT US</font></th>
-       <th style="color: white; border: 1px solid tomato;
-    background-color: tomato;"><font size="5">SPONSORS</font></th>
-        <th style="color: white; border: 1px solid tomato;
-    background-color: tomato;"><font size="5">FOLLOW US</font></th>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Contact Us</font></th>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Sponsors</font></th>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Follow Us</font></th>
    </tr>
    <tr>
-     <th style="line-height: 0.8em; color: white; border: 1px solid tomato;
-    background-color: tomato;"><font size="3">University College London
-       <br></br>Gower Street - London
-       <br></br>WC1E 6BT
-       <br></br>Biochemical Engineering Department
-       <br></br>Phone: +44 (0)20 7679 2000
-       <br></br>Email:
-        <a href = "mailto: ucligem2018@gmail.com">
-            ucligem2018@gmail.com </font></a></th>
-       <th style="border: 1px solid tomato;
-    background-color: tomato"><img src="http://placehold.it/200x100/e4dede/c4baba"></th>
-        <th style="line-height: 0.8em; border: 1px solid tomato;
-    background-color: tomato">
+     <th style="font-family:avenir; background-color:white; border:1px solid transparent"><font size= 3>University College London</font><br></br>
+       <th style="font-family:avenir; background-color:white; border:1px solid transparent"><font size= 3>Gower Street - London - WC1E 6BT</font><br></br>
+       Biochemical Engineering Department<br></br>+44 (0)20 7679 2000<br></br>
+       <a href = "mailto: ucligem2018@gmail.com">ucligem2018@gmail.com</a><br></br>
+      </th>
+       <th><img src="http://placehold.it/200x100/e4dede/c4baba"></th>
+        <th>
           <a href="https://www.facebook.com/UCLiGEM/">
-          <img src="http://2018.igem.org/wiki/images/e/e6/T--UCL--facebook58.png"><br></br>
-          </a>
-<a href="https://twitter.com/ucligem?lang=en">
-          <img src="http://2018.igem.org/wiki/images/a/a2/T--UCL--twitter1.png" width="60" height="60"><br></br>
-</a>
-<a href="https://www.instagram.com/ucl.igem/">
-          <img src="http://2018.igem.org/wiki/images/7/79/T--UCL--instagram.png" width="60" height="60"><br></br>
-</a>
-
+            <img src="http://2018.igem.org/wiki/images/e/e6/T--UCL--facebook58.png"><br></br></a>
+          <a href="https://twitter.com/ucligem?lang=en">
+            <img src="http://2018.igem.org/wiki/images/a/a2/T--UCL--twitter1.png" width="60" height="60"><br></br></a>
+          <a href="https://www.instagram.com/ucl.igem/">
+            <img src="http://2018.igem.org/wiki/images/7/79/T--UCL--instagram.png" width="60" height="60"><br></br></a>
         </th>
    </tr>
  </table>
 
 </footer>
 
-</body>
 </html>
