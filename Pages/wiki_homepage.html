@@ -1,0 +1,328 @@
+<!--Homepage-->
+
+<html>
+<head>
+    <title>UCL iGEM 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Questrial|Raleway');
+
+#sideMenu,
+#top_title {
+    display: none; //removes the top iGEM logo thing
+}
+
+#content {
+    width: 100vw;
+    padding: 0px;
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Header */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    list-style-image: none; //removes the iGEM wiki bullets
+}
+
+li {
+    float: left;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Questrial", sans-serif;
+  display: inline-grid;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: tomato;
+}
+
+.topnav a.active {
+  background-color: #tomato;
+  color: white;
+}
+
+
+li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    color: tomato;
+    background-color: white;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Questial", sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#rcorners1 {
+    border-radius: 20px;
+    border: 2px solid tomato;
+    padding: 3px;
+    width: 90px;
+    height: 96px;
+}
+
+#rcorners2 {
+    border-radius: 17px;
+    padding: 0px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-position: center;
+}
+
+#rcorners3 {
+    border-radius: 17px;
+    padding: 0px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-position: center;
+}
+
+/* Content */
+
+h1 {
+    margin-top: 10;
+    font-family: "Questrial", sans-serif;
+    font-size: 50;
+    color: tomato;
+    text-align: center;
+    padding: 20px !important;
+}
+
+h2 {
+    margin-top: 10;
+    font-family: "Questrial", sans-serif;
+    font-size: 25;
+    color: tomato;
+    text-align: center;
+    padding: 10px !important;
+}
+
+p {
+    margin-top: 10;
+    margin-left: 10;
+    margin-right: 10;
+    font-family: "Raleway", sans-serif;
+    font-size: 16;
+    padding: 20px !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: white !important;
+    padding: 0px;
+    text-align: center;
+    margin: 0;
+    table-layout:fixed;
+    font-size: 30 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+table {
+    font-family: "Raleway", sans-serif;
+    color: black !important;
+    border-style: hidden;
+    table-layout: fixed;
+    font-size: 16 !important;
+    background-color: transparent;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    font-family: "Raleway", sans-serif;
+    border: 1px solid transparent;
+    background-color: white;
+    text-align: left;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    height: inherit;
+}
+
+tr {
+    height: 0;
+}
+
+</style>
+
+<body>
+
+<div class="topnav">
+<ul>
+    <li><a href="http://2018.igem.org/Team:UCL">
+        <img src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" width="70" align="middle"></a></li>
+    <li class="dropdown">
+      <button class="dropbtn">Project
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-content" class="center" id="rcorners1">
+            <a href="http://2018.igem.org/Team:UCL/Description" id="rcorners2">Description</a>
+            <a href="#parts" id="rcorners3">BioBricks</a>
+            <a href="http://2018.igem.org/Team:UCL/Results" id="rcorners3">Results</a>
+            <a href="http://2018.igem.org/Team:UCL/InterLab" id="rcorners3">InterLab</a>
+        </div>
+    </li>
+<li class="dropdown">
+      <button class="dropbtn">Modelling
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-content" class="center" id="rcorners1">
+            <a href="#description" id="rcorners2">Equation</a>
+        </div>
+    </li>
+<li class="dropdown">
+      <button class="dropbtn">Human Practices
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </li>
+    <li class="dropdown">
+          <button class="dropbtn">Team
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content" class="center" id="rcorners1">
+                <a href="http://2018.igem.org/Team:UCL/Team" id="rcorners2">People</a>
+                <a href="#description" id="rcorners2">Attributions</a>
+            </div>
+        </li>
+<li class="dropdown">
+      <button class="dropbtn">Awards
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </li>
+
+</ul>
+</div>
+
+<div class="column full_size">
+<h1>2018 UCL iGEM Team</h1>
+
+<div class="clear extra_space"></div>
+<p><font size="5">Thank you for checking out our Wiki page. It is still under construction.</font></p>
+
+<img src="http://2018.igem.org/wiki/images/a/a3/T--UCL--logo1.jpg" alt="our logo"/>
+
+</div>
+
+<div class="column full_size">
+
+  <h2>Spider silk as a biomaterial</h2>
+  <p>Spider silk is famous for its mechanical properties including strength and toughness, but it is also biodegradable and biocompatible. The cannibalistic nature of spiders renders the harvesting challenging. Therefore, recombinant spider silks have been developed to produce synthetic spider silks in bacteria. <br></br>
+
+  The spider silk fibres can be arranged in a variety of biomaterial structures such as hydrogels, non-woven filters, spheres and capsules, and biofilms. These can be used as cell scaffolds, wound healing, drug delivery, cosmetics and textiles.<br></br>
+
+  The structure of the encoded protein guarantees a direct control of its self-assembly through pH changes, hence preventing aggregation of the final fibre. While this occurs naturally in silk-producing spiders, it can be effectively replicated in the lab via controlling the production with targeted PI control systems.
+  </p>
+
+  <h2>Our approach</h2>
+
+  <p>Previous iGEM teams have focused on the possibilities linked with spider silk for biomaterial applications, the UCL iGEM 2018 team, however wants to explore the properties of spider silk for the creation of widely applicable biomaterials, spanning from recovery of metals to tissue engineering.<br></br>
+
+  Our initial design is to use a SpyCatcher-Silk fusion protein to create a modular platform for the functionalisation of spider silk proteins. This can be expanded upon to create engineered spider silk with metal binding proteins for metal recovery or growth factors for tissue engineering and regenerative medicine. <br></br>
+
+  By collaborating with the UCL Department of Biochemical Engineering we intend to go beyond a simple proof of principle by developing a production process at a manufacturing scale. We intend to develop a large-scale model through real testing at benchtop and pilot scales.
+  </p>
+
+</div>
+
+<div class="clear extra_space"></div>
+
+</body>
+
+<footer>
+ <table>
+   <tr>
+     <th style="background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Contact Us</font></th>
+     <th style="background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Sponsors</font></th>
+     <th style="background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Follow Us</font></th>
+   </tr>
+   <tr>
+       <td style="border:1px solid transparent">
+           <p style="background-color:white; text-align:center"><font size= 3>University College London
+               <br></br>Gower Street - London - WC1E 6BT
+               <br></br>Biochemical Engineering Department
+               <br></br>+44 (0)20 7679 2000
+               <br></br><a href = "mailto: ucligem2018@gmail.com">ucligem2018@gmail.com</a>
+           </p>
+        </td>
+       <td style="border:1px solid transparent"><img src="http://placehold.it/200x100/e4dede/c4baba"></td>
+        <td style="border:1px solid transparent">
+          <a href="https://www.facebook.com/UCLiGEM/">
+            <img src="http://2018.igem.org/wiki/images/e/e6/T--UCL--facebook58.png"><br></br></a>
+          <a href="https://twitter.com/ucligem?lang=en">
+            <img src="http://2018.igem.org/wiki/images/a/a2/T--UCL--twitter1.png" width="60" height="60"><br></br></a>
+          <a href="https://www.instagram.com/ucl.igem/">
+            <img src="http://2018.igem.org/wiki/images/7/79/T--UCL--instagram.png" width="60" height="60"><br></br></a>
+        </td>
+   </tr>
+ </table>
+
+</footer>
+
+</html>

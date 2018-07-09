@@ -1,0 +1,313 @@
+<!--InterLab-->
+
+<html>
+<head>
+    <title>UCL iGEM 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+#sideMenu,
+#top_title {
+    display: none;
+}
+
+#content {
+    width: 100vw;
+    padding: 0px;
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Header */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    list-style-image: none; //removes the iGEM wiki bullets
+}
+
+li {
+    float: left;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: futura;
+  display: inline-grid;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: tomato;
+}
+
+.topnav a.active {
+  background-color: #tomato;
+  color: white;
+}
+
+
+li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    color: tomato;
+    background-color: white;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: futura;
+    margin: 0;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#rcorners1 {
+    border-radius: 20px;
+    border: 2px solid tomato;
+    padding: 3px;
+    width: 90px;
+    height: 96px;
+}
+
+#rcorners2 {
+    border-radius: 17px;
+    padding: 0px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-position: center;
+}
+
+#rcorners3 {
+    border-radius: 17px;
+    padding: 0px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-position: center;
+}
+
+/* Content */
+
+@font-face{
+    font-family: Futura; src: url(Futura.otf);
+}
+
+h1 {
+    margin-top: 10;
+    font-family: "Futura", Gil Sans, arial, sans-serif;
+    font-size: 40;
+    color: tomato;
+    text-align: center;
+    padding: 20px !important;
+}
+
+h2 {
+    margin-top: 10;
+    font-family: futura;
+    font-size: 25;
+    color: tomato;
+    text-align: center;
+    padding: 10px !important;
+}
+
+p {
+    margin-top: 10;
+    margin-left: 10;
+    margin-right: 10;
+    font-family: avenir;
+    font-size: 16;
+    padding: 20px !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: white !important;
+    padding: 0px;
+    text-align: center;
+    margin: 0;
+    table-layout:fixed;
+    font-size: 30 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+table {
+    font-family: futura;
+    color: black !important;
+    border-style: hidden;
+    table-layout: fixed;
+    font-size: 16 !important;
+    background-color: transparent;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    font-family: avenir;
+    border: 1px solid transparent;
+    background-color: white;
+    text-align: left;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    height: inherit;
+}
+
+tr {
+    height: 0;
+}
+
+</style>
+
+<body>
+
+<div class="topnav">
+<ul>
+    <li><a href="http://2018.igem.org/Team:UCL">
+        <img src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" width="70" align="middle"></a></li>
+    <li class="dropdown">
+      <button class="dropbtn">Project
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-content" class="center" id="rcorners1">
+            <a href="http://2018.igem.org/Team:UCL/Description" id="rcorners2">Description</a>
+            <a href="#parts" id="rcorners3">BioBricks</a>
+            <a href="http://2018.igem.org/Team:UCL/Results" id="rcorners3">Results</a>
+            <a href="http://2018.igem.org/Team:UCL/InterLab" id="rcorners3">InterLab</a>
+        </div>
+    </li>
+<li class="dropdown">
+      <button class="dropbtn">Modelling
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-content" class="center" id="rcorners1">
+            <a href="#description" id="rcorners2">Equation</a>
+        </div>
+    </li>
+<li class="dropdown">
+      <button class="dropbtn">Human Practices
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </li>
+    <li class="dropdown">
+          <button class="dropbtn">Team
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content" class="center" id="rcorners1">
+                <a href="http://2018.igem.org/Team:UCL/Team" id="rcorners2">People</a>
+                <a href="#description" id="rcorners2">Attributions</a>
+            </div>
+        </li>
+<li class="dropdown">
+      <button class="dropbtn">Awards
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </li>
+
+</ul>
+</div>
+
+<div class="column full_size">
+<h1 style="font-family: futura">InterLab</h1>
+
+
+  <p style="font-family: avenir"><font size="3">The importance of reproducibility/reliability for our project... <br></br>
+    The purpose of the InterLab study...<br></br>
+    Protocols we followed...<br></br>
+    Our results...<br></br>
+    Picture of us </font></p>
+  <center><img src="http://placehold.it/500x300/e4dede/c4baba" alt="InterLab group" style ="margin-bottom:80px"/></center>
+
+
+</div>
+
+<div class="clear extra_space"></div>
+
+</body>
+
+<footer>
+ <table>
+   <tr>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Contact Us</font></th>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Sponsors</font></th>
+     <th style="font-family:futura; background-color:white; border:1px solid transparent"><font size= 5; color=tomato>Follow Us</font></th>
+   </tr>
+   <tr>
+       <td style="border:1px solid transparent">
+           <p style="font-family:avenir; background-color:white; text-align:center"><font size= 3>University College London
+               <br></br>Gower Street - London - WC1E 6BT
+               <br></br>Biochemical Engineering Department
+               <br></br>+44 (0)20 7679 2000
+               <br></br><a href = "mailto: ucligem2018@gmail.com">ucligem2018@gmail.com</a>
+           </p>
+        </td>
+       <td style="border:1px solid transparent"><img src="http://placehold.it/200x100/e4dede/c4baba"></td>
+        <td style="border:1px solid transparent">
+          <a href="https://www.facebook.com/UCLiGEM/">
+            <img src="http://2018.igem.org/wiki/images/e/e6/T--UCL--facebook58.png"><br></br></a>
+          <a href="https://twitter.com/ucligem?lang=en">
+            <img src="http://2018.igem.org/wiki/images/a/a2/T--UCL--twitter1.png" width="60" height="60"><br></br></a>
+          <a href="https://www.instagram.com/ucl.igem/">
+            <img src="http://2018.igem.org/wiki/images/7/79/T--UCL--instagram.png" width="60" height="60"><br></br></a>
+        </td>
+   </tr>
+ </table>
+
+</footer>
+
+</html>
