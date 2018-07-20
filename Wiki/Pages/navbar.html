@@ -1,0 +1,85 @@
+<html>
+<head>
+</head>
+<body>
+
+<!-- Fix for Safari mobile -->
+
+<script>
+$(document).ready(function() {
+    $('#sidebarHide').click(function() {
+        $('#sidebar').trigger('offcanvas.toggle');
+    });
+    $('#sidebarCollapse').click(function() {
+        $('#sidebar').trigger('offcanvas.toggle');
+    });
+    $('#mw-content-text div').click(function() {
+      $('#sidebar').trigger('offcanvas.toggle');
+    });
+    $(window).on('swiperight', function(){
+      $('#sidebar').trigger('offcanvas.toggle');
+    });
+    $(window).on('swipeleft', function(){
+      $('#sidebar').trigger('offcanvas.toggle');
+    });
+    $('#sidenav').find('> li').click(function() {
+      $(this).find('> ul').trigger('collapse.toggle');
+    });
+});
+</script>
+<style>
+html,
+body {
+    z-index: 0;
+}
+</style>
+
+<!-- NAVBAR
+============================================================================ -->
+<nav style="z-index: 10001;" class="navbar navbar-default navbar-fixed-top navbar-no-bg;" role="nagivation">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+                <div id="circle">
+                    <a id="homelink" href="http://2018.igem.org/Team:UCL" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; z-index: 9999;"><img src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" width="70" align="middle"></a>
+                </div>
+            </div>
+            <a type="button" data-canvas="body" id="sidebarCollapse" class="navbar-toggle" data-toggle="offcanvas" data-target="#sidebar" style="color: white; margin-top: 10px;">MENU</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a role="button" aria-haspopup="true" aria-expanded="flase" class="dropdown-toggle" data-toggle="dropdown" href="http://2018.igem.org/Team:UCL/Project">Project<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Description">Description</a></li>
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Parts">Parts</a></li>
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Results">Results</a></li>
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/InterLab">InterLab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a role="button" aria-haspopup="true" aria-expanded="flase" class="dropdown-toggle" data-toggle="dropdown" href="http://2018.igem.org/Team:UCL/Modelling">Modelling<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Equation">Equation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a role="button" aria-haspopup="true" aria-expanded="flase" class="dropdown-toggle" data-toggle="dropdown" href="http://2018.igem.org/Team:UCL/HP">Human Practices<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Collaborations">Collaborations</a></li>
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Outreach">Outreach</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a role="button" aria-haspopup="true" aria-expanded="flase" class="dropdown-toggle" data-toggle="dropdown" href="http://2018.igem.org/Team:UCL/Team">Team<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/People">People</a></li>
+                        <li><a href="http://2018.igem.org/Team:UCL/Project/Acknowledgements">Acknowledgements</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+</body>
+</html>
