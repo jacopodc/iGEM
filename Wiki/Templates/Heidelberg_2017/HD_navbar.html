@@ -1,0 +1,259 @@
+{{Template_All_Teams}}
+<html>
+<head>
+</head>
+<body>
+
+
+<!-- It was fun! Lots of love from phaetjay (jkreft.de) -->
+
+<!-- Fix for Safari mobile and touch in general -->
+
+<script>
+$( document ).ready(function() {
+  $('#sidebarHide').click(function() {
+    $('#sidebar').trigger('offcanvas.toggle');
+  });
+  $('#sidebarCollapse').click(function() {
+    $('#sidebar').trigger('offcanvas.toggle');
+  });
+  $('#mw-content-text div').click(function() {
+    $('#sidebar').trigger('offcanvas.toggle');
+  });
+  $(window).on('swiperight', function(){
+    $('#sidebar').trigger('offcanvas.toggle');
+  });
+  $(window).on('swipeleft', function(){
+    $('#sidebar').trigger('offcanvas.toggle');
+  });
+
+
+  $('#sidenav').find('> li').click(function() {
+    $(this).find('> ul').trigger('collapse.toggle');
+  });
+});
+</script>
+<style>
+html,
+body{
+  z-index: 0;
+}
+</style>
+
+<!-- Top menu -->
+		<nav style="z-index: 10001;" class="navbar navbar-inverse navbar-fixed-top navbar-no-bg " role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+
+                     <div class="navbar-brand">
+                    <div id="circle">
+                        <a id="homelink" href="http://2017.igem.org/Team:Heidelberg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; z-index: 9999;"></a>
+                    </div>
+                </div>
+               <a type="button" data-canvas="body" id="sidebarCollapse" class="navbar-toggle" data-toggle="offcanvas" data-target="#sidebar" style="color: #393939;margin-top: 9px;">NAVIGATION
+                    </a>
+
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav pull-right">
+                        <li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Team">People <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Team">Team</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Attributions">Attributions</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Sponsoring">Sponsoring</a></li>
+                             <li><a href="http://2017.igem.org/Team:Heidelberg/For_Judges">For Judges</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Jamboree">Giant Jamboree</a></li>
+                        </ul>
+                        </li>
+						<li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Description">Project <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Description">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Design">Background &amp; Design </a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Pace">PACE</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Predcel">PREDCEL</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Results">Results Summary</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Validation">Software Validation</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Organosilicons">Organosilicons</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Protein_Interaction">Protein Interaction</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Cytochrome_Engineering">Cytochrome Engineering</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Optogenetics">Optogenetics</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/CRISPR">CRISPR Cas9</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/InterLab">InterLab Study</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Achievements">Achievements</a></li>
+                        </ul>
+                        </li>
+                        <li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Parts">Parts <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Basic_Part">Basic Parts</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Composite_Part">Composite Parts</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Improved_Part">Improved Part</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Part_Collection">Parts Collection</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Part_List">Part List</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/RFC">RFC</a></li>
+                        </ul>
+                        </li>
+						<li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Model">Modeling <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Phage_Titer">Phage Titer</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Mutagenesis_Induction">Mutagenesis Induction</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Mutation_Rate_Estimation">Mutation Rate Estimation</a></li>
+<li><a href="http://2017.igem.org/Team:Heidelberg/Model/Lagoon_Contamination">Lagoon Contamination</a></li>
+
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Medium_Consumption">Medium Consumption</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Tools">Interactive Web Tools</a></li>
+                        </ul>
+                        </li>
+						<li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Software">Software <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software">AiGEM Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/DeeProtein">DeeProtein</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/GAIA">GAIA</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/SafetyNet">SafetyNet</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/MAWS">MAWS 2.0</a></li>
+                        </ul>
+                        </li>
+						<li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Human_Practices">Human Practices <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Human_Practices">Overview</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/HP/Gold_Integrated">Integrated Human Practices</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Interviews">Expert Interviews</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Safety">Safety &amp; Security</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Engagement">Public Engagement</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Education">Education</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Collaborations">Collaborations</a></li>
+
+                        </ul>
+                        </li>
+                        <li class="dropdown"><a href="http://2017.igem.org/Team:Heidelberg/Notebook">Notebook <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Notebook">Overview</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Experiments">Methods</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Materials">Materials</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Database">Notebook Database</a></li>
+
+                        </ul>
+                        </li>
+
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Toolbox">Toolbox Guide</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+
+           <nav id="sidebar" style="z-index: 10001; background-color: white;border: none;box-shadow:1px 0px 0px #393939;" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+        <a class="navmenu-brand" href="http://2017.igem.org/Team:Heidelberg"><img src="http://2017.igem.org/wiki/images/8/8f/Heidelberg_2017_phage_logo.svg"><br><br> iGEM TEAM HEIDELBERG 2017</a>
+
+<div id="sidebarHide" data-toggle="offcanvas" data-target="#sidebar" style="padding-left: 20px;">
+      <hr>
+<a style="font-family: 'Josefin Sans' !important; font-size: 16px; line-height: 18px; height: 18px;"> COLLAPSE NAVIGATION </a>
+      <hr>
+</div>
+
+        <ul class="nav navmenu-nav" id="sidenav">
+             <li><a data-toggle="collapse" data-target="#People_side">People <i class="fa fa-fw fa-caret-down"></i></a>
+                         <ul id="People_side" class="collapse side">
+                             <li><a href="http://2017.igem.org/Team:Heidelberg/Team">Team</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Attributions">Attributions</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Sponsoring">Sponsoring</a></li>
+                             <li><a href="http://2017.igem.org/Team:Heidelberg/For_Judges">For Judges</a></li>
+                             <li><a href="http://2017.igem.org/Team:Heidelberg/Jamboree">Giant Jamboree</a></li>
+                        </ul>
+
+                        </li>
+
+						<li><a data-toggle="collapse" data-target="#Project_side">Project <i class="fa fa-fw fa-caret-down"></i></a>
+                         <ul id="Project_side" class="collapse side">
+                         <li><a href="http://2017.igem.org/Team:Heidelberg/Description">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Design">Background &amp; Design </a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Pace">PACE</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Predcel">PREDCEL</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Results">Results Summary</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Validation">Software Validation</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Organosilicons">Organosilicons</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Protein_Interaction">Protein Interaction</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Cytochrome_Engineering">Cytochrome Engineering</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Optogenetics">Optogenetics</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/CRISPR">CRISPR Cas9</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/InterLab">InterLab Study</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Achievements">Achievements</a></li>
+                        </ul>
+                        </li>
+
+
+             <li><a data-toggle="collapse" data-target="#Parts_side">Parts <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="Parts_side" class="collapse side">
+            <li><a href="http://2017.igem.org/Team:Heidelberg/Parts">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Basic_Part">Basic Parts</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Composite_Part">Composite Parts</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Improved_Part">Improved Part</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Part_Collection">Parts Collection</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Parts#Part_List">Part List</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/RFC">RFC</a></li>
+            </ul>
+            </li>
+
+
+                        <li><a data-toggle="collapse" data-target="#Model_side">Modeling <i class="fa fa-fw fa-caret-down"></i></a>
+                         <ul id="Model_side" class="collapse side">
+                         <li><a href="http://2017.igem.org/Team:Heidelberg/Model">Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Phage_Titer">Phage Titer</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Mutagenesis_Induction">Mutagenesis Induction</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Mutation_Rate_Estimation">Mutation Rate Estimation</a></li>
+<li><a href="http://2017.igem.org/Team:Heidelberg/Model/Lagoon_Contamination">Lagoon Contamination</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Medium_Consumption">Medium Consumption</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Model/Tools">Interactive Web Tools</a></li>
+                        </ul>
+                        </li>
+                        <li><a data-toggle="collapse" data-target="#AI_side">Software <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="AI_side" class="collapse side">
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software">AiGEM Overview</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/DeeProtein">DeeProtein</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/GAIA">GAIA</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/SafetyNet">SafetyNet</a></li>
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Software/MAWS">MAWS 2.0</a></li>
+                        </ul>
+                        </li>
+
+
+
+
+
+                        <li><a data-toggle="collapse" data-target="#HP_side">Human Practices <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="HP_side" class="collapse side">
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Human_Practices">Overview</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/HP/Gold_Integrated">Integrated Human Practices</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Interviews">Expert Interviews</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Safety">Safety &amp; Security</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Engagement">Public Engagement</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Education">Education</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Collaborations">Collaborations</a></li>
+                        </ul>
+
+                        </li>
+
+
+                        <li><a data-toggle="collapse" data-target="#Notebook_side">Notebook <i class="fa fa-fw fa-caret-down"></i></a>
+                         <ul id="Notebook_side" class="collapse side">
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Notebook">Overview</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Experiments">Methods</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Materials">Materials</a></li>
+                            <li><a href="http://2017.igem.org/Team:Heidelberg/Database">Notebook Database</a></li>
+                        </ul>
+
+                        </li>
+
+
+                        <li><a href="http://2017.igem.org/Team:Heidelberg/Toolbox">Toolbox Guide</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
