@@ -1,0 +1,13 @@
+#particles-js{
+  display:block;
+  background-image:url("../resource/Images/space.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.logo{
+  color:white;
+  text-align: center;
+  font-family: arial;
+}

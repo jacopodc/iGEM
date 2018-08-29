@@ -1,0 +1,90 @@
+#particles-index{
+display:block;
+background-image:url("../resource/Images/1.jpg");
+height:100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+.header{
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+
+  text-align: center;
+  padding:10vh auto;
+
+  color: #ffffff;
+  font-size:100px;
+  font-weight: 100;
+  font-family: ;
+
+}
+.scrolltext{
+  margin: 30vh auto;
+  color:#bbbbbb;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  opacity: 0.5;
+  transition: all 3000ms ease-in;
+}
+.scrolltext2{
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.section-1{
+  margin: 5vh 0;
+  padding: 20vh 10vw;
+  background: url("../resource/Images/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+  opacity:0;
+  transition: all 3000ms ease;
+}
+.section1animation{
+  opacity: 1;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation
+}
+.section1padding{
+  padding:75vh 0 0;
+}
+.section-2{
+  animation-delay: 0s;
+  animation-duration: 10s;
+  margin: 5vh 0;
+  padding:20vh 10vw;
+  background: url("../resource/Images/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+}
+.section2padding{
+  padding:35vh 0 0;
+}
+.logo{
+  animation-delay: 2s;
+  animation-duration: 1s;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:33.3%;
+}
+.logo2{
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  margin: 7.5vh 0;
+}
+
+
+.remove{
+  opacity:0;
+}

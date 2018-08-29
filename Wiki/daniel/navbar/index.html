@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Title-->
+  <title>Navbar Sandbox</title>
+  <meta name="description"content="Just testing my navabr" />
+  <!-- Required tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport"content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible"content="IE=edge" />
+  <!-- CSS Load -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet"href="style.css" />
+  <!-- Javascript Load -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Javacsript Head Activation -->
+  <script type="text/javascript">
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('nav').addClass('black');
+      }
+      else{
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('.logopng').addClass('black');
+      }
+      else{
+        $('.logopng').removeClass('black');
+      }
+    })
+  </script>
+  <!-- Styles -->
+
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">
+        <a href="https://www.google.com">
+          <img class="logopng"src="Images/logo.png" alt="logo.png" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Modelling</a></li>
+        <li><a href="#">Sponsorship</a></li>
+        <li><a href="#">Wet lab</a></li>
+        <li><a class="active"href="#">Log In</a></li>
+      </ul>
+    </nav>
+    <section class="sec1"></section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
+    </section>
+  </div>
+  <!-- Javasript Body Activation -->
+</body>
+</html>

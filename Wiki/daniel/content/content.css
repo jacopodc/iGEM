@@ -1,0 +1,26 @@
+.header{
+  animation-duration: 5.0625s;
+}
+.section-1{
+  animation-duration: 1.5s;
+  margin: 5vh 0;
+  padding: 7.5vh;
+}
+.section-2{
+  animation-duration: 2.25s;
+  margin: 5vh 0;
+  padding:7.5vh;
+}
+.logo{
+  animation-delay: 3s;
+  animation-duration: 1.25;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:33%;
+}
+.logo2{
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  margin: 7.5vh 0;
+}
