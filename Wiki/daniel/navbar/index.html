@@ -1,57 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--Title-->
-  <title>Navbar Sandbox</title>
-  <meta name="description"content="Just testing my navabr" />
-  <!-- Required tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport"content="width=device-width" />
-  <meta http-equiv="X-UA-Compatible"content="IE=edge" />
-  <!-- CSS Load -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet"href="style.css" />
-  <!-- Javascript Load -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Javacsript Head Activation -->
-  <script type="text/javascript">
-    $(window).on('scroll',function(){
-      if($(window).scrollTop()){
-        $('nav').addClass('black');
-      }
-      else{
-        $('nav').removeClass('black');
-      }
-    })
-  </script>
-
-  <script type="text/javascript">
-    $(window).on('scroll',function(){
-      if($(window).scrollTop()){
-        $('.logopng').addClass('black');
-      }
-      else{
-        $('.logopng').removeClass('black');
-      }
-    })
-  </script>
-  <!-- Styles -->
-
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $(window).on('scroll',function(){
+    if($(window).scrollTop()){
+      $('nav').addClass('black');
+    }
+    else {
+      $('nav').removeClass('black');
+    }
+  })
+</script>
 </head>
 <body>
   <div class="wrapper">
     <nav>
-      <div class="logo">
-        <a href="https://www.google.com">
-          <img class="logopng"src="Images/logo.png" alt="logo.png" />
-        </a>
+      <div class="div-logo"><a href="#">
+        <img class="img-logo"src="Images/logo.png"/></a>
       </div>
       <ul>
         <li><a href="#">Team</a>
           <ul>
             <li><a href="#">Students</a></li>
             <li><a href="#">Supervisors</a></li>
-            <li><a href="#">Lab Experts</a></li>
+            <li><a href="#">Assistance</a></li>
             <li><a href="#">Sponsors</a></li>
           </ul>
         </li>
@@ -79,16 +58,31 @@
             <li><a href="#">Interlab</a></li>
           </ul>
         </li>
-        <li><a class="active"href="#">Log In</a></li>
+        <li>
+          <a href="#">More</a>
+          <ul>
+            <li><a href="#">You</a></li>
+            <li><a href="#">are</a></li>
+            <li><a href="#">Awesome</a></li>
+            <li><a href="#">!!!</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-    <section class="sec1"></section>
-    <section class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius nisi non maxime dolorem vitae fugit, ullam fugiat assumenda obcaecati ipsum. Accusantium quidem libero ipsam nam, officiis ea facilis vero!</p>
-    </section>
   </div>
-  <!-- Javasript Body Activation -->
+  <section class="sec1">
+
+  </section>
+  <section class="content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
 </body>
 </html>
