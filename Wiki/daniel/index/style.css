@@ -172,6 +172,7 @@ nav.black ul li ul li a
 {
   padding:15px 30px;
 }
+
 section.sec1
 {
   width: 100%;
@@ -183,13 +184,14 @@ section.sec1
 }
 .particle-bg-heading
 {
-  padding-top:33vh;
-  padding-left: 15vw;
+
   font-family: Quicksand;
-  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
   font-size: 96px;
   position:absolute;
+  top:30vh;
+  left:15vw;
 }
 section.content
 {
