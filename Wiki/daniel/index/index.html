@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet"href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet"href="resources/css/animate.min.css" />
 <script src="/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
   $(window).on('scroll',function(){
@@ -26,7 +27,10 @@
       console.log('Particles.js loaded..');
     });
 </script>
-
+<script src="resources/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 </head>
 <body>
   <div class="wrapper">
@@ -80,7 +84,8 @@
     </nav>
   </div>
   <section id="particle-bg"class="sec1">
-    <div class="particle-bg-heading">
+    <div class="animated fadeInDown particle-bg-heading">
+
       Silk<br />
       Engineered<br />
       Technology &amp;<br />

@@ -52,6 +52,7 @@ nav ul
   display:flex;
   margin: 0 0 0 0;
   padding: 0;
+  position:relative;
 }
 nav ul li
 {
@@ -163,6 +164,7 @@ nav ul li:hover ul
 {
   opacity: 1;
   visibility: visible;
+  display:block;
 }
 nav ul li ul li a
 {
