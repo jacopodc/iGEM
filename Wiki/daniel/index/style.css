@@ -63,7 +63,7 @@ nav ul li a
   text-decoration: none;
   text-transform: uppercase;
   transition:0.3s;
-  padding: 27.5px 30px;
+  padding: 27.5px 0px;
   box-sizing: border-box;
   position: relative;
   font-size: 15px;
@@ -77,7 +77,7 @@ nav.black ul li a
   text-decoration: none;
   text-transform: uppercase;
   transition:0.3s;
-  padding: 27.5px 30px;
+  padding: 27.5px 0px;
   box-sizing: border-box;
   position: relative;
   font-size: 15px;
