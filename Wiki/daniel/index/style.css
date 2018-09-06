@@ -195,9 +195,11 @@ section.sec1
   top:15vh;
   left:15vw;
   line-height: 1;
-  color:white;
 }
-
+.particle-bg-heading .acronym
+{
+  color: rgba(242, 77, 25,1);
+}
 .particle-bg-heading .acronym1
 {
   animation-name: fadeInDown;
@@ -205,7 +207,7 @@ section.sec1
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
-  color: rgba(242, 77, 25,1);
+
 }
 
 .particle-bg-heading .acronym2
@@ -215,7 +217,7 @@ section.sec1
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
-  color: rgba(242, 77, 25,1);
+
 }
 .particle-bg-heading .acronym3
 {
@@ -224,7 +226,7 @@ section.sec1
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
-  color: rgba(242, 77, 25,1);
+
 }
 .particle-bg-heading .acronym4
 {
@@ -233,7 +235,11 @@ section.sec1
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
-  color: rgba(242, 77, 25,1);
+
+}
+.particle-bg-heading .heading
+{
+  color:#ffffff;
 }
 .particle-bg-heading .heading1
 {
