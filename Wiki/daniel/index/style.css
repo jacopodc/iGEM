@@ -187,7 +187,6 @@ section.sec1
 }
 .particle-bg-heading
 {
-
   font-family: Quicksand;
   font-weight: 100;
   font-size: 96px;
@@ -197,10 +196,77 @@ section.sec1
   line-height: 1;
   color:white;
 }
+.particle-bg-heading .acronym1
+{
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 0.5s;
+  color: rgba(242, 77, 25,1);
+}
+.particle-bg-heading .acronym2
+{
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 0.5s;
+  color: rgba(242, 77, 25,1);
+}
+.particle-bg-heading .acronym3
+{
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 0.5s;
+  color: rgba(242, 77, 25,1);
+}
+.particle-bg-heading .acronym4
+{
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 0.5s;
+  color: rgba(242, 77, 25,1);
+}
+.particle-bg-heading .heading1
+{
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 3s;
+}
+.particle-bg-heading .heading2
+{
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 3.5s;
+}
+.particle-bg-heading .heading3
+{
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 4s;
 
+}
+.particle-bg-heading .heading4
+{
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display:inline-block;
+  animation-delay: 4.5s;
+}
 .particle-bg-intro
 {
-
   font-family: Quicksand;
   font-weight: 100;
   font-size: 18px;
