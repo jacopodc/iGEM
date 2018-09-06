@@ -16,6 +16,7 @@ nav
   transition: 0.3s;
   background: rgba(255, 255, 255, 0.95);
   border-bottom: :1px solid rgba(0, 0, 0, 1);
+  z-index:3;
 }
 nav.black
 {
@@ -136,7 +137,7 @@ nav.black ul li a:hover:before
 
 nav ul li a:focus
 {
-  outline: none;
+  outline:inherit;
 }
 nav ul li ul
 {
@@ -154,7 +155,7 @@ nav.black ul li ul
   display:none;
   text-align: center;
   max-width: 200px;
-  transition:0.5s;
+  transition:0.3s;
   opacity: 0;
   visibility: hidden;
   transform:translateY(0px);
@@ -179,7 +180,7 @@ section.sec1
 {
   width: 100%;
   height: 100vh;
-  background: url('resources/Images/7.jpg');
+  background: url('resources/Images/8.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,12 +189,26 @@ section.sec1
 {
 
   font-family: Quicksand;
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: 100;
   font-size: 96px;
   position:absolute;
-  top:30vh;
+  top:15vh;
   left:15vw;
+  line-height: 1;
+  color:white;
+}
+
+.particle-bg-intro
+{
+
+  font-family: Quicksand;
+  font-weight: 100;
+  font-size: 18px;
+  position:absolute;
+  top:60vh;
+  left:15vw;
+  line-height: 1.75;
+  color:white;
 }
 section.content
 {
