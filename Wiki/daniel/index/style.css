@@ -188,22 +188,22 @@ section.sec1
 }
 .particle-bg-heading
 {
-  font-family: Quicksand;
-  font-weight: bold;
-  font-size: 96px;
   position:absolute;
   top:15vh;
   left:15vw;
-  line-height: 1;
 }
 .particle-bg-heading .acronym
 {
   color: rgba(242, 77, 25,1);
+  font-family: Quicksand;
+  font-weight: bolder;
+  font-size: 96px;
+  line-height: 1;
 }
 .particle-bg-heading .acronym1
 {
-  animation-name: fadeInDown;
-  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
@@ -212,8 +212,8 @@ section.sec1
 
 .particle-bg-heading .acronym2
 {
-  animation-name: fadeInDown;
-  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
@@ -221,8 +221,8 @@ section.sec1
 }
 .particle-bg-heading .acronym3
 {
-  animation-name: fadeInDown;
-  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
@@ -230,8 +230,8 @@ section.sec1
 }
 .particle-bg-heading .acronym4
 {
-  animation-name: fadeInDown;
-  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   display:inline-block;
   animation-delay: 0.5s;
@@ -240,14 +240,19 @@ section.sec1
 .particle-bg-heading .heading
 {
   color:#ffffff;
+  font-family: 'Quicksand',serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1;
 }
 .particle-bg-heading .heading1
 {
   animation-name: flipInX;
+  animation-delay: 3s;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
   display:inline-block;
-  animation-delay: 3s;
+
 }
 .particle-bg-heading .heading2
 {
@@ -286,15 +291,34 @@ section.sec1
   line-height: 1.75;
   color:white;
 }
-section.content
+
+.scroll
+{
+  font-size: 96px;
+  text-align: center;
+
+  color:#ffffff;
+  animation-name: fadeIn;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  top: 92.5vh;
+  left:47.5vw;
+  position: absolute;
+text-decoration: none;
+}
+
+
+section.section1
 {
   margin-top: 80px;
 }
-section.content p
+section.section1 p
 {
   width: 80vw;
   margin:30px auto;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
+  font-family: Quicksand;
 }
