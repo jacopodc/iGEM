@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <meta charset="UTF-8"> -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UCL SETA</title>
-  <!-- <link rel="stylesheet"href="style.css" /> -->
+  <link rel="stylesheet"href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
- <!-- <link rel="stylesheet"href="resources/css/animate.min.css" />
-<script src="/resources/js/jquery-3.3.1.min.js"></script>
+ <link rel="stylesheet"href="resources/css/animate.min.css" />
+<script src="resources/js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 <script type="text/javascript">
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
@@ -20,18 +35,18 @@
   })
 </script>
 
-<script src="/resources/js/particles.js"></script>
+<script src="resources/js/particles.js"></script>
 
 <script>
     particlesJS.load('particle-bg','particles.json',function(){
       console.log('Particles.js loaded..');
     });
 </script>
-<script src="/resources/js/wow.min.js"></script>
+<script src="resources/js/wow.min.js"></script>
 <script>
   new WOW().init();
 </script>
--->
+
 </head>
 
 <style>
@@ -41,331 +56,6 @@
     font-style: normal;
     font-weight: 400;
     src: url()
-}
-
-body
-{
-  margin:0;
-  padding:0;
-
-}
-nav
-{
-  font-family: Quicksand;
-  font-weight:100;
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:74px;
-  box-sizing: border-box;
-  transition: 0.3s;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: :1px solid rgba(0, 0, 0, 1);
-  z-index:3;
-}
-nav.black
-{
-  background: rgba(0,0,0,0.75);
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:74px;
-  box-sizing: border-box;
-  transition: 0.3s;
-}
-nav .img-logo
-{
-  height:100px;
-  width:100px;
-  float:left;
-  transition:0.3s;
-  position: fixed;
-  top: 25px;
-  left:100px;
-}
-nav.black.img-logo
-{
-  height:100px;
-  width:100px;
-  float:left;
-  transition:0.3s;
-}
-nav ul
-{
-  list-style: none;
-  float:right;
-  display:flex;
-  margin: 0 0 0 0;
-  padding: 0;
-  position:relative;
-}
-nav ul li
-{
-  list-style: none;
-}
-nav ul li a
-{
-  color:rgba(242, 77, 25,1);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition:0.3s;
-  padding: 27.5px 0px;
-  box-sizing: border-box;
-  position: relative;
-  font-size: 15px;
-  display: block;
-  text-align: center;
-  width: 175px;
-}
-nav.black ul li a
-{
-  color:rgba(255, 255, 255, 1);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition:0.3s;
-  padding: 27.5px 0px;
-  box-sizing: border-box;
-  position: relative;
-  font-size: 15px;
-  display: block;
-  text-align: center;
-}
-nav ul li a:before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(242, 77, 25,1);
-  transform-origin:top;
-  transform:scaleY(0);
-  transition: 0.5s;
-  color:#000;
-  z-index: -1;
-}
-nav ul li a:hover
-{
-  color:rgba(255, 255, 255, 1)
-}
-nav ul li a:hover:before
-{
-  transform-origin:top;
-  transform:scaleY(1);
-}
-nav.black ul li a:before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(255,255,255,0.75);
-  transform-origin:top;
-  transform:scaleY(0);
-  transition: 0.5s;
-  color:#000;
-  z-index: -1;
-}
-nav.black ul li a:hover
-{
-  color:rgba(0,0,0,1)
-}
-nav.black ul li a:hover:before
-{
-  transform-origin:top;
-  transform:scaleY(1);
-}
-
-nav ul li a:focus
-{
-  outline:inherit;
-}
-nav ul li ul
-{
-  display:none;
-  text-align: center;
-  max-width: 200px;
-  transition:0.3s;
-  opacity: 0;
-  visibility: hidden;
-  transform:translateY(0px);
-  background:rgba(255, 255, 255, 0.9);
-}
-nav.black ul li ul
-{
-  display:none;
-  text-align: center;
-  max-width: 200px;
-  transition:0.3s;
-  opacity: 0;
-  visibility: hidden;
-  transform:translateY(0px);
-  background:rgba(0,0,0,0.75);
-}
-nav ul li:hover ul
-{
-  opacity: 1;
-  visibility: visible;
-  display:block;
-}
-nav ul li ul li a
-{
-  padding:15px 30px;
-}
-nav.black ul li ul li a
-{
-  padding:15px 30px;
-}
-
-section.sec1
-{
-  width: 100%;
-  height: 100vh;
-  background: url('resources/Images/8.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.particle-bg-heading
-{
-  position:absolute;
-  top:15vh;
-  left:15vw;
-}
-.particle-bg-heading .acronym
-{
-  color: rgba(242, 77, 25,1);
-  font-family: Quicksand;
-  font-weight: bolder;
-  font-size: 96px;
-  line-height: 1;
-}
-.particle-bg-heading .acronym1
-{
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 0.5s;
-
-}
-
-.particle-bg-heading .acronym2
-{
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 0.5s;
-
-}
-.particle-bg-heading .acronym3
-{
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 0.5s;
-
-}
-.particle-bg-heading .acronym4
-{
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 0.5s;
-
-}
-.particle-bg-heading .heading
-{
-  color:#ffffff;
-  font-family: 'Quicksand',serif;
-  font-weight: 800;
-  font-size: 72px;
-  line-height: 1;
-}
-.particle-bg-heading .heading1
-{
-  animation-name: flipInX;
-  animation-delay: 3s;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  display:inline-block;
-
-}
-.particle-bg-heading .heading2
-{
-  animation-name: flipInX;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 3.5s;
-}
-.particle-bg-heading .heading3
-{
-  animation-name: flipInX;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 4s;
-
-}
-.particle-bg-heading .heading4
-{
-  animation-name: flipInX;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  display:inline-block;
-  animation-delay: 4.5s;
-}
-
-.particle-bg-intro
-{
-  font-family: Quicksand;
-  font-weight: 100;
-  font-size: 18px;
-  position:absolute;
-  top:60vh;
-  left:15vw;
-  line-height: 1.75;
-  color:white;
-}
-
-.scroll
-{
-  font-size: 96px;
-  text-align: center;
-
-  color:#ffffff;
-  animation-name: fadeIn;
-  animation-iteration-count: infinite;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  top: 92.5vh;
-  left:47.5vw;
-  position: absolute;
-text-decoration: none;
-}
-
-
-section.section1
-{
-  margin-top: 80px;
-}
-section.section1 p
-{
-  width: 80vw;
-  margin:30px auto;
-  text-align: center;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: Quicksand;
 }
 
 </style>
@@ -436,19 +126,23 @@ section.section1 p
   <section id="particle-bg"class="sec1">
     <div class="particle-bg-heading">
 
-      <div class="acronym1 acronym">S</div><div class="heading1 heading">ilk</div><br />
-      <div class="acronym2 acronym">E</div><div class="heading2 heading">ngineered</div><br />
-      <div class="acronym3 acronym">T</div><div class="heading3 heading">echnology &amp;</div><br />
-      <div class="acronym4 acronym">A</div><div class="heading4 heading">pplications</div><br />
+      <div class="acronym1 acronym animated lightSpeedIn">S</div><div class="heading1 heading animated flipInX">ilk</div><br />
+      <div class="acronym2 acronym animated lightSpeedIn">E</div><div class="heading2 heading animated flipInX">ngineered</div><br />
+      <div class="acronym3 acronym animated lightSpeedIn">T</div><div class="heading3 heading animated flipInX">echnology &amp;</div><br />
+      <div class="acronym4 acronym animated lightSpeedIn">A</div><div class="heading4 heading animated flipInX">pplications</div><br />
 
     </div>
-    <div class="particle-bg-intro">
+    <div class="particle-bg-intro animated fadeIn">
       With five times the strength of steel, spider silk is the ideal material <br />both in biodegradability and biocompatibility. Here at UCL, we aim to <br />use spider silk to create metal-binding scaffolds for <br />filtering purposes as well as aiding tissue regeneration.
     </div>
 
 
-    <div class="scroll">
-      <a href=".section1">&#xfe40;</a>
+    <div class="scroll animated fadeIn">
+
+
+      <a href="#section1"class="nostyle">
+      &#65088;
+</a>
     </div>
 
 
@@ -459,7 +153,55 @@ section.section1 p
 
 
 
-  <section class="section1">
+  <section class="section1" id="section1">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </section>
+  <section class="section2" id="section2">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </section>
+  <section class="section3" id="section3">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </section>
+  <section class="section4" id="section4">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </section>
+  <section class="section5" id="section5">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
