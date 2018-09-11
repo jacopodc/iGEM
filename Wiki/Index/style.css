@@ -1,13 +1,50 @@
-*
-{
+@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+
+/* Quicksand regular */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+    src: local('Quicksand Regular'), local('Quicksand-Regular'),
+            url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot') format('embedded-opentype'),
+            url('http://2018.igem.org/wiki/images/a/aa/T--UCL--quicksand.ttf') format('truetype'),
+            url('http://2018.igem.org/wiki/images/7/74/T--UCL--QuicksandReg1.woff') format('woff');
+}
+
+#sideMenu,
+#top_title {
+    display: none;
+}
+
+#content {
+    width: 100vw;
+    padding: 0px;
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+#globalWrapper {
+    font-size: inherit;
+    padding-bottom: 0;
+}
+
+#top_menu_under {
+    height: 0px !important;
+}
+
+* {
   margin:0;
   padding:0;
-
 }
 
 nav
 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-weight:100;
   position: fixed;
   top:0;
@@ -197,7 +234,7 @@ section.sec1
 .particle-bg-heading .acronym
 {
   color: rgba(242, 77, 25,1);
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-weight: bolder;
   font-size: 80px;
   line-height: 1;
@@ -237,7 +274,7 @@ section.sec1
 .particle-bg-heading .heading
 {
   color:#ffffff;
-  font-family: 'Quicksand',serif;
+  font-family: "Quicksand",serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 1;
@@ -279,7 +316,7 @@ section.sec1
 
 .particle-bg-intro
 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-weight: 100;
   font-size: 18px;
   position:absolute;
@@ -328,7 +365,7 @@ section.section1 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 section.section2
 {
@@ -343,7 +380,7 @@ section.section2 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
 
 }
 section.section3
@@ -358,7 +395,7 @@ section.section3 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 section.section4
 {
@@ -373,7 +410,7 @@ section.section4 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 section.section5
 {
@@ -386,5 +423,5 @@ section.section5 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
