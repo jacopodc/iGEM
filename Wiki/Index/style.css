@@ -1,6 +1,20 @@
 @import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
+
+/*Futura*/
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 400;
+    src: url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
+    src: local('Futura'), local('Futura'),
+    url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot") format("embedded-opentype"),
+    url("http://2018.igem.org/wiki/images/c/ce/T--UCL--futuramed.woff") format("woff"),
+    url("http://2018.igem.org/wiki/images/e/e6/T--UCL--futuramed.ttf") format("truetype"),
+  }
+
 /* Quicksand regular */
 @font-face {
     font-family: 'Quicksand';
@@ -78,7 +92,7 @@ nav .img-logo
   transition:0.3s;
   position: fixed;
   top: 25px;
-  left:100px;
+  left: 2vw;
   box-shadow: 5px 5px 10px #d0513a;
   border-radius: 100%;
 }
@@ -222,7 +236,7 @@ nav.black ul li ul li a
 }
 
 @media screen and (max-width:700px) {
-    ..particle-bg-intro, .scroll, .section1, .section2, .section3,
+    .particle-bg-intro, .scroll, .section1, .section2, .section3,
     .section4, .section5 {
         width: 100%;
     }
@@ -262,16 +276,20 @@ div.particle-bg-heading
 {
   position: absolute;
   top:20vh;
-  left:5vw;
-  right: 5vw;
+  left:15vw;
+  right: 15vw;
 }
 .particle-bg-heading .acronym
 {
   color: rgba(242, 77, 25,1);
-  font-family: "Quicksand";
+  font-family: "Futura";
   font-weight: bolder;
-  line-height: 1;
+  line-height: 80%;
   animation-delay: 1.5s;
+  font-weight: 400;
+  float: left;
+  display: inline;
+  align-items: center;
 }
 .particle-bg-heading .acronym1
 {
@@ -307,9 +325,9 @@ div.particle-bg-heading
 .particle-bg-heading .heading
 {
   color:#ffffff;
-  font-family: "Quicksand",serif;
+  font-family: "Futura",serif;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1vh;
 }
 .particle-bg-heading .heading1
 {
@@ -383,7 +401,7 @@ a.nostyle:visited {
 }
 section.section1
 {
-  padding: 224px 0px 150px;
+  padding: 100px 0px 100px;
 }
 section.section1 p
 {
@@ -396,7 +414,7 @@ section.section1 p
 }
 section.section2
 {
-  padding: 224px 0px 150px;
+  padding: 100px 0px 100px;
   background-color: grey;
   color:white;
 }
@@ -412,7 +430,7 @@ section.section2 p
 }
 section.section3
 {
-  padding: 224px 0px 150px;
+  padding: 100px 0px 100px;
 
 }
 section.section3 p
@@ -426,7 +444,7 @@ section.section3 p
 }
 section.section4
 {
-  padding: 224px 0px 150px;
+  padding: 100px 0px 100px;
   background-color: grey;
   color:white;
 }
@@ -441,7 +459,7 @@ section.section4 p
 }
 section.section5
 {
-  padding: 224px 0px 150px;
+  padding: 100px 0px 100px;
 }
 section.section5 p
 {
