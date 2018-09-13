@@ -1,4 +1,5 @@
 @import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /* Quicksand regular */
 @font-face {
@@ -78,6 +79,8 @@ nav .img-logo
   position: fixed;
   top: 25px;
   left:100px;
+  box-shadow: 5px 5px 10px #d0513a;
+  border-radius: 100%;
 }
 nav.black.img-logo
 {
@@ -85,6 +88,8 @@ nav.black.img-logo
   width:100px;
   float:left;
   transition:0.3s;
+  box-shadow: 5px 5px 10px #d0513a;
+  border-radius: 100%;
 }
 nav ul
 {
@@ -216,6 +221,21 @@ nav.black ul li ul li a
   padding:15px 30px;
 }
 
+@media screen and (max-width:700px) {
+    ..particle-bg-intro, .scroll, .section1, .section2, .section3,
+    .section4, .section5 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {.particle-bg-heading, .acronym, .acronym1, .acronym2,
+.acronym3, .acronym4, .heading, .heading1, .heading2, .heading3,
+.heading4, {
+    width: 100%;
+    }
+}
+
+
 section.sec1
 {
   width: 100%;
@@ -224,19 +244,32 @@ section.sec1
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #000000;
+  -webkit-filter: blur(3.5px);
+  -moz-filter: blur(3.5px);
+  -o-filter: blur(3.5px);
+  -ms-filter: blur(3.5px);
+  filter: blur(3.5px);
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-.particle-bg-heading
+div.particle-bg-heading
 {
-  position:absolute;
-  top:15vh;
-  left:15vw;
+  position: absolute;
+  top:20vh;
+  left:5vw;
+  right: 5vw;
 }
 .particle-bg-heading .acronym
 {
   color: rgba(242, 77, 25,1);
   font-family: "Quicksand";
   font-weight: bolder;
-  font-size: 80px;
   line-height: 1;
   animation-delay: 1.5s;
 }
@@ -276,7 +309,6 @@ section.sec1
   color:#ffffff;
   font-family: "Quicksand",serif;
   font-weight: 400;
-  font-size: 72px;
   line-height: 1;
 }
 .particle-bg-heading .heading1
@@ -318,27 +350,22 @@ section.sec1
 {
   font-family: "Quicksand";
   font-weight: 100;
-  font-size: 18px;
-  position:absolute;
-  top:60vh;
-  left:15vw;
+  position: relative;
   line-height: 1.75;
-  color:white;
+  color: #ffffff;
   animation-timing-function: ease-in;
   animation-delay: 6s;
+  text-align: justify;
 }
 
 .scroll
 {
   font-size: 96px;
-  text-align: center;
   color:#ffffff;
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-delay: 0s;
   animation-direction: alternate;
-  top: 92.5vh;
-  left:47.5vw;
   position: absolute;
   text-decoration: none;
 }
