@@ -1,0 +1,303 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+
+  <div id="myfilter" style="position:absolute;background-color:#000000;opacity:0.3;width:550px;height:350px;display:none"></div>
+<div id="myrestartbutton" style="position:absolute;padding-top:150px;padding-left:235px;display:none;"><button onclick="restartGame()">Restart</button></div>
+<div id="canvascontainer"></div>
+<br>
+<br>
+
+<script>
+
+var myGameArea;
+var myGamePiece;
+var myObstacles = [];
+var myscore;
+var myapple = [];
+var mypipette = [];
+var mywaste = [];
+var mygloves = [];
+var mygerm = [];
+
+
+function restartGame() {
+document.getElementById("myfilter").style.display = "none";
+document.getElementById("myrestartbutton").style.display = "none";
+myGameArea.stop();
+myGameArea.clear();
+myGameArea = {};
+myGamePiece = {};
+myObstacles = [];
+myapple = [];
+mypipette = [];
+mywaste = [];
+mygloves = [];
+mygerm = [];
+
+myscore = {};
+document.getElementById("canvascontainer").innerHTML = "";
+startGame()
+}
+
+function startGame() {
+    myGameArea = new gamearea();
+    myGamePiece = new component(35, 45, "http://2018.igem.org/wiki/images/3/39/T--UCL--scientist.png", 10, 120, "image");
+    myscore = new component("30px", "Consolas", "black", 320, 40, "text");
+    myGameArea.start();
+}
+
+function gamearea() {
+    this.canvas = document.createElement("canvas");
+    this.canvas.width = 550;
+    this.canvas.height = 350;
+    document.getElementById("canvascontainer").appendChild(this.canvas);
+    this.context = this.canvas.getContext("2d");
+    this.pause = false;
+    this.frameNo = 0;
+    this.start = function() {
+        this.interval = setInterval(updateGameArea, 20);
+        window.addEventListener('keydown', function (e) {
+            myGameArea.keys = (myGameArea.keys || []);
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+        })
+        window.addEventListener('keyup', function (e) {
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+        })
+
+    }
+    this.stop = function() {
+        clearInterval(this.interval);
+        this.pause = true;
+    }
+
+    this.clear = function(){
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y, type) {
+
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = color;
+    }
+
+    if (type == "text") {
+        this.text = color;
+    }
+    this.score = 0;
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;
+    this.x = x;
+    this.y = y;
+    this.update = function() {
+        ctx = myGameArea.context;
+        if (type == "image") {
+            ctx.drawImage(this.image,
+                this.x,
+                this.y,
+                this.width, this.height);
+        } else if (this.type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+    this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
+}
+
+function updateGameArea() {
+    var x, y, min, max, height, gap;
+    for (i = 0; i < myObstacles.length; i += 1) {
+        if (myGamePiece.crashWith(myObstacles[i])) {
+            myGameArea.stop();
+            document.getElementById("myfilter").style.display = "block";
+            document.getElementById("myrestartbutton").style.display = "block";
+            return;
+        }
+    }
+
+
+    if (myGameArea.pause == false) {
+        myGameArea.clear();
+        myGamePiece.speedX = 0;
+        myGamePiece.speedY = 0;
+        if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.speedX = -2; }
+        if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.speedX = 1; }
+        if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speedY = -1; }
+        if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; }
+
+
+        myGameArea.frameNo += 1;
+        myscore.score +=0;
+        if (myGameArea.frameNo == 1 || everyinterval(200)) {
+            x = myGameArea.canvas.width;
+            y = myGameArea.canvas.height - 100;
+            min = 20;
+            max = 130;
+            height = Math.floor(Math.random()*(max-min+1)+min);
+            min = 80;
+            max = 150;
+            gap = Math.floor(Math.random()*(max-min+1)+min);
+            myObstacles.push(new component(10, height, "green", x, 0));
+            myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        }
+        for (i = 0; i < myObstacles.length; i += 1) {
+            myObstacles[i].x += -1;
+            myObstacles[i].update();
+        }
+
+
+        if (myGameArea.frameNo == 1 || everyinterval(300)) {
+        x = myGameArea.canvas.width;
+        y = myGameArea.canvas.height - 200
+        min = 20;
+        max = 300;
+        height1 = Math.floor(Math.random()*(max-min+1)+min);
+        height2 = Math.floor(Math.random()*(max-min+1)+min);
+        height3 = Math.floor(Math.random()*(max-min+1)+min);
+        height4 = Math.floor(Math.random()*(max-min+1)+min);
+        height5 = Math.floor(Math.random()*(max-min+1)+min);
+        min = 50;
+        max = 2030;
+        width1 = Math.floor(Math.random()*(max-min+1)+min);
+        width2 = Math.floor(Math.random()*(max-min+1)+min);
+        width3 = Math.floor(Math.random()*(max-min+1)+min);
+        width4 = Math.floor(Math.random()*(max-min+1)+min);
+        width5 = Math.floor(Math.random()*(max-min+1)+min);
+        myapple.push(new component(30, 30, "http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png", x+width1, height1, "image"));
+        mypipette.push(new component(50, 50, "http://2018.igem.org/wiki/images/6/69/T--UCL--pipette.png", x+width2, height2, "image"));
+        mywaste.push(new component(40, 50, "http://2018.igem.org/wiki/images/2/2a/T--UCL--waste.png", x+width3, height3, "image"));
+        mygloves.push(new component(50, 50, "http://2018.igem.org/wiki/images/c/ca/T--UCL--gloves.png", x+width4, height4, "image"));
+        mygerm.push(new component(40, 40, "http://2018.igem.org/wiki/images/1/18/T--UCL--germ.png", x+width5, height5, "image"));
+         }
+
+        for (i = 0; i < myapple.length; i += 1) {
+        myapple[i].x += -1;
+        myapple[i].update();
+        if((myGamePiece.x > myapple[i].x -20 && myGamePiece.x < myapple[i].x +20)
+          && (myGamePiece.y > myapple[i].y-20 && myGamePiece.y < myapple[i].y+20))
+        {
+        myapple[i].y = -100;
+        myapple[i].update();
+        myscore.score +=1000;}
+        }
+
+
+        for (i = 0; i < mypipette.length; i += 1) {
+        mypipette[i].x += -1;
+        mypipette[i].update();
+        if((myGamePiece.x > mypipette[i].x -20 && myGamePiece.x < mypipette[i].x +20)
+          && (myGamePiece.y > mypipette[i].y-20 && myGamePiece.y < mypipette[i].y+20))
+        {
+        mypipette[i].y = -100;
+        mypipette[i].update();
+        myscore.score +=500;}
+        }
+
+        for (i = 0; i < mywaste.length; i += 1) {
+        mywaste[i].x += -1;
+        mywaste[i].update();
+        if((myGamePiece.x > mywaste[i].x -20 && myGamePiece.x < mywaste[i].x +20)
+          && (myGamePiece.y > mywaste[i].y-20 && myGamePiece.y < mywaste[i].y+20))
+        {
+        mywaste[i].y = -100;
+        mywaste[i].update();
+        myscore.score -=100;}
+        }
+
+        for (i = 0; i < mygloves.length; i += 1) {
+        mygloves[i].x += -1;
+        mygloves[i].update();
+        if((myGamePiece.x > mygloves[i].x -20 && myGamePiece.x < mygloves[i].x +20)
+          && (myGamePiece.y > mygloves[i].y-20 && myGamePiece.y < mygloves[i].y+20))
+        {
+        mygloves[i].y = -100;
+        mygloves[i].update();
+        myscore.score +=10;}
+        }
+
+        for (i = 0; i < mygerm.length; i += 1) {
+        mygerm[i].x += -1;
+        mygerm[i].update();
+        if((myGamePiece.x > mygerm[i].x -20 && myGamePiece.x < mygerm[i].x +20)
+          && (myGamePiece.y > mygerm[i].y-20 && myGamePiece.y < mygerm[i].y+20))
+        {
+        mygerm[i].y = -100;
+        mygerm[i].update();
+        myscore.score -=50;}
+        }
+
+
+        myscore.text="SCORE: " + myscore.score;
+        myscore.update();
+        myGamePiece.x += myGamePiece.speedX;
+        myGamePiece.y += myGamePiece.speedY;
+        myGamePiece.update();
+    }
+}
+
+function everyinterval(n) {
+    if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+    return false;
+}
+
+function moveup(e) {
+    myGamePiece.speedY = -1;
+}
+
+function movedown() {
+    myGamePiece.speedY = 1;
+}
+
+function moveleft() {
+    myGamePiece.speedX = -1;
+}
+
+function moveright() {
+    myGamePiece.speedX = 1;
+}
+
+function clearmove(e) {
+    myGamePiece.speedX = 0;
+    myGamePiece.speedY = 0;
+}
+startGame();
+
+</script>
+
+<p><font face="verdana" color="blue">Click the game window to activate controls.</font></p>
+<p><font face="verdana" color="blue">Use arrow keys to move UP, DOWN, RIGHT and LEFT.</font></p>
+<p><font face="verdana" color="green">Avoid the green walls.</font></p>
+<p><font face="verdana" color="blue">Collect lab equipment, while avoiding dangerous substances. Good luck!</font></p>
+
+</body>
+</html>
