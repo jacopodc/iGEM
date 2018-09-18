@@ -1,10 +1,9 @@
 <!--
-{{UCL/BootstrapCSS}}
-{{UCL/BootstrapJS}}
-{{UCL/Style}}
-{{UCL/Animate_CSS}}
-{{UCL/JQuery}}
-{{UCL/Particle_JS}}
+{{Template:UCL/Style}}
+{{Template:UCL/JQuery}}
+{{Template:UCL/Particle_JS}}
+{{Template:UCL/BootstrapJS}}
+{{Template:UCL/PopperJS}}
 -->
 
 
@@ -17,15 +16,14 @@
   <link rel="stylesheet" href="http://2018.igem.org/Template:UCL/BootstrapCSS" />
   <link rel="stylesheet" href="http://2018.igem.org/Template:UCL/Style" />
  <link rel="stylesheet"href="http://2018.igem.org/Template:UCL/Animate_CSS" />
- <link rel="stylesheet" href="bootstrap1.css" />
  <link rel="stylesheet" href="style.css"  />
- <link rel="stylesheet" href="resources/css/animate.min.css"  />
  <!-- ========SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS======== -->
  <script src="http://2018.igem.org/Template:UCL/BootstrapJS"></script>
 <script src="http://2018.igem.org/Template:UCL/JQuery"></script>
 <script src="resources/js/jquery-3.3.1.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script>
+<script src="bootstrapscript.js"></script>
+<script src="scratch/templates/popper.min.js"></script>
+<script type="text/javascript">
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -40,7 +38,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
+<script type="text/javascript">
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
       $('nav').addClass('black');
@@ -59,69 +57,92 @@ $(document).ready(function(){
 
 <body>
   <!-- ========NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR============ -->
-  <div class="wrapper">
-      <div class="div-logo"><a href="http://2018.igem.org/Team:UCL">
-        <img class="img-logo"src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" /></a>
-      </div>
-    <nav>
-      <ul>
-        <li><a href="http://2018.igem.org/Team:UCL/People">People</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/People/Team">Team</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/People/Attributions">Attributions</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/People/Sponsors">Sponsors</a></li>
-          </ul>
-        </li>
-        <li><a href="http://2018.igem.org/Team:UCL/Project">Project</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/Results">Results</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/POP">Proof of Principle</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/InterLab">InterLab</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Project/Safety">Safety and Security</a></li>
-          </ul>
-        </li>
-        <li><a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/FB">Final Brick</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/Intein_mScar">Intein Passenger</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/GFP">GFP Reporter</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/RFP">RFP Reporter</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/MS">Mini Spindroin</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/IS">Intein Spindroin</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/NikR">NikR</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Parts/SpyTag">SpyTag</a></li>
-          </ul>
-        </li>
-        <li><a href="http://2018.igem.org/Team:UCL/Modelling">Modelling</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/Modelling/Intein">Intein</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Modelling/Intein_Poly">Intein Polymerisation</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Modelling/LAMMPS">LAMMPS</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Modelling/Scale_Up">Scale Up</a></li>
-          </ul>
-        </li>
-        <li><a href="http://2018.igem.org/Team:UCL/HP">Human Practices</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/HP/IHP">Integrated Human Practices</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/HP/PE">Public Engagement</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/HP/Collaborations">Collaborations</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
-          <ul>
-            <li><a href="http://2018.igem.org/Team:UCL/Notebook/Lab_Book">Lab Book</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Notebook/Protocols">Protocols</a></li>
-            <li><a href="http://2018.igem.org/Team:UCL/Notebook/MC">Medal Criteria</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+<div class="navbar">
+    <div class="navbar-brand"><a href="http://2018.igem.org/Team:UCL" style="background-color: transparent;">
+        <img class="img-logo" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png"></a>
+    </div>
+<div class="menu">
+<div class="dropdown">
+    <button class="dropbtn">People
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+          <a href="http://2018.igem.org/Team:UCL/People/Team">Team</a>
+          <a href="http://2018.igem.org/Team:UCL/People/Attributions">Attributions</a>
+          <a href="http://2018.igem.org/Team:UCL/People/Sponsors">Sponsors</a>
+    </div>
+</div>
 
-  </div>
+<div class="dropdown">
+    <button class="dropbtn">Project
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Results">Results</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/POP">Proof of Principle</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/InterLab">InterLab</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Safety">Safety and Security</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Parts
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/FB">Final Brick</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/Intein_mScar">Intein Passenger</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/GFP">GFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/RFP">RFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/MS">Mini Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/IS">Intein Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/NikR">NikR</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/SpyTag">SpyTag</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Modelling
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://2018.igem.org/Team:UCL/Modelling">Modelling</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein_Poly">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Scale_Up">Scale Up</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Human Practices
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://2018.igem.org/Team:UCL/HP">Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/IHP">Integrated Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/PE">Public Engagement</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/Collaborations">Collaborations</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Notebook
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Lab_Book">Lab Book</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Protocols">Protocols</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/MC">Medal Criteria</a>
+    </div>
+</div>
+</div>
+</div>
   <!-- ========HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING======== -->
   <section id="particles-js" class="sec1"></section>
     <div class="particle-bg-heading">
@@ -211,7 +232,6 @@ $(document).ready(function(){
     </p>
 
   </section>
-
 
   <script src="http://2018.igem.org/Template:UCL/Particle_JS" ></script>
   <script src="particles.js"></script>
@@ -329,5 +349,6 @@ $(document).ready(function(){
                 console.log('Particles.js loaded..');
               });
   </script>
+
 </body>
 </html>
