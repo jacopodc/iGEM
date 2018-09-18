@@ -3,7 +3,7 @@
 {{Template:UCL/Animate_CSS}}
 {{Template:UCL/JQuery}}
 {{Template:UCL/ParticleJS}}
-{{Template:UCL/WOW_JS}} -->
+-->
 
 <html lang="en">
 <head>
@@ -11,9 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UCL SETA</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="bootstrap1.css" />
+  <link rel="stylesheet" href="bootstrap.min.js" />
  <link rel="stylesheet"href="resources/css/animate.min.css" />
+ <!-- ========SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS======== -->
 <script src="resources/js/jquery-3.3.1.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -30,34 +30,513 @@ $(document).ready(function(){
   });
 });
 </script>
-<script type="text/javascript">
+<script>
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
       $('nav').addClass('black');
-  }
+    }
     else {
       $('nav').removeClass('black');
     }
   })
 </script>
 
-<script type="text/text/javascript" src="/resources/js/particles.js" ></script>
 
-<script>
-    particlesJS.load('particle-bg','particles.json',function(){
-              console.log('Particles.js loaded..');
-            });
-</script>
 
-<!-- <script src="http://2018.igem.org/Template:UCL/Particle_JS"></script> -->
-<script>
-  new WOW().init();
-</script>
 
+<!-- =========STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES===================STYLES========== -->
+<style>
+@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
+
+/*Futura*/
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 400;
+    src: url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
+    src: local('Futura'), local('Futura'),
+    url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot") format("embedded-opentype"),
+    url("http://2018.igem.org/wiki/images/c/ce/T--UCL--futuramed.woff") format("woff"),
+    url("http://2018.igem.org/wiki/images/e/e6/T--UCL--futuramed.ttf") format("truetype"),
+  }
+
+/* Quicksand regular */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+    src: local('Quicksand Regular'), local('Quicksand-Regular'),
+            url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot') format('embedded-opentype'),
+            url('http://2018.igem.org/wiki/images/a/aa/T--UCL--quicksand.ttf') format('truetype'),
+            url('http://2018.igem.org/wiki/images/7/74/T--UCL--QuicksandReg1.woff') format('woff');
+}
+
+#sideMenu,
+#top_title {
+    display: none;
+}
+
+#content {
+    width: 100vw;
+    padding: 0px;
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+#top_menu_under {
+    height: 0px !important;
+}
+/* ====NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR==== */
+* {
+  margin:0;
+  padding:0;
+}
+/*
+@media screen and (min-width: 1024px) {
+    nav, nav ul li a {
+        height: 8.5vh;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    nav, nav ul li a {
+        height: 5vh;
+    }
+}
+*/
+nav
+{
+  font-family: "Quicksand";
+  font-weight:100;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.95);
+  z-index:3;
+  height:8.6vh;
+}
+
+nav.black
+{
+  background: rgba(0,0,0,0.75);
+}
+.div-logo
+{
+    position: relative;
+    top: 3vh;
+    left:1.5vw;
+    z-index: 9999;
+}
+.img-logo
+{
+  float:left;
+  transition:0.3s;
+  /*
+  box-shadow: 5px 5px 10px #d0513a;
+*/
+  border-radius: 100%;
+  z-index: 9999;
+  -webkit-transform: translateX(3vh);
+  transform: translateX(3vh);
+  position:fixed;
+  width:11vh;
+}
+.black.img-logo
+{
+
+}
+nav ul
+{
+  list-style: none;
+  float:right;
+  display:flex;
+  margin: 0 0 0 0;
+  padding: 0;
+  position:relative;
+}
+nav ul li
+{
+  list-style: none;
+}
+nav ul li a
+{
+  color: rgba(242, 77, 25,1);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:0.3s;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 0.9vw;
+  display: block;
+  text-align: center;
+  width: 11.5vw;
+  vertical-align: middle;
+  display: table-cell;
+  height:8.5vh;
+}
+nav.black ul li a
+{
+  color: rgba(255, 255, 255, 1);
+
+}
+nav ul li a:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(242, 77, 25,1);
+  transform-origin:top;
+  transform:scaleY(0);
+  transition: 0.5s;
+  color:#000;
+  z-index: -1;
+}
+nav ul li a:hover
+{
+  color:rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+nav ul li a:hover:before
+{
+  transform-origin:top;
+  transform:scaleY(1);
+}
+nav.black ul li a:before
+{
+
+  background:rgba(255,255,255,0.75);
+
+}
+nav.black ul li a:hover
+{
+  color:rgba(0,0,0,1);
+  text-decoration: none;
+}
+nav.black ul li a:hover:before
+{
+  transform-origin:top;
+  transform:scaleY(1);
+}
+
+nav ul li a:focus
+{
+  outline:inherit;
+}
+nav ul li ul
+{
+  display:none;
+  text-align: center;
+  max-width: 200px;
+  transition:0.3s;
+  opacity: 0;
+  visibility: hidden;
+  transform:translateY(0px);
+  background:rgba(255, 255, 255, 0.9);
+}
+nav.black ul li ul
+{
+
+  background:rgba(0,0,0,0.75);
+}
+nav ul li:hover ul
+{
+  opacity: 1;
+  visibility: visible;
+  display:block;
+}
+nav ul li ul li a
+{
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+  display: table-cell;
+}
+nav.black ul li ul li a
+{
+
+}
+
+@media screen and (max-width:700px) {
+    .particle-bg-intro, .scroll, .section1, .section2, .section3,
+    .section4, .section5 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {.particle-bg-heading, .acronym, .acronym1, .acronym2,
+.acronym3, .acronym4, .heading, .heading1, .heading2, .heading3,
+.heading4, {
+    width: 100%;
+    }
+}
+
+/* ====HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING==== */
+
+#particles-js
+{
+  width: 100%;
+  height: 85vh;
+  /*
+  background: url('http://2018.igem.org/wiki/images/7/7d/T--UCL--SilkStock1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  */
+  background: #000000;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 5em 1em;
+  border-radius: 0.3em;
+}
+div.particle-bg-heading
+{
+  position: absolute;
+  top:15vh;
+  left:10vw;
+  right:50vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .acronym {
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .acronym{
+        font-size: 8vw;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .heading {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .heading{
+        font-size: 5vw;
+    }
+}
+.particle-bg-heading .acronym
+{
+  color: rgba(242, 77, 25,1);
+  font-family: "Quicksand",serif;
+  animation-delay: 0s;
+  font-weight: 600;
+  display:inline-block;
+}
+.particle-bg-heading .acronym1
+{
+
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  line-height: 1em;
+}
+
+.particle-bg-heading .acronym2
+{
+
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  line-height: 1em;
+
+}
+.particle-bg-heading .acronym3
+{
+
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  line-height: 1em;
+}
+.particle-bg-heading .acronym4
+{
+
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  line-height: 1em;
+}
+.particle-bg-heading .heading
+{
+  color:#ffffff;
+  font-family: "Futura",serif;
+  font-weight: 100;
+}
+.particle-bg-heading .heading1
+{
+
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  line-height: 1em;
+ display:inline-block;
+}
+.particle-bg-heading .heading2
+{
+
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  line-height: 1em;
+  display:inline-block;
+}
+.particle-bg-heading .heading3
+{
+
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 2.5s;
+  line-height: 1em;
+display:inline-block;
+}
+.particle-bg-heading .heading4
+{
+
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  line-height: 1em;
+  display:inline-block;
+}
+
+.particle-bg-intro
+{
+  font-family: "Quicksand";
+  font-size:10px;
+  font-weight: 100;
+  position: relative;
+  line-height: 1.75;
+  color: #ffffff;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  text-align: justify;
+  word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;      /* current browsers */
+  width:30vw;
+}
+
+.scroll
+{
+  font-size: 96px;
+  color:#ffffff;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+  top:90vh;
+  left:45vw;
+  text-decoration: none;
+  z-index:9999;
+  width:5vw;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+section.section1
+{
+  padding: 150px 0px 100px;
+}
+section.section1 p
+{
+  width: 80vw;
+  margin:30px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+}
+section.section2
+{
+  padding: 100px 0px 100px;
+  background-color: grey;
+  color:white;
+}
+section.section2 p
+{
+  width: 80vw;
+  margin:30px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+
+}
+section.section3
+{
+  padding: 100px 0px 100px;
+
+}
+section.section3 p
+{
+  width: 80vw;
+  margin:30px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+}
+section.section4
+{
+  padding: 100px 0px 100px;
+  background-color: grey;
+  color:white;
+}
+section.section4 p
+{
+  width: 80vw;
+  margin:30px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+}
+section.section5
+{
+  padding: 100px 0px 100px;
+}
+section.section5 p
+{
+  width: 80vw;
+  margin:30px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Quicksand";
+}
+
+</style>
 </head>
 
 <body>
-  <!-- ========NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR============ -->
+  <!-- ========NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR============ -->
   <div class="wrapper">
       <div class="div-logo"><a href="http://2018.igem.org/Team:UCL">
         <img class="img-logo"src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" /></a>
@@ -121,8 +600,8 @@ $(document).ready(function(){
     </nav>
 
   </div>
-  <!-- ========HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING======== -->
-  <section id="particle-bg"class="sec1"></section>
+  <!-- ========HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING================HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING===============HEADING======== -->
+  <section id="particles-js" class="sec1"></section>
     <div class="particle-bg-heading">
 
       <div class="acronym1 acronym animated fadeInRight">S</div><div class="heading1 heading animated fadeIn">ilk</div>
@@ -142,14 +621,14 @@ $(document).ready(function(){
 
 
     <div class="scroll animated fadeIn">
-        <a href="#section1"class="nostyle">&#65088;TESING</a>
+        <a href="#section1"class="nostyle">&#65088;</a>
     </div>
 
 
 
 
 
-<!-- ========SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION========= -->
+<!-- ========SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION=================SECTION========= -->
   <section class="section1" id="section1">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -211,7 +690,121 @@ $(document).ready(function(){
 
   </section>
 
-
-
+<!-- ========STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES================STYLES======== -->
+  <script src="particles.js" ></script>
+  <script>
+      particlesJS('particles-js',{
+        "particles": {
+          "number": {
+            "value": 15,
+            "density": {
+              "enable": true,
+              "value_area": 2000
+            }
+          },
+          "color": {
+            "value": "000000"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#f95c2c"
+            },
+            "polygon": {
+              "nb_sides": 50
+            },
+            "image": {
+              "src": "#",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.2,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0,
+              "sync": true
+            }
+          },
+          "size": {
+            "value": 1,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "size_min": 0,
+              "sync": true
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 1000,
+            "color": "#ebebeb",
+            "opacity": 0.50625,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode":"bounce",
+            "bounce": false,
+            "attract": {
+              "enable": true,
+              "rotateX": 150000,
+              "rotateY": 150000
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 1000,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 800,
+              "size": 80,
+              "duration": 2,
+              "opacity": 0.8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 400,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 5
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": false
+      },function(){
+                console.log('Particles.js loaded..');
+              });
+  </script>
 </body>
 </html>

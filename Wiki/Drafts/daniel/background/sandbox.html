@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Particles Login</title>
-  <link rel='stylesheet'href='style.css' />
+<style>
+body
+{
+  margin:0;
+  padding:0;
+}
+#particles-js{
+  display:block;
+  background-image:black;
+  height: 100%;
+  background: url('8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.logo{
+  color:;
+  text-align: center;
+  font-family: arial;
+}
+</style>
 </head>
 <body >
 
@@ -14,11 +34,122 @@
     <h1 class="logo">Welcome</h1>
   </div>
 </div>
- <script src='../resource/particles.js-master/particles.js'>
+ <script src='particles.js'>
  </script>
 
+
  <script>
-   particlesJS.load('particles-js','particles.json', function(){
+   particlesJS('particles-js',{
+     "particles": {
+       "number": {
+         "value": 35,
+         "density": {
+           "enable": true,
+           "value_area": 2000
+         }
+       },
+       "color": {
+         "value": "000000"
+       },
+       "shape": {
+         "type": "circle",
+         "stroke": {
+           "width": 0,
+           "color": "#f95c2c"
+         },
+         "polygon": {
+           "nb_sides": 50
+         },
+         "image": {
+           "src": "#",
+           "width": 100,
+           "height": 100
+         }
+       },
+       "opacity": {
+         "value": 0.5,
+         "random": false,
+         "anim": {
+           "enable": false,
+           "speed": 1,
+           "opacity_min": 0,
+           "sync": true
+         }
+       },
+       "size": {
+         "value": 1,
+         "random": false,
+         "anim": {
+           "enable": false,
+           "speed": 1,
+           "size_min": 0,
+           "sync": true
+         }
+       },
+       "line_linked": {
+         "enable": true,
+         "distance": 1000,
+         "color": "#aaaaaa",
+         "opacity": 0.50625,
+         "width": 1
+       },
+       "move": {
+         "enable": true,
+         "speed": 1.5,
+         "direction": "none",
+         "random": true,
+         "straight": false,
+         "out_mode":"bounce",
+         "bounce": false,
+         "attract": {
+           "enable": true,
+           "rotateX": 300000,
+           "rotateY": 300000
+         }
+       }
+     },
+     "interactivity": {
+       "detect_on": "canvas",
+       "events": {
+         "onhover": {
+           "enable": true,
+           "mode": "grab"
+         },
+         "onclick": {
+           "enable": true,
+           "mode": "push"
+         },
+         "resize": true
+       },
+       "modes": {
+         "grab": {
+           "distance": 337.5,
+           "line_linked": {
+             "opacity": 1
+           }
+         },
+         "bubble": {
+           "distance": 800,
+           "size": 80,
+           "duration": 2,
+           "opacity": 0.8,
+           "speed": 3
+         },
+         "repulse": {
+           "distance": 400,
+           "duration": 0.4
+         },
+         "push": {
+           "particles_nb": 1
+         },
+         "remove": {
+           "particles_nb": 2
+         }
+       }
+     },
+     "retina_detect": false
+   }
+, function(){
      console.log('particles.json loaded...');
    });
  </script>
