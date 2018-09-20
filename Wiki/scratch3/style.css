@@ -2,3 +2,30 @@
 {
   background-color: #f5684c !important;
 }
+.body
+{
+  margin:0;
+  padding:0;
+}
+.navbar {
+  position: fixed;
+  top:0;
+  left:0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.section1
+{
+  background-color: rgba(0, 0, 0, 1);
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:300vh;
+}
