@@ -1,7 +1,7 @@
 @import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
 
 /*Futura*/
 @font-face {
@@ -52,17 +52,17 @@ body
   margin: 0;
   padding:0;
 }
-.menu
+.menu_igem
 {
   float: right;
 }
-.navbar {
+.navbar_igem {
     overflow: hidden;
     background-color: rgba(255,255,255,0.75);
     font-family: 'Quicksand', sans-serif;
 }
 
-.navbar a {
+.navbar_igem a {
     float: left;
     color: white;
     text-align: center;
@@ -70,13 +70,13 @@ body
     font-family: 'Quicksand', sans-serif;
 }
 
-.dropdown {
+.dropdown_igem {
     float: left;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
 }
 
-.dropdown .dropbtn {
+.dropdown_igem .dropbtn_igem {
     font-size: 16px;
     border: none;
     outline: none;
@@ -86,23 +86,25 @@ body
     font-family: inherit;
     margin: 0;
     width: 160px;
+    text-decoration: none;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
     background-color: rgba(242, 77, 25,1);
     color:white;
 }
 
-.dropdown-content {
+.dropdown-content_igem {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-decoration: none;
 }
 
-.dropdown-content a {
+.dropdown-content_igem a {
     float: none;
     color: rgba(242, 77, 25,1);
     padding: 12px 16px;
@@ -112,11 +114,12 @@ body
     transition: 0.5s;
 }
 
-.dropdown-content a:hover {
+.dropdown-content_igem a:hover {
     background-color: rgba(242, 77, 25,1);
+    text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown_igem:hover .dropdown-content_igem {
     display: block;
 }
 
@@ -152,8 +155,7 @@ body
 
 #particles-js
 {
-  width: 98vw;
-  height: 80vh;
+  height: 100vh;
   /*
   background: url('http://2018.igem.org/wiki/images/7/7d/T--UCL--SilkStock1.jpg');
   background-size: cover;
@@ -284,28 +286,28 @@ display:inline-block;
 .particle-bg-intro
 {
   font-family: "Quicksand";
-  font-size:10px;
+  font-size:1rem;
   font-weight: 100;
   position: relative;
   line-height: 1.75;
   color: #ffffff;
   animation-timing-function: ease-in;
   animation-delay: 0s;
-  text-align: justify;
+  text-align:left;
   word-wrap: break-word;      /* IE 5.5-7 */
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;      /* current browsers */
-  width:30vw;
+  width:40vw;
 }
 
-.scroll
+.scroll_igem
 {
   font-size: 96px;
   color:#ffffff;
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-delay: 0s;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   position: absolute;
   top:90vh;
   left:45vw;
@@ -327,7 +329,7 @@ a.nostyle:visited {
 }
 section.section1
 {
-  padding: 150px 0px 100px;
+  padding: 100px 0px 100px;
 }
 section.section1 p
 {
@@ -337,13 +339,15 @@ section.section1 p
   font-size: 24px;
   line-height: 30px;
   font-family: "Josefin Sans";
-  font-weight: 200;
+  font-weight: 300;
+  vertical-align: super;
 }
 section.section2
 {
   padding: 100px 0px 100px;
   background-color: grey;
   color:white;
+  height: 100vh;
 }
 section.section2 p
 {
@@ -358,6 +362,7 @@ section.section2 p
 section.section3
 {
   padding: 100px 0px 100px;
+  height: 100vh;
 
 }
 section.section3 p
@@ -374,6 +379,7 @@ section.section4
   padding: 100px 0px 100px;
   background-color: grey;
   color:white;
+  height: 100vh;
 }
 section.section4 p
 {
@@ -387,6 +393,7 @@ section.section4 p
 section.section5
 {
   padding: 100px 0px 100px;
+  height: 100vh;
 }
 section.section5 p
 {
