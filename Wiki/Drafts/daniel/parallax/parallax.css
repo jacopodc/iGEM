@@ -1,13 +1,14 @@
 .container{
-  max-width:80vw;
+  width:100vw;
   max-height:none;
-  margin:10vh auto;
+  margin:0;
   border: 0px;
-  padding:5vw;
+  padding:50vh 1vw;
   background:url('Images/1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color:#e0eeee;
   font-size:10px;
   font-weight: 400;
@@ -21,4 +22,9 @@
   background-size: cover;
   background-attachment: fixed;
   height:500px;
+}
+body
+{
+  margin:0;
+  padding:0;
 }
