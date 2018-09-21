@@ -1,9 +1,10 @@
 <!--
-{{Template:UCL/Style}}
-{{Template:UCL/JQuery}}
-{{Template:UCL/Particle_JS}}
-{{Template:UCL/BootstrapJS}}
-{{Template:UCL/PopperJS}}
+{{UCL/BootstrapCSS}}
+{{UCL/BootstrapJS}}
+{{UCL/Style}}
+{{UCL/Animate_CSS}}
+{{UCL/JQuery}}
+{{UCL/Particle_JS}}
 -->
 
 
@@ -13,18 +14,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UCL SETA</title>
-  <!-- <link rel="stylesheet" href="http://2018.igem.org/Template:UCL/BootstrapCSS" />
+  <link rel="stylesheet" href="http://2018.igem.org/Template:UCL/BootstrapCSS" />
   <link rel="stylesheet" href="http://2018.igem.org/Template:UCL/Style" />
-  <link rel="stylesheet"href="http://2018.igem.org/Template:UCL/Animate_CSS" /> -->
-  <link rel="stylesheet" href="style.css"  />
-  <link rel="stylesheet" href="bootstrap1.css"  />
+ <link rel="stylesheet"href="http://2018.igem.org/Template:UCL/Animate_CSS" />
+ <link rel="stylesheet" href="bootstrap1.css" />
+ <link rel="stylesheet" href="style.css"  />
+ <link rel="stylesheet" href="resources/css/animate.min.css"  />
  <!-- ========SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS======== -->
-<!-- <script src="http://2018.igem.org/Template:UCL/BootstrapJS"></script>
-<script src="http://2018.igem.org/Template:UCL/JQuery"></script> -->
+ <script src="http://2018.igem.org/Template:UCL/BootstrapJS"></script>
+<script src="http://2018.igem.org/Template:UCL/JQuery"></script>
 <script src="resources/js/jquery-3.3.1.min.js"></script>
-<script src="bootstrapscript.js"></script>
-<script src="scratch/templates/popper.min.js"></script>
-<script type="text/javascript">
+<script src="bootstrap.min.js"></script>
+<script>
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -39,7 +40,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script type="text/javascript">
+<script>
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
       $('nav').addClass('black');
@@ -58,6 +59,9 @@ $(document).ready(function(){
     <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
         <img class="img-logo" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" style="margin-top:3vh;"></a>
     </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 <div class="menu_igem">
 <div class="dropdown_igem">
     <button class="dropbtn_igem">People
@@ -161,7 +165,7 @@ $(document).ready(function(){
 
 
     <div class="scroll_igem animated fadeIn">
-        <a href="#"class="nostyle">&#65088;</a>
+        <a href="#section1"class="nostyle">&#65088;</a>
     </div>
 
 
@@ -230,7 +234,8 @@ $(document).ready(function(){
 
   </section>
 
-  <!-- <script src="http://2018.igem.org/Template:UCL/Particle_JS" ></script> -->
+
+  <script src="http://2018.igem.org/Template:UCL/Particle_JS" ></script>
   <script src="particles.js"></script>
   <script>
       particlesJS('particles-js',{
@@ -346,6 +351,5 @@ $(document).ready(function(){
                 console.log('Particles.js loaded..');
               });
   </script>
-
 </body>
 </html>
