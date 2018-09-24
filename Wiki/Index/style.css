@@ -1,29 +1,31 @@
-@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+/*@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
+@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");*/
 
 /*Futura*/
 @font-face {
   font-family: "Futura";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
     src: url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
     src: local('Futura'), local('Futura'),
-    url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot") format("embedded-opentype"),
-    url("http://2018.igem.org/wiki/images/c/ce/T--UCL--futuramed.woff") format("woff"),
-    url("http://2018.igem.org/wiki/images/e/e6/T--UCL--futuramed.ttf") format("truetype"),
+        url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot") format("embedded-opentype"),
+        url("http://2018.igem.org/wiki/images/c/ce/T--UCL--futuramed.woff") format("woff"),
+        url("http://2018.igem.org/wiki/images/e/e6/T--UCL--futuramed.ttf") format("truetype"),
+        url('http://2018.igem.org/wiki/images/8/84/T--UCL--Futura.otf');
   }
 
 /* Quicksand regular */
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     src: url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
     src: local('Quicksand Regular'), local('Quicksand-Regular'),
-            url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot') format('embedded-opentype'),
-            url('http://2018.igem.org/wiki/images/a/aa/T--UCL--quicksand.ttf') format('truetype'),
-            url('http://2018.igem.org/wiki/images/7/74/T--UCL--QuicksandReg1.woff') format('woff');
+        url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot') format('embedded-opentype'),
+        url('http://2018.igem.org/wiki/images/a/aa/T--UCL--quicksand.ttf') format('truetype'),
+        url('http://2018.igem.org/wiki/images/7/74/T--UCL--QuicksandReg1.woff') format('woff'),
+        url('http://2018.igem.org/wiki/images/0/06/T--UCL--QuicksandLight.otf');
 }
 
 #sideMenu,
@@ -34,6 +36,7 @@
 #globalWrapper {
     font-size: inherit;
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 #mw-content-text {
@@ -331,9 +334,9 @@ display:inline-block;
 }
 .particle-bg-intro
 {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-size:1rem;
-  font-weight: 100;
+  font-weight: 800;
   position: relative;
   line-height: 1.75;
   color: #ffffff;
@@ -373,6 +376,14 @@ a.nostyle:visited {
     color: inherit;
     cursor: auto;
 }
+
+.h1_igem_homepage {
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 5rem;
+    color: rgba(242, 77, 25,1);
+    text-align: center;
+}
 section.section1
 {
   padding: 100px 0px 100px;
@@ -385,8 +396,8 @@ section.section1 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Quicksand";
-  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
   vertical-align: super;
   color:white;
 }
