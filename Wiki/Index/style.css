@@ -1,13 +1,12 @@
 @import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
 
 /*Futura*/
 @font-face {
   font-family: "Futura";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
     src: url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
     src: local('Futura'), local('Futura'),
     url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot") format("embedded-opentype"),
@@ -19,7 +18,7 @@
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     src: url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
     src: local('Quicksand Regular'), local('Quicksand-Regular'),
             url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot') format('embedded-opentype'),
