@@ -228,7 +228,7 @@ body
 div.particle-bg-heading
 {
   position: absolute;
-  top:15vh;
+  top:12vh;
   left:10vw;
   right:50vw;
 }
@@ -347,6 +347,7 @@ display:inline-block;
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;      /* current browsers */
   width:40vw;
+  top: 2vh;
 }
 
 .scroll_igem
@@ -362,19 +363,19 @@ display:inline-block;
   left:45vw;
   text-decoration: none;
   z-index:2;
-  width:5vw;
+  width:1vw;
 }
 
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
 }
 
 a.nostyle:visited {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
 }
 
 .h1_igem_homepage {
@@ -409,6 +410,24 @@ section.section2
   height: 100vh;
 }
 
+/* SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE===== */
+
+body {
+    background-image: url('resources/Images/5.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card_igem_1 {
+    padding: 2rem 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 

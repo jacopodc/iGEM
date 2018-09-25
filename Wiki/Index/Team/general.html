@@ -1,0 +1,155 @@
+<!--
+{{UCL/BootstrapCSS}}
+{{UCL/Style}}
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UCL SETA</title>
+    <link rel="stylesheet" href="../bootstrap1.css"  />
+    <link rel="stylesheet" href="../style.css"  />
+</head>
+
+ <!-- ========SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS=================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS================SCRIPTS======== -->
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/BootstrapJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/JQuery?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="../bootstrapscript.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<script>
+  $(window).on('scroll',function(){
+    if($(window).scrollTop()){
+      $('nav').addClass('black');
+    }
+    else {
+      $('nav').removeClass('black');
+    }
+  })
+</script>
+
+<body>
+  <!-- ========NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR=================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR================NAVBAR============ -->
+<nav class="navbar_igem navbar-expand-lg fixed-top">
+  <!-- Navbar Brand -->
+    <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+        <img class="img-logo" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+    </div>
+    <!-- Collapsible Hamburger -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!-- Sections on navbar -->
+<div class="collapse_igem navbar-collapse_igem" id="navbarTogglerDemo02">
+<div class="menu_igem">
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">People
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+          <a href="http://2018.igem.org/Team:UCL/People/Team">Team</a>
+          <a href="http://2018.igem.org/Team:UCL/People/Attributions">Attributions</a>
+          <a href="http://2018.igem.org/Team:UCL/People/Sponsors">Sponsors</a>
+    </div>
+</div>
+
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">Project
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+        <a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Results">Results</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/POP">Proof of Principle</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/InterLab">InterLab</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Safety">Safety and Security</a>
+    </div>
+</div>
+
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">Parts
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/FB">Final Brick</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/Intein_mScar">Intein Passenger</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/GFP">GFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/RFP">RFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/MS">Mini Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/IS">Intein Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/NikR">NikR</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/SpyTag">SpyTag</a>
+    </div>
+</div>
+
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">Modelling
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+        <a href="http://2018.igem.org/Team:UCL/Modelling">Modelling</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein_Poly">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Scale_Up">Scale Up</a>
+    </div>
+</div>
+
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">Human Practices
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+        <a href="http://2018.igem.org/Team:UCL/HP">Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/IHP">Integrated Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/PE">Public Engagement</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/Collaborations">Collaborations</a>
+    </div>
+</div>
+
+<div class="dropdown_igem">
+    <button class="dropbtn_igem">Notebook
+          <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content_igem">
+        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Lab_Book">Lab Book</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Protocols">Protocols</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/MC">Medal Criteria</a>
+    </div>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE==== -->
+
+<body>
+    <div class="parallax"></div>
+
+    <div class="card_igem_1 animate fadeIn">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+    </div>
+
+    <div class="parallax"></div>
+</body>
