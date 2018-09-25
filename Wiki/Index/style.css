@@ -1,6 +1,6 @@
-/*@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
+@import url('http://2018.igem.org/wiki/images/5/52/T--UCL--QuicksandReg.eot');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");*/
+@import url("http://2018.igem.org/wiki/images/6/6a/T--UCL--futuramed.eot");
 
 /*Futura*/
 @font-face {
@@ -336,7 +336,7 @@ display:inline-block;
 {
   font-family: "Quicksand", sans-serif;
   font-size:1rem;
-  font-weight: 800;
+  font-weight: 400;
   position: relative;
   line-height: 1.75;
   color: #ffffff;
