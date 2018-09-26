@@ -28,6 +28,18 @@
         url('http://2018.igem.org/wiki/images/0/06/T--UCL--QuicksandLight.otf');
 }
 
+/* Lato Thin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('http://2018.igem.org/wiki/images/0/05/T--UCL--LatoThin.eot');
+    src: local('Lato Thin'), local('Lato-Thin'),
+        url('http://2018.igem.org/wiki/images/0/05/T--UCL--LatoThin.eot') format('embedded-opentype'),
+        url('http://2018.igem.org/wiki/images/6/60/T--UCL--LatoThin1.ttf') format('truetype'),
+        url('http://2018.igem.org/wiki/images/4/4a/T--UCL--LatoThin2.ttf') format('woff'),
+}
+
 #sideMenu,
 #top_title {
     display: none;
@@ -221,7 +233,7 @@ body
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
-  padding: 6em 1em 5em;
+  padding: 4em 1em 5em;
 }
 
 /* Heading */
@@ -347,7 +359,7 @@ display:inline-block;
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;      /* current browsers */
   width:40vw;
-  top: 2vh;
+  top: 6vh;
 }
 
 .scroll_igem
@@ -359,17 +371,23 @@ display:inline-block;
   animation-delay: 0s;
   animation-direction: alternate-reverse;
   position: absolute;
-  top:90vh;
-  left:45vw;
   text-decoration: none;
   z-index:2;
   width:1vw;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: block;
+  margin-top: 10vh;
+  left: 87%;
 }
 
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
     cursor: pointer;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
 }
 
 a.nostyle:visited {
@@ -397,8 +415,8 @@ section.section1 p
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   vertical-align: super;
   color:white;
 }
@@ -413,7 +431,7 @@ section.section2
 /* SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE===== */
 
 body {
-    background-image: url('resources/Images/5.png');
+    background-image: url('resources/Images/silkbackground.svg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -427,7 +445,10 @@ body {
     border-radius: 0.3rem;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+    top: 20vh;
 }
+
+
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
