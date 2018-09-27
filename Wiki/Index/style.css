@@ -434,9 +434,9 @@ section.section2
 
 /* SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE===== */
 
-#background_subpage {
+body {
     background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg');
-    height: 100vh;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,6 +462,24 @@ section.section2
     color: rgba(242, 77, 25,1);
     text-align: center;
     margin-top: 8%;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.card_igem_img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0.5rem;
+    border-radius: 0.5rem !important;
 }
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
