@@ -194,10 +194,41 @@ body
   background-color: rgba(242, 77, 25,1);
   color: white;
 }
-
+.navbarzindex.black .topnav_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
+  background-color: rgba(242, 77, 25,1);
+  color: white;
+}
 .dropdown-content_igem a:hover {
     background-color: rgba(242, 77, 25,1);
     color: rgba(255,255,255,1);
+}
+/*  */
+.topnav_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
+  background-color: rgba(242, 77, 25,1);
+  transition: 0.3s;
+  color:white;
+}
+.navbarzindex.black .dropdown_igem:hover .dropbtn_igem{
+  background-color: white;
+  color:black;
+}
+.dropdown-content_igem a:hover {
+    background-color: rgba(242, 77, 25,1);
+    color: rgba(255,255,255,1);
+    transition: 0.3s;
+}
+
+.navbarzindex.black .dropdown-content_igem a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0,0,0,1);
+}
+/*  */
+.navbarzindex.black .icon_igem{
+  color:white;
+}
+.navbarzindex.black .topnav_igem a:hover{
+  background-color: white;
+  color:black;
 }
 .dropdown-content_igem
 {
