@@ -181,7 +181,7 @@ body
 }
 
 .showy {display: block;}
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1110px) {
   .topnav_igem a:not(:first-child), .dropdown_igem .dropbtn_igem {
     display: none;
   }
@@ -259,7 +259,7 @@ width:100vw;
  float:none important;
  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1111px) {
 .floatright_igem{
 float:right;
 }
