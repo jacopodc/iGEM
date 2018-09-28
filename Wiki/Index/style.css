@@ -156,12 +156,18 @@ body
 }
 
 .dropdown-content_igem {
-    display: none;
     position: absolute;
     background-color: #f9f9f9;
     z-index: 1;
-   margin-left:auto;
+    margin-left:auto;
     margin-right:auto;
+/* Juicy Stuff */
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 .dropdown-content_igem a {
@@ -294,6 +300,11 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 .dropdown_igem:hover .dropdown-content_igem {
     display: block;
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 }
 .show_igem
