@@ -156,13 +156,13 @@ body
 }
 
 .dropdown-content_igem {
-    display: none;
+
     position: absolute;
     background-color: #f9f9f9;
     z-index: 1;
-   margin-left:auto;
+    margin-left:auto;
     margin-right:auto;
-    
+    display:none;
 }
 
 .dropdown-content_igem a {
@@ -293,8 +293,9 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   color: rgba(0,0,0,1);
 }
 
-.dropdown_igem:hover .dropdown-content_igem {
-    display: block;
+.dropdown_igem:hover > .dropdown-content_igem {
+    display:block;
+
 }
 }
 .show_igem
