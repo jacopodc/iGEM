@@ -536,8 +536,15 @@ body {
 .card_igem {
     /*animation-duration: 1.5s;
     animation-iteration-count: 1;*/
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 1) !important;
     border-radius: 0.5rem !important;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    .card_igem{
+        margin-left: 7rem;
+    }
 }
 
 .h1_igem_subpage {
@@ -551,8 +558,9 @@ body {
 
 h4 {
     font-size: 2rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    margin-top: 1rem;
 }
 
 .card_igem_img {
@@ -565,6 +573,35 @@ h4 {
     bottom: 0;
     margin: 0.5rem;
     border-radius: 0.5rem !important;
+}
+
+.sidenav {
+    width: 10em;
+    position: fixed;
+    z-index: 1;
+    left: 0.5vw;
+    background: rgb(255, 255, 255, 0.95);
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: tomato;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+
+}
+
+@media screen and (max-width: 1025px) {
+    .sidenav{
+        width: 9rem;
+    }
 }
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
