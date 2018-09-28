@@ -73,140 +73,232 @@
 #bodyContent {
     margin-top: 0 !important;
 }
-/* ====NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR==== */
 body
 {
-  margin: 0;
+  margin:0;
   padding:0;
 }
-.menu_igem
+/* ====NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR========NAVBAR==== */
+.navbarzindex
 {
-  float: right;
-}
-.navbar_igem {
-    overflow: hidden;
-    background-color: rgba(255,255,255,1);
-    font-family: 'Quicksand', sans-serif;
-    top: 0;
-    position: fixed;
-    z-index: 999999;
-    width: 100%;
-    margin-top: 16px;
-}
-
-.navbar_igem a {
-    float: left;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.dropdown_igem {
-    float: left;
-    overflow: hidden;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.dropdown_igem .dropbtn_igem {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgba(242, 77, 25,1);
-    padding: 20px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    width: 160px;
-    text-decoration: none;
-    transition:0.3s;
-}
-
-.navbar_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
-    background-color: rgba(242, 77, 25,1);
-    color:white;
-}
-
-.dropdown-content_igem {
-    font-size: 16px;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-decoration: none;
-    position: fixed;
-}
-/* This is the nav ul li a */
-.dropdown-content_igem a {
-    float: none;
-    color: rgba(242, 77, 25,1);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    transition:0.5s;
-
-}
-.dropdown-content_igem a:before
-{
-  content:'';
-  position:absolute;
+  z-index: 99999999;
+  font-family: "Quicksand";
+  position: fixed;
   top:0;
   left:0;
   width:100%;
+}
+.img-logo_igem
+{
+
+  transition:0.3s;
+  border-radius: 100%;
+  z-index: 10;
+  -webkit-transform: translateX(3vh);
+  transform: translateX(3vh);
+  position: fixed;
+  width:11vh;
+  height: 11vh;
+  margin-top:4vh;
+}
+
+.navbarzindex .topnav_igem {
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  margin-top:16px;
+  transition:0.3s;
+}
+.navbarzindex.black .topnav_igem
+{
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom: solid 1px rgba(255, 255, 255,1);
+  border-bottom-style: solid;
+}
+.topnav_igem a {
+  display: block;
+  color: rgba(242, 77, 25,1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active_igem {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav_igem .icon_igem {
+  display: none;
+}
+
+.dropdown_igem {
+    float:left;
+    overflow: hidden;
+
+}
+
+.dropdown_igem .dropbtn_igem {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: rgba(242, 77, 25,1);
+    padding:0;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align:center;
+    width:160px;
+    height:60px;
+}
+.navbarzindex.black .dropdown_igem .dropbtn_igem {
+  color:rgba(255, 255, 255, 1);
+}
+
+.dropdown-content_igem {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+   margin-left:auto;
+    margin-right:auto;
+}
+
+.dropdown-content_igem a {
+    text-align:center;
+    color:rgba(242, 77, 25,1);
+    background-color:rgba(255,255,255,1);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.navbarzindex.black .dropdown-content_igem a {
+    text-align:center;
+    color:rgba(255, 255, 255, 1);
+    background-color:rgba(0, 0, 0, 1);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.showy {display: block;}
+@media screen and (max-width: 1023px) {
+  .topnav_igem a:not(:first-child), .dropdown_igem .dropbtn_igem {
+    display: none;
+  }
+  .topnav_igem a.icon_igem {
+    float: center;
+    display: block;
+  }
+.topnav_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
+  background-color: rgba(242, 77, 25,1);
+  color: white;
+}
+
+.dropdown-content_igem a:hover {
+    background-color: rgba(242, 77, 25,1);
+    color: rgba(255,255,255,1);
+}
+.dropdown-content_igem
+{
+width:100vw;
+}
+  .topnav.responsive_igem {position: relative;}
+  .topnav.responsive_igem .icon_igem {
+
+  }
+  .dropdown_igem .dropbtn_igem{
+  font-size:22px;
+  font-weight:bold;
+  }
+  .topnav_igem.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+
+  }
+  .topnav_igem.responsive .dropdown_igem {float: none;}
+  .topnav_igem.responsive .dropdown-content_igem {position: relative;}
+  .topnav_igem.responsive .dropdown_igem .dropbtn_igem {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+  }
+ .floatright_igem{
+ float:none important;
+ }
+}
+@media screen and (min-width: 1024px) {
+.floatright_igem{
+float:right;
+}
+.dropdown-content_igem
+{
+width:160px;
+}
+.dropdown-content_igem{
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.topnav_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
+  background-color: rgba(242, 77, 25,1);
+  transition: 0.3s;
+  color:white;
+}
+.navbarzindex.black .dropdown_igem:hover .dropbtn_igem{
+  background-color: white;
+  color:black;
+}
+.dropdown-content_igem a:hover {
+    background-color: rgba(242, 77, 25,1);
+    color: rgba(255,255,255,1);
+    transition: 0.3s;
+}
+
+.navbarzindex.black .dropdown-content_igem a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0,0,0,1);
+}
+
+.dropdown_igem:hover .dropdown-content_igem {
+    display: block;
+}
+}
+.show_igem
+{
+display:block;
+}
+
+
+
+/* Translate Y effect
+.dropdown_igem.dropbtn_igem .dropdown-content_igem:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
   height:100%;
+  background:rgba(242, 77, 25,1);
   transform-origin:top;
   transform:scaleY(0);
   transition: 0.5s;
   color:#000;
   z-index: -1;
 }
-
-.dropdown-content_igem a:hover {
-    background-color: rgba(242, 77, 25,1);
-    text-decoration: none;
-}
-
-.dropdown-content_igem a:hover:before
+.dropdown_igem.dropbtn_igem .dropdown-content_igem:hover
 {
-  transform-origin: top;
-  transform: scaleY(1);
+  color:rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
-.dropdown_igem:hover .dropdown-content_igem {
-    display: block;
-}
-
-.img-logo
+.dropdown_igem.dropbtn_igem .dropdown-content_igem:hover:before
 {
-  float:left;
-  transition:0.3s;
-  box-shadow: 3px 3px 10px #d0513a;
-  border-radius: 100%;
-  z-index: 99999;
-  -webkit-transform: translateX(3vh);
-  transform: translateX(3vh);
-  position: fixed;
-  width:11vh;
-  height: 11vh;
-  margin-top:3vh
+  transform-origin:top;
+  transform:scaleY(1);
 }
-
-@media screen and (max-width:700px) {
-    .particle-bg-intro, .scroll, .section1, .section2, .section3,
-    .section4, .section5 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:700px) {.particle-bg-heading, .acronym, .acronym1, .acronym2,
-.acronym3, .acronym4, .heading, .heading1, .heading2, .heading3,
-.heading4, {
-    width: 100%;
-    }
-}
-
+*/
 /* ====HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING=======HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING========HEADING==== */
 
 
@@ -397,7 +489,7 @@ a.nostyle:visited {
     color: inherit;
     cursor: pointer;
 }
-
+/* HOMEPAGE___SECTIONS========= HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========HOMEPAGE___SECTIONS=========*/
 .h1_igem_homepage {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
