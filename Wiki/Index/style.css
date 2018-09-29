@@ -585,8 +585,6 @@ h4 {
     overflow-x: hidden;
     background-color: white;
     position: fixed;
-    top:31vh;
-    left:3vw;
 }
 
 .sidenav a {
@@ -596,6 +594,7 @@ h4 {
     background-color: tomato;
     color:white;
     display: block;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .sidenav a:hover {
