@@ -532,23 +532,22 @@ body {
 .container_igem {
     margin-top: 2%;
     margin-bottom: 2%;
-
 }
 
 .card_igem {
-    /*animation-duration: 1.5s;
-    animation-iteration-count: 1;*/
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
     background-color: rgb(255, 255, 255, 1) !important;
-    border-radius: 0.5rem !important;
+    border-radius: 1rem !important;
     margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 1126px) {
     .card_igem{
-        margin-left: 21vw;
+        margin-left: 7rem;
     }
 }
+
 .h1_igem_subpage {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
@@ -565,17 +564,21 @@ body {
     margin-top: 1rem;
 }
 
+.card_igem_img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0.5rem;
+    border-radius: 0.5rem !important;
 }
-.card-text
-{
-  font-family: 'Lato', sans-serif;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
 .sidenav {
     width: 160px;
     position: fixed;
+    position: -webkit-sticky; /*for Safari*/
     z-index: 1;
     left: 0.5vw;
     background: rgb(255, 255, 255, 0.95);
