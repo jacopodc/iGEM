@@ -36,22 +36,7 @@ $(document).ready(function(){
     <script>
         new WOW().init();
     </script>
-    <script>
-    // The function actually applying the offset
-  function offsetAnchor() {
-      if(location.hash.length !== 0) {
-          window.scrollTo(window.scrollX, window.scrollY - 100);
-      }
-  }
 
-  // This will capture hash changes while on the page
-  window.addEventListener("hashchange", offsetAnchor);
-
-  // This is here so that when you enter the page with a hash,
-  // it can provide the offset in that case too. Having a timeout
-  // seems necessary to allow the browser to jump to the anchor first.
-  window.setTimeout(offsetAnchor, 15);
-  </script>
 <body>
   <div class="navbarzindex">
   <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
@@ -218,7 +203,7 @@ function myFunction() {
     </div>
 
 
-        <section id="Overview">
+        <section id="Overview" class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Overview</h4>
@@ -241,7 +226,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Final_Brick">
+        <section id="Final_Brick"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Final Brick</h4>
@@ -264,7 +249,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Intein_Passenger">
+        <section id="Intein_Passenger"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Intein Passenger</h4>
@@ -287,7 +272,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="GFP_Reporter">
+        <section id="GFP_Reporter"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>GFP Reporter</h4>
@@ -310,7 +295,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="RFP_Reporter">
+        <section id="RFP_Reporter"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>RFP Reporter</h4>
@@ -333,7 +318,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Mini_Spindroin">
+        <section id="Mini_Spindroin"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Mini Spindroin</h4>
@@ -356,7 +341,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Intein_Spindroin">
+        <section id="Intein_Spindroin"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Intein Spindroin</h4>
@@ -379,7 +364,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="NikR">
+        <section id="NikR"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>NikR</h4>
@@ -402,7 +387,7 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="SpyTag">
+        <section id="SpyTag"class="yaypadding">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>SpyTag</h4>
