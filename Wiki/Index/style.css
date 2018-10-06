@@ -518,8 +518,7 @@ section.section2
   height: 100vh;
 }
 
-/* SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE========SUBPAGE===== */
-
+/* SUBPAGE===============================================================================================================================================*/
 body {
     background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg');
     height: 100%;
@@ -532,6 +531,13 @@ body {
 .container_igem {
     margin-top: 2%;
     margin-bottom: 2%;
+    background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .card_igem {
