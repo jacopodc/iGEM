@@ -616,6 +616,69 @@ section.section2
 {
   padding-top: 75px;
 }
+
+.accordion {
+    background-color: #0d0d0d;
+    color: tomato;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.5rem;
+    font-family:"Quicksand";
+    transition: 0.4s;
+    border-radius: 0.5rem;
+}
+
+
+.active, .accordion:hover {
+    background-color: #ff3300;
+    color: #eee;
+}
+
+.panel {
+    padding: 8px 18px;
+    display: none;
+    background-color:  #262626;
+    color: #eee;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.sidenav_accordion {
+    height: 100%;
+    width: 2.3rem;
+    position: fixed;
+    z-index: 1;
+    top: 75;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 45px;
+
+}
+
+.sidenav_accordion a {
+    padding: 10px 3px 3px 1px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #818181;
+    display: block;
+    text-align: center;
+}
+
+.sidenav_accordion a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav_accordion {padding-top: 15px;}
+  .sidenav_accordion a {font-size: 18px;}
+}
+
+
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
 @charset "UTF-8";
