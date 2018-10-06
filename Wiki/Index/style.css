@@ -465,8 +465,8 @@ display:inline-block;
   display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
   display: block;
-  margin-top: 20vh;
-  text-align: center;
+  margin-top: 85vh;
+  margin-left: 45vw;
 
 }
 
@@ -534,7 +534,6 @@ section.section2
 
 .container_igem {
     margin-top: 2%;
-    margin-bottom: 2%;
     background-color:rgba(0, 0, 0, 0.0);
     padding-left: 5vw;
 }
