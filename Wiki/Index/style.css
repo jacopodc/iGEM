@@ -576,7 +576,7 @@ body {
     border-radius: 0.5rem !important;
 }
 .sidenav {
-    width: 160px;
+    width: 10rem;
     position: fixed;
     position: -webkit-sticky; /*for Safari*/
     z-index: 1;
