@@ -519,25 +519,23 @@ section.section2
 }
 
 /* SUBPAGE===============================================================================================================================================*/
-body {
-    background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.background_img_igem {
+    background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg') !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    z-index: -5;
 }
 
 .container_igem {
     margin-top: 2%;
     margin-bottom: 2%;
-    background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color:rgba(0, 0, 0, 0.0);
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 
 .card_igem {
@@ -560,7 +558,6 @@ body {
     font-size: 5rem;
     color: rgba(242, 77, 25,1);
     text-align: center;
-    margin-top: 15vh;
 }
 
 .card-title h4 {
@@ -582,7 +579,7 @@ body {
     border-radius: 0.5rem !important;
 }
 .sidenav {
-    width: 10rem;
+    width: 160px;
     position: fixed;
     position: -webkit-sticky; /*for Safari*/
     z-index: 1;
