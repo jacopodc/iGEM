@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UCL SETA - Homepage</title>
+    <title>UCL SETA - Parts</title>
     <link rel="stylesheet" href="../resources/css/bootstrap1.css"  />
     <link rel="stylesheet" href="../style.css"  />
 </head>
@@ -33,14 +33,27 @@ $(document).ready(function(){
   });
 });
 </script>
-
-<script src="../wow.js"></script>
+<script src="../resources/js/wow1.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script>
+    // The function actually applying the offset
+  function offsetAnchor() {
+      if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - 100);
+      }
+  }
 
+  // This will capture hash changes while on the page
+  window.addEventListener("hashchange", offsetAnchor);
+
+  // This is here so that when you enter the page with a hash,
+  // it can provide the offset in that case too. Having a timeout
+  // seems necessary to allow the browser to jump to the anchor first.
+  window.setTimeout(offsetAnchor, 15);
+  </script>
 <body>
-
   <div class="navbarzindex">
   <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
         <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
@@ -132,16 +145,6 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav_igem");
-    if (x.className === "topnav_igem") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav_igem";
-    }
-}
-</script>
 
 <script>
   $(window).on('scroll',function(){
@@ -153,6 +156,17 @@ function myFunction() {
     }
   })
 </script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav_igem");
+    if (x.className === "topnav_igem") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav_igem";
+    }
+}
+</script>
+
 
 
 <script>
@@ -184,6 +198,7 @@ function myFunction() {
     }
 }());
 </script>
+
 <!-- CONTENT**************************************************************************************************************************************************** -->
   <section id="particles-js" class="sec1">
       <div class="container container_igem">
