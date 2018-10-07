@@ -691,11 +691,14 @@ section.section2
    position: relative;
    left: 0;
    width: 100vw;
-   background-color: rgb(13, 13, 13, 0.75);
+   background-color: rgb(13, 13, 13, 1);
    color: white;
    text-align: center;
    font-family: "Quicksand", sans-serif;
    padding: 1rem;
+   padding-top: 4vh;
+   padding-bottom: 4vh;
+   margin-top: 15vh;
 }
 
 .footer_img_igem {
