@@ -554,12 +554,21 @@ section.section2
 {
   margin-bottom: 12vh;
 }
+@media screen and (max-width:1441px) {
+  .specialmargin{
+    margin-bottom: 4vh;
+  }
+}
 @media screen and (max-width: 1126px) {
     .card_igem{
         margin-left: 7rem;
     }
 }
-
+@media screen and (max-width: 401px) {
+    .card_igem{
+        margin-left: 0rem;
+    }
+}
 .h1_igem_subpage {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
@@ -619,6 +628,11 @@ section.section2
 @media screen and (max-width: 1025px) {
     .sidenav{
         width:160px;
+    }
+}
+@media screen and (max-width: 401px) {
+    .sidenav{
+        display:none;
     }
 }
 .yaypadding
