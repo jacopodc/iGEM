@@ -533,7 +533,7 @@ section.section2
 }
 
 .container_igem {
-    margin-top: 2%;
+    padding-bottom: 1rem;
     background-color:rgba(0, 0, 0, 0.0);
     padding-left: 5vw;
 }
@@ -564,7 +564,7 @@ section.section2
     font-size: 5rem;
     color: rgba(242, 77, 25,1);
     text-align: center;
-    padding-top: 13vh;
+    padding-top: 10rem;
 }
 
 .card-title h4 {
@@ -685,6 +685,31 @@ section.section2
   .sidenav_accordion a {font-size: 18px;}
 }
 
+/* FOOTER===============================================================================================================================================*/
+
+.footer {
+   position: relative;
+   left: 0;
+   width: 100vw;
+   background-color: rgb(13, 13, 13, 0.75);
+   color: white;
+   text-align: center;
+   font-family: "Quicksand", sans-serif;
+   padding: 1rem;
+}
+
+.footer_img_igem {
+    margin-bottom: 5px;
+}
+
+.h2_footer_igem {
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    color: rgba(242, 77, 25,1);
+    text-align: center;
+    padding-bottom: 1rem;
+}
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
