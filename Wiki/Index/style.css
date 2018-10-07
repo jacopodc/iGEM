@@ -550,15 +550,16 @@ section.section2
     font-weight: 300;
     line-height: 1.6em;
 }
-.specialmargin
-{
+.specialmargin {
   margin-bottom: 12vh;
 }
+
 @media screen and (max-width:1441px) {
-  .specialmargin{
+  .specialmargin {
     margin-bottom: 4vh;
   }
 }
+
 @media screen and (max-width: 1126px) {
     .card_igem{
         margin-left: 7rem;
@@ -596,6 +597,7 @@ section.section2
     margin: 0.5rem;
     border-radius: 0.5rem !important;
 }
+
 .sidenav {
     width: 160px;
     position: fixed;
