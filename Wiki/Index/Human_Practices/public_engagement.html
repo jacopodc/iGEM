@@ -1,0 +1,234 @@
+<!--
+{{UCL/BootstrapCSS}}
+{{UCL/Style}}
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UCL SETA - Public Engagement</title>
+    <link rel="icon" href="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png">
+    <link rel="stylesheet" href="../resources/css/bootstrap1.css"  />
+    <link rel="stylesheet" href="../style.css"  />
+</head>
+
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/BootstrapJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/JQuery?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/WowJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="../resources/js/bootstrapscript.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<script src="../resources/js/wow1.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+    // The function actually applying the offset
+  function offsetAnchor() {
+      if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - 100);
+      }
+  }
+
+  // This will capture hash changes while on the page
+  window.addEventListener("hashchange", offsetAnchor);
+
+  // This is here so that when you enter the page with a hash,
+  // it can provide the offset in that case too. Having a timeout
+  // seems necessary to allow the browser to jump to the anchor first.
+  window.setTimeout(offsetAnchor, 15);
+  </script>
+<body>
+<div class="background_img_igem">
+  <div class="navbarzindex">
+  <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+        <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+    </div>
+
+<div class="topnav_igem" id="myTopnav_igem">
+<div class="floatright_igem">
+<a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="People()">People
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownpeople_igem">
+        <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
+        <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
+        <a href="http://2018.igem.org/Team:UCL/Attributions#Sponsors">Sponsors</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Project()">Project
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownproject_igem">
+        <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a>
+        <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
+        <a href="http://2018.igem.org/Team:UCL/POC">Proof of Concept</a>
+        <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
+        <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Parts()">Parts
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownparts_igem">
+        <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
+        <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Modelling()">Modelling
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+        <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein_Polymerisation">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Scale_Up">Scale Up</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+
+    </button>
+    <div class="dropdown-content_igem"id"dropdownhumanpractices_igem">
+        <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
+        <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Notebook()">Notebook
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
+        <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
+        <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<script>
+  $(window).on('scroll',function(){
+    if($(window).scrollTop()){
+      $('.navbarzindex').addClass('black');
+    }
+    else {
+      $('.navbarzindex').removeClass('black');
+    }
+  })
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav_igem");
+    if (x.className === "topnav_igem") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav_igem";
+    }
+}
+</script>
+
+<script>
+(function(){
+    var dropDownClass = 'dropdown-content_igem';
+    var showClass = 'show_igem';
+    var dropDowns = document.getElementsByClassName('dropdown_igem');
+
+    var open = function(e){
+        var openDropDown = e.target.nextElementSibling;
+        var dropdowns = document.getElementsByClassName(dropDownClass);
+
+        openDropDown.classList.toggle(showClass);
+
+        var closeDropDown = function(event) {
+            if (event.target === e.target) {
+                return;
+            }
+            if (openDropDown.classList.contains(showClass)) {
+                openDropDown.classList.remove(showClass);
+            }
+            window.removeEventListener('click', closeDropDown);
+        };
+        window.addEventListener('click', closeDropDown);
+    }
+
+    for(var i = 0; i < dropDowns.length; i++){
+        dropDowns[i].children[0].addEventListener('click', open);
+    }
+}());
+</script>
+<!--BODY==================================================================== -->
+<body>
+    <div class="background_img_igem">
+    </div>
+    <!--FOOTER================================================================== -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Our Location</div>
+                        University College London<br />
+      Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                        <span></span>
+
+                    </center>
+                </div>
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Contact Us</div>
+                      ucl.igem@ucl.ac.uk
+                        <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
+                            <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
+                        </a>
+                    </center>
+                </div>
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Follow Us</div>
+                        <a href="https://www.facebook.com/UCLiGEM/">
+                            <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding:1em;" height="100rem;"/>
+                        </a>
+                        <span style="color: grey; text-align: center;">&amp;</span>
+                        <a href="https://twitter.com/ucligem?lang=en">
+                            <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding:1em;" height="100rem;"/>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
