@@ -598,13 +598,21 @@ section.section2
     border-radius: 0.5rem !important;
 }
 
+.h2_card_igem {
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    color: rgba(0, 0, 0,1);
+    margin-bottom: 1rem;
+}
+
 .sidenav {
-    width: 160px;
+    width: 200px;
     position: fixed;
     position: -webkit-sticky; /*for Safari*/
     z-index: 1;
     left: 0.5vw;
-    background: rgb(255, 255, 255, 0.95);
+    background: rgb(28, 28, 28, 0.95);
     border-radius: 1rem;
     overflow-x: hidden;
     background-color: white;
