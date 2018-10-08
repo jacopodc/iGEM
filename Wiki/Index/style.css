@@ -545,10 +545,19 @@ section.section2
     margin-top: 5vh;
 }
 
+.card_pic_igem {
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    background-color: rgb(255, 255, 255, 1) !important;
+    border-radius: 1rem !important;
+    margin-top: 1rem;
+}
+
 .card-text_igem {
     font-family: 'Lato', sans-serif !important;
     font-weight: 300;
     line-height: 1.6em;
+    margin: 0.5rem;
 }
 .specialmargin {
   margin-bottom: 12vh;
