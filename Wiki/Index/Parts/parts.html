@@ -174,6 +174,36 @@ function myFunction() {
 }());
 </script>
 
+<script>
+(function(){
+    var dropDownClass = 'panel';
+    var showClass = 'accordion';
+    var dropDowns = document.getElementsByClassName('panel');
+
+    var open = function(e){
+        var openDropDown = e.target.nextElementSibling;
+        var dropdowns = document.getElementsByClassName(dropDownClass);
+
+        openDropDown.classList.toggle(showClass);
+
+        var closeDropDown = function(event) {
+            if (event.target === e.target) {
+                return;
+            }
+            if (openDropDown.classList.contains(showClass)) {
+                openDropDown.classList.remove(showClass);
+            }
+            window.removeEventListener('click', closeDropDown);
+        };
+        window.addEventListener('click', closeDropDown);
+    }
+
+    for(var i = 0; i < dropDowns.length; i++){
+        dropDowns[i].children[0].addEventListener('click', open);
+    }
+}());
+</script>
+
 
 
 <!-- CONTENT******************************************************************************************************************************************************* -->
@@ -193,6 +223,8 @@ function myFunction() {
               <a href="#Intein_Spindroin">Intein Spindroin</a>
               <a href="#NikR">NikR</a>
               <a href="#SpyTag">SpyTag</a>
+              <a href="#Basic_Parts">Basic Parts</a>
+              <a href="#Composite_Parts">Composite Parts</a>
           </div>
 
 
@@ -403,10 +435,78 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <button class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p class="specialp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+
+        <section id="Basic_Parts">
+            <button class="collapsible wow fadeInUp">Our Basic Parts</button>
+                <div class="content">
+                    <div class="container container_igem">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                    <th>Length</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+        <section id="Composite_Parts">
+            <button class="collapsible wow fadeInUp">Our Composite Parts</button>
+                <div class="content">
+                    <div class="container container_igem">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                    <th>Length</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+
+
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -423,11 +523,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
     </div>
+
 </div>
+
 </div>
 <!--FOOTER================================================================== -->
-
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -455,17 +557,19 @@ for (i = 0; i < coll.length; i++) {
                     <a href="https://www.facebook.com/UCLiGEM/"class="contacticons">
                         <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding-top:1em;" height="62rem;"/>
                     </a>
+
                     <a href="https://twitter.com/ucligem?lang=en"class="contacticons">
                         <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
-                    </a>
+
+
                     <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
                         <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
-
                     </a>
                 </center>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>

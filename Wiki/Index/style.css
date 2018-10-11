@@ -617,15 +617,13 @@ section.section2
 
 .sidenav {
     width: 200px;
-    position: fixed;
-    position: -webkit-sticky; /*for Safari*/
     z-index: 1;
     left: 0.5vw;
-    background: rgb(28, 28, 28, 0.95);
     border-radius: 1rem;
     overflow-x: hidden;
-    background-color: white;
+    overflow-y: scroll;
     position: fixed;
+    vertical-align: middle;
 }
 
 .sidenav a {
@@ -690,7 +688,7 @@ section.section2
 }
 
 .sidenav_accordion {
-    height: 100%;
+    height: 100vh;
     width: 2.3rem;
     position: fixed;
     z-index: 1;
@@ -718,6 +716,60 @@ section.section2
 @media screen and (max-height: 450px) {
   .sidenav_accordion {padding-top: 15px;}
   .sidenav_accordion a {font-size: 18px;}
+}
+
+/*  */
+.collapsible {
+ background-color: #777;
+ color: white;
+ cursor: pointer;
+ padding: 1rem;
+ width: 100vh;
+ border: none;
+ text-align: center;
+ outline: none;
+ font-size: 2rem;
+ border-radius: 0.5rem;
+ font-family: 'Quicksand', sans-serif;
+}
+
+.active, .collapsible:hover {
+ background-color: #555;
+}
+
+.collapsible:after {
+ content: '\002B';
+ color: white;
+ font-weight: bold;
+ float: right;
+ margin-left: 5px;
+}
+
+.active:after {
+ content: "\2212";
+}
+.content {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ background-color: #f1f1f1;
+ padding-left: 5vw;
+}
+.specialp
+{
+ margin-top: 0.5rem !important;
+ margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1126px) {
+   .collapsible{
+       margin-left: 7rem;
+   }
+}
+@media screen and (max-width: 401px) {
+   .collapsible{
+       margin-left: 0rem;
+   }
 }
 
 /* FOOTER===============================================================================================================================================*/
@@ -753,46 +805,6 @@ section.section2
 {
   opacity: 0.5;
 
-}
- /*  */
- .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-.specialp
-{
-  margin-top: 0.5rem !important;
-  margin-bottom: 0 !important;
 }
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
