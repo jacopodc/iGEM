@@ -559,13 +559,12 @@ section.section2
     line-height: 1.6em;
     margin: 0.5rem;
 }
-.specialmargin {
-  margin-bottom: 12vh;
+.basicparts{
+  margin-top: 5vh;
 }
-
 @media screen and (max-width:1441px) {
   .specialmargin {
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
   }
 }
 
@@ -724,13 +723,14 @@ section.section2
  color: white;
  cursor: pointer;
  padding: 1rem;
- width: 100vh;
+ width: 100%;
  border: none;
  text-align: center;
  outline: none;
  font-size: 2rem;
  border-radius: 0.5rem;
  font-family: 'Quicksand', sans-serif;
+ transition: 0.3s;
 }
 
 .active, .collapsible:hover {
@@ -753,14 +753,32 @@ section.section2
  overflow: hidden;
  transition: max-height 0.2s ease-out;
  background-color: #f1f1f1;
- padding-left: 5vw;
+ padding-left: 2.5vw;
+ padding-right: 2.5vw;
+ border-radius: 0.5rem !important;
+
 }
 .specialp
 {
  margin-top: 0.5rem !important;
  margin-bottom: 0 !important;
 }
+tbody tr:hover
+{
+  height:43px;
+  background-color: rgb(214, 214, 214);
+  color:black;
+  z-index: -1;
+  transition: 0.15s;
+}
+.tableleft
+{
+  text-align: left;
 
+}
+.tableright{
+  text-align: right;
+}
 @media screen and (max-width: 1126px) {
    .collapsible{
        margin-left: 7rem;
