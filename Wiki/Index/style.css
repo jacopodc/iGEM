@@ -573,7 +573,7 @@ section.section2
   }
 }
 
-@media screen and (max-width: 1126px) {
+@media screen and (max-width: 1399px) {
     .card_igem{
         margin-left: 7rem;
     }
@@ -594,6 +594,12 @@ section.section2
 
 .card-title h4 {
     font-size: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.card-title .vanish {
+    font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     margin-top: 1rem;
@@ -830,7 +836,75 @@ tbody tr:hover
    border:5px grey solid;
    margin-top: 3vh;
 }
-
+.insta{
+  width:80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  border-radius: 3rem;
+}
+.customise{
+  position: relative;
+  width: 100vw;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.lol{
+  display: inline-block;
+}
+.lol:hover{
+  color:tomato;
+  transition:0.3s;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+}
+.superwow{
+  background-color: orange !important;
+  color:white !important;
+}
+.yin{
+  background-color: black;
+  color:white;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.yin:hover{
+  background-color: white;
+  color:black;
+  transition: 0.3s;
+}
+.yang{
+  background-color: white;
+  color:black;
+  border-radius: 1rem;
+}
+.yang:hover{
+  background-color: black;
+  color:white;
+  transition: 0.3s;
+}
+.removepadding
+{
+  padding-bottom:0 !important;
+  text-align: justify !important;
+  font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.argss{
+  text-align: center;
+}
+.sshh{
+  text-decoration: none;
+  color:tomato;
+}
+.wwww{
+  
+}
 /* FOOTER===============================================================================================================================================*/
 
 .footer {
