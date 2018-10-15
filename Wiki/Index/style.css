@@ -187,7 +187,7 @@ body
     display: none;
   }
   .topnav_igem a.icon_igem {
-    float: center;
+
     display: block;
   }
 .topnav_igem a:hover, .dropdown_igem:hover .dropbtn_igem {
@@ -257,7 +257,7 @@ width:100vw;
 
   }
  .floatright_igem{
- float:right !important;
+ float:none !important;
  }
  .floatleft_igem{
  float:left !important;
@@ -851,7 +851,6 @@ tbody tr:hover
    border:5px grey solid;
    margin-top: 3vh;
 }
-<<<<<<< HEAD
 .insta{
   width:80%;
   display:block;
@@ -919,9 +918,9 @@ tbody tr:hover
   color:tomato;
 }
 .wwww{
-  
+
 }
-=======
+
 .flippy
 {
     animation-iteration-count: infinite;
@@ -963,7 +962,7 @@ tbody tr:hover
   transform: rotateY(180deg);
 }
 
->>>>>>> 26b35eca89fdbe5cfdc95c703bcce786589e7ead
+
 /* FOOTER===============================================================================================================================================*/
 
 .footer {
