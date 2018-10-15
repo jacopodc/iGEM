@@ -631,6 +631,23 @@ section.section2
     vertical-align:bottom;
 }
 
+.animatedhover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+
+.animatedhover:hover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
 .h2_card_igem {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
