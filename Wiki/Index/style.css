@@ -621,7 +621,7 @@ body {
 }
 
 .accordion {
-    background-color: #0d0d0d;
+    background-color: rgb(13, 13, 13, 0.8);
     color: tomato;
     cursor: pointer;
     padding: 18px;
@@ -657,7 +657,7 @@ body {
     z-index: 1;
     top: 75;
     left: 0;
-    background-color: #111;
+    background-color: rgb(13, 13, 13, 0.9);
     overflow-x: hidden;
     padding-top: 45px;
 
@@ -667,13 +667,24 @@ body {
     padding: 10px 3px 3px 1px;
     text-decoration: none;
     font-size: 0.8rem;
-    color: #818181;
+    color: #737373;
     display: block;
     text-align: center;
 }
 
 .sidenav_accordion a:hover {
-    color: #f1f1f1;
+    color: tomato;
+}
+.accordion_column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.accordion_row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 @media screen and (max-height: 450px) {
@@ -681,6 +692,189 @@ body {
   .sidenav_accordion a {font-size: 18px;}
 }
 
+.leftspace {
+  position: relative;
+  left: 410;
+  bottom: 450;
+}
+
+.button_circle {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 1px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 5px 0.1px;
+    cursor: pointer;
+    border-radius: 80%;
+
+  }
+
+.button_circle:hover {background-color: red}
+
+    #myContainer {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      background:  rgb(102, 102, 102, 0.7);
+      border-radius: 5%;
+    }
+    #myRFP1 {
+      width: 40px;
+      height: 25px;
+      position: relative;
+      left: 30px;
+      bottom: 155px;
+      background-color:  #ff6666;
+      border-radius: 10%;
+    }
+
+    #myInteinRN1 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 15px;
+      bottom: 172px;
+      background-color: #ff9966;
+      border-radius: 80%;
+    }
+
+
+    #myInteinRC1 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 70px;
+      bottom: 180px;
+      background-color: #ffffcc;
+      border-radius: 10%;
+    }
+
+
+    #myGFP1 {
+      width: 40px;
+      height: 25px;
+      position: relative;
+      left: 100px;
+      bottom: 196px;
+      background-color:  #b3ffb3;
+      border-radius: 10%;
+    }
+
+    #myInteinGN1 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 85px;
+      bottom: 213px;
+      background-color: #ffffcc;
+      border-radius: 80%;
+    }
+
+    #myInteinGC1 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 140px;
+      bottom: 220px;
+      background-color:   #ff9966;
+      border-radius: 10%;
+    }
+
+    #myRFP2 {
+      width: 40px;
+      height: 25px;
+      position: relative;
+      left: 170px;
+      bottom: 237px;
+      background-color:  #ff6666;
+      border-radius: 10%;
+    }
+
+    #myInteinRN2 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 155px;
+      bottom: 253px;
+      background-color: #ff9966;
+      border-radius: 80%;
+    }
+
+
+    #myInteinRC2 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 210px;
+      bottom: 261px;
+      background-color: #ffffcc;
+      border-radius: 10%;
+    }
+
+    #myGFP2 {
+      width: 40px;
+      height: 25px;
+      position: relative;
+      left: 240px;
+      bottom: 278px;
+      background-color:  #b3ffb3;
+      border-radius: 10%;
+    }
+
+    #myInteinGN2 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 225px;
+      bottom: 294px;
+      background-color: #ffffcc;
+      border-radius: 80%;
+    }
+
+    #myInteinGC2 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 280px;
+      bottom: 302px;
+      background-color:   #ff9966;
+      border-radius: 10%;
+    }
+
+    #myRFP3 {
+      width: 40px;
+      height: 25px;
+      position: relative;
+      left: 310px;
+      bottom: 319px;
+      background-color:  #ff6666;
+      border-radius: 10%;
+    }
+
+    #myInteinRN3 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 295px;
+      bottom: 335px;
+      background-color: #ff9966;
+      border-radius: 80%;
+    }
+
+
+    #myInteinRC3 {
+      width: 15px;
+      height: 8px;
+      position: relative;
+      left: 350px;
+      bottom: 343px;
+      background-color: #ffffcc;
+      border-radius: 10%;
+    }
 
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
