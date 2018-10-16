@@ -524,7 +524,7 @@ section.section2
 
 /* SUBPAGE===============================================================================================================================================*/
 .background_img_igem {
-    background-image: url('http://2018.igem.org/wiki/images/9/93/T--UCL--silkbackground.svg') !important;
+    background-image: url('resources/Images/silkbackground2.svg') !important;
     min-height: 100% !important;
     width: 100% !important;
     background-attachment: fixed !important;
@@ -1189,8 +1189,8 @@ tbody tr:hover
 }
 .carousel-item{
   background-color: rgba(28,28,28,1);
+}
 
-<<<<<<< HEAD
 .list-group-item_igem {
   color: white;
   background-color: rgb(255, 133, 102);
@@ -1201,7 +1201,6 @@ tbody tr:hover
     height: auto;
 }
 
-=======
 }
 .carousel-inner img {
       width: 33vw;
@@ -1228,8 +1227,6 @@ margin-right: auto;
   .wwww{
     background-color: rgba(28,28,28,1);
   }
->>>>>>> 2f33a100b0e0054ec2f1c6f5e3d335132bd249b3
-/* FOOTER===============================================================================================================================================*/
 
 .footer {
    position: relative;
