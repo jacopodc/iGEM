@@ -32,11 +32,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="796"
+     inkscape:window-height="794"
      id="namedview113"
      showgrid="false"
      inkscape:zoom="0.48541667"
-     inkscape:cx="587.12447"
+     inkscape:cx="214.24894"
      inkscape:cy="539.09871"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -50,7 +50,9 @@
 	.st3{fill:url(#SVGID_4_);}
 </style><g
      id="g110"
-     transform="translate(41.481479,-41.481481)"><linearGradient
+     transform="translate(41.481479,-41.481481)"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"><linearGradient
        id="SVGID_1_"
        gradientUnits="userSpaceOnUse"
        x1="747"
