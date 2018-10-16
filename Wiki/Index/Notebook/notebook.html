@@ -8,8 +8,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <title>UCL SETA - Parts</title>
     <link rel="stylesheet" href="../bootstrap1.css"  />
+=======
+    <title>UCL SETA - Notebook</title>
+    <link rel="icon" href="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png">
+    <link rel="stylesheet" href="../resources/css/bootstrap1.css"  />
+>>>>>>> ad953d620d48783fcff0fdbc7953043a268da95e
     <link rel="stylesheet" href="../style.css"  />
 </head>
 
@@ -26,7 +32,7 @@ $(document).ready(function(){
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 100
       }, 1500, function(){
         window.location.hash = hash;
       });
@@ -38,23 +44,9 @@ $(document).ready(function(){
     <script>
         new WOW().init();
     </script>
-    <script>
-    // The function actually applying the offset
-  function offsetAnchor() {
-      if(location.hash.length !== 0) {
-          window.scrollTo(window.scrollX, window.scrollY - 100);
-      }
-  }
-
-  // This will capture hash changes while on the page
-  window.addEventListener("hashchange", offsetAnchor);
-
-  // This is here so that when you enter the page with a hash,
-  // it can provide the offset in that case too. Having a timeout
-  // seems necessary to allow the browser to jump to the anchor first.
-  window.setTimeout(offsetAnchor, 15);
-  </script>
+  
 <body>
+<div class="background_img_igem">
   <div class="navbarzindex">
   <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
         <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
@@ -70,7 +62,7 @@ $(document).ready(function(){
     <div class="dropdown-content_igem"id="dropdownpeople_igem">
         <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
         <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
-        <a href="http://2018.igem.org/Team:UCL/Sponsors">Sponsors</a>
+        <a href="http://2018.igem.org/Team:UCL/Attributions#Sponsors">Sponsors</a>
     </div>
   </div>
   <div class="dropdown_igem">
@@ -79,11 +71,8 @@ $(document).ready(function(){
     </button>
     <div class="dropdown-content_igem"id="dropdownproject_igem">
         <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
-        <a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a>
-        <a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a>
-        <a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a>
         <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/Project/POP">Proof of Principle</a>
+        <a href="http://2018.igem.org/Team:UCL/POC">Proof of Concept</a>
         <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
         <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
     </div>
@@ -95,14 +84,6 @@ $(document).ready(function(){
     <div class="dropdown-content_igem"id="dropdownparts_igem">
         <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
         <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/FB">Final Brick</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/Intein_mScar">Intein Passenger</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/GFP">GFP Reporter</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/RFP">RFP Reporter</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/MS">Mini Spindroin</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/IS">Intein Spindroin</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/NikR">NikR</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts/SpyTag">SpyTag</a>
         <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
     </div>
   </div>
@@ -112,20 +93,19 @@ $(document).ready(function(){
     </button>
     <div class="dropdown-content_igem"id="dropdownmodelling_igem">
         <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
-        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein">Intein</a>
-        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein_Poly">Intein Polymerisation</a>
-        <a href="http://2018.igem.org/Team:UCL/Modelling/LAMMPS">LAMMPS</a>
-        <a href="http://2018.igem.org/Team:UCL/Modelling/Scale_Up">Scale Up</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein_Polymerisation">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Scale_Up">Scale Up</a>
     </div>
   </div>
   <div class="dropdown_igem">
     <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
 
     </button>
-    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+    <div class="dropdown-content_igem"id"dropdownhumanpractices_igem">
         <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
-        <a href="http://2018.igem.org/Team:UCL/Integrated_Human_Practices">Integrated Human Practices</a>
-        <a href="http://2018.igem.org/Team:UCL/HP/PE">Public Engagement</a>
+        <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
         <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
     </div>
   </div>
@@ -135,9 +115,7 @@ $(document).ready(function(){
     </button>
     <div class="dropdown-content_igem"id="dropdownnotebook_igem">
         <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
-        <a href="http://2018.igem.org/Team:UCL/Notebook/Lab_Book">Lab Book</a>
-        <a href="http://2018.igem.org/Team:UCL/Notebook/Protocols">Protocols</a>
-        <a href="http://2018.igem.org/Team:UCL/Notebook/MC">Medal Criteria</a>
+        <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
         <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
     </div>
   </div>
@@ -167,8 +145,6 @@ function myFunction() {
     }
 }
 </script>
-
-
 
 <script>
 (function(){
@@ -230,10 +206,9 @@ function myFunction() {
 }());
 </script>
 
-<!-- CONTENT******************************************************************************************************************************************************* -->
-
-
+<!--BODY==================================================================== -->
 <body>
+<<<<<<< HEAD
 
 <div class="container">
   <div class="container">
@@ -489,8 +464,183 @@ After running into slight issues due to the repetitive nature of spider silk seq
       <a href="#Demo24">24</a>
       <a href="#Demo25">25</a>
       <a href="#Demo26">26</a>
+=======
+    <div class="background_img_igem">
+        <div class="container">
+          <div class="container">
+             <div class="h1_igem_subpage">Notebook</div>
+          </div>
+
+
+          <button id="Demo1" class="accordion">WEEK 1 - 4 (April 23 - May 18)</button>
+          <div class="panel">
+            <p>Absolute shit...
+              <br></br>
+            </p>
+          </div>
+
+          <button id="Demo5" class="accordion">WEEK 5 - 8 (May 21 - June 15)</button>
+          <div class="panel">
+            <p>Fuck all...
+              <br></br>
+            </p>
+          </div>
+
+          <button id="Demo9" class="accordion">WEEK 9 - 12 (June 18 - July 13)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo13" class="accordion">WEEK 13 (July 16 - July 20)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo14" class="accordion">WEEK 14 (July 23 - July 27)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo15" class="accordion">WEEK 15 (July 30 - August 3)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo16" class="accordion">WEEK 16 (August 6 - August 10)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo17" class="accordion">WEEK 17 (August 13 - August 17)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo18" class="accordion">WEEK 18 (August 20 - August 24)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo19" class="accordion">WEEK 19 (August 27 - August 31)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo20" class="accordion">WEEK 20 (September 3 - September 7)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo21" class="accordion">WEEK 21 (September 10 - September 14)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo22" class="accordion">WEEK 22 (September 17 - September 21)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo23" class="accordion">WEEK 23 (September 24 - September 28)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo24" class="accordion">WEEK 24 (October 1 - October 5)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo25" class="accordion">WEEK 25 (October 8 - October 12)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <button id="Demo26" class="accordion">WEEK 26 (October 15 - October 19)</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+        <br></br>
+
+        </div>
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              });
+          }
+          </script>
+
+          <div class="sidenav_accordion">
+              <a href="#Demo1">1-4</a>
+              <a href="#Demo5">5-8</a>
+              <a href="#Demo9">9-12</a>
+              <a href="#Demo13">13</a>
+              <a href="#Demo14">14</a>
+              <a href="#Demo15">15</a>
+              <a href="#Demo16">16</a>
+              <a href="#Demo17">17</a>
+              <a href="#Demo18">18</a>
+              <a href="#Demo19">19</a>
+              <a href="#Demo20">20</a>
+              <a href="#Demo21">21</a>
+              <a href="#Demo22">22</a>
+              <a href="#Demo23">23</a>
+              <a href="#Demo24">24</a>
+              <a href="#Demo25">25</a>
+              <a href="#Demo26">26</a>
+            </div>
+
+>>>>>>> ad953d620d48783fcff0fdbc7953043a268da95e
     </div>
 
-</body>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Our Location</div>
+                        University College London<br />
+      Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                        <span></span>
 
+                    </center>
+                </div>
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Contact Us</div>
+                      ucl.igem@ucl.ac.uk
+                        <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
+                            <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
+                        </a>
+                    </center>
+                </div>
+                <div class="col-lg-4">
+                    <center>
+                        <div class="h2_footer_igem">Follow Us</div>
+                        <a href="https://www.facebook.com/UCLiGEM/"class="contacticons">
+                            <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding-top:1em;" height="62rem;"/>
+                        </a>
+                        <a href="https://twitter.com/ucligem?lang=en"class="contacticons">
+                            <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
+                        </a>
+                        <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
+                            <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

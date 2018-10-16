@@ -1,0 +1,515 @@
+<!--
+{{UCL/BootstrapCSS}}
+{{UCL/Style}}
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UCL SETA - Parts</title>
+    <link rel="stylesheet" href="../bootstrap1.css"  />
+    <link rel="stylesheet" href="../style.css"  />
+</head>
+
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/BootstrapJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/JQuery?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/WowJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="../resources/js/bootstrapscript.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<script src="../resources/js/wow1.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+    // The function actually applying the offset
+  function offsetAnchor() {
+      if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - 100);
+      }
+  }
+
+  // This will capture hash changes while on the page
+  window.addEventListener("hashchange", offsetAnchor);
+
+  // This is here so that when you enter the page with a hash,
+  // it can provide the offset in that case too. Having a timeout
+  // seems necessary to allow the browser to jump to the anchor first.
+  window.setTimeout(offsetAnchor, 15);
+  </script>
+<body>
+  <div class="navbarzindex">
+  <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+        <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+    </div>
+
+<div class="topnav_igem" id="myTopnav_igem">
+<div class="floatright_igem">
+<a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="People()">People
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownpeople_igem">
+        <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
+        <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
+        <a href="http://2018.igem.org/Team:UCL/Sponsors">Sponsors</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Project()">Project
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownproject_igem">
+        <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/FB">Final Brick Standardisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Intein">Intein Technology</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/Spider_Silk">Spider Silk</a>
+        <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
+        <a href="http://2018.igem.org/Team:UCL/Project/POP">Proof of Principle</a>
+        <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
+        <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Parts()">Parts
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownparts_igem">
+        <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/FB">Final Brick</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/Intein_mScar">Intein Passenger</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/GFP">GFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/RFP">RFP Reporter</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/MS">Mini Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/IS">Intein Spindroin</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/NikR">NikR</a>
+        <a href="http://2018.igem.org/Team:UCL/Parts/SpyTag">SpyTag</a>
+        <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Modelling()">Modelling
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+        <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Intein_Poly">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Modelling/Scale_Up">Scale Up</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+        <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/Integrated_Human_Practices">Integrated Human Practices</a>
+        <a href="http://2018.igem.org/Team:UCL/HP/PE">Public Engagement</a>
+        <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
+    </div>
+  </div>
+  <div class="dropdown_igem">
+    <button class="dropbtn_igem"onclick="Notebook()">Notebook
+
+    </button>
+    <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Lab_Book">Lab Book</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/Protocols">Protocols</a>
+        <a href="http://2018.igem.org/Team:UCL/Notebook/MC">Medal Criteria</a>
+        <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<script>
+  $(window).on('scroll',function(){
+    if($(window).scrollTop()){
+      $('.navbarzindex').addClass('black');
+    }
+    else {
+      $('.navbarzindex').removeClass('black');
+    }
+  })
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav_igem");
+    if (x.className === "topnav_igem") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav_igem";
+    }
+}
+</script>
+
+
+
+<script>
+(function(){
+    var dropDownClass = 'dropdown-content_igem';
+    var showClass = 'show_igem';
+    var dropDowns = document.getElementsByClassName('dropdown_igem');
+
+    var open = function(e){
+        var openDropDown = e.target.nextElementSibling;
+        var dropdowns = document.getElementsByClassName(dropDownClass);
+
+        openDropDown.classList.toggle(showClass);
+
+        var closeDropDown = function(event) {
+            if (event.target === e.target) {
+                return;
+            }
+            if (openDropDown.classList.contains(showClass)) {
+                openDropDown.classList.remove(showClass);
+            }
+            window.removeEventListener('click', closeDropDown);
+        };
+        window.addEventListener('click', closeDropDown);
+    }
+
+    for(var i = 0; i < dropDowns.length; i++){
+        dropDowns[i].children[0].addEventListener('click', open);
+    }
+}());
+</script>
+
+<script>
+(function(){
+    var dropDownClass = 'panel';
+    var showClass = 'accordion';
+    var dropDowns = document.getElementsByClassName('panel');
+
+    var open = function(e){
+        var openDropDown = e.target.nextElementSibling;
+        var dropdowns = document.getElementsByClassName(dropDownClass);
+
+        openDropDown.classList.toggle(showClass);
+
+        var closeDropDown = function(event) {
+            if (event.target === e.target) {
+                return;
+            }
+            if (openDropDown.classList.contains(showClass)) {
+                openDropDown.classList.remove(showClass);
+            }
+            window.removeEventListener('click', closeDropDown);
+        };
+        window.addEventListener('click', closeDropDown);
+    }
+
+    for(var i = 0; i < dropDowns.length; i++){
+        dropDowns[i].children[0].addEventListener('click', open);
+    }
+}());
+</script>
+
+
+<!-- CONTENT******************************************************************************************************************************************************* -->
+
+
+<body>
+
+<div class="container">
+
+  <div class="container">
+     <div class="h1_igem_subpage">Testing animations</div>
+  </div>
+
+  <div id ="myContainer"></div>
+
+    <div id ="myRFP1">   </div>
+      <div id ="myInteinRN1">  </div>
+      <div id ="myInteinRC1">  </div>
+
+      <div id ="myGFP1">  </div>
+      <div id ="myInteinGN1">  </div>
+      <div id ="myInteinGC1">  </div>
+
+      <div id ="myRFP2">   </div>
+      <div id ="myInteinRN2">  </div>
+      <div id ="myInteinRC2">  </div>
+
+      <div id ="myGFP2">  </div>
+      <div id ="myInteinGN2">  </div>
+      <div id ="myInteinGC2">  </div>
+
+      <div id ="myRFP3">   </div>
+      <div id ="myInteinRN3">  </div>
+      <div id ="myInteinRC3">  </div>
+
+
+      <div class="leftspace">
+        <p>
+        <button class= "button_circle" onclick="myGFP1Move()">1</button>
+        <br></br>
+        <button class= "button_circle" onclick="myIntein1Move()">2</button>
+        <br></br>
+        <button class= "button_circle" onclick="myRFP2Move()">3</button>
+        <br></br>
+        </p>
+      </div>
+
+
+  <script>
+  function myGFP1Move() {
+    var elem = document.getElementById("myGFP1");
+    var mybottom = 196;
+    var myleft = 100;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (mybottom == 300) {
+        clearInterval(id);
+      } else {
+        mybottom++;
+        elem.style.bottom = mybottom + 'px';
+      }
+    }
+    anotherfunction1();
+    anotherfunction2();
+    }
+
+  function anotherfunction1() {
+    var elem = document.getElementById("myInteinGN1");
+    var mybottom = 260;
+    var myright = -335;
+    var id = setInterval(frame, 5);
+    function frame() {
+      elem.style.display="block";
+      if (myright == -85) {
+        clearInterval(id);
+      } else {
+        myright++;
+        elem.style.right = myright + 'px';
+      }
+    }
+  }
+
+  function anotherfunction2() {
+    var elem = document.getElementById("myInteinGC1");
+    var mybottom = 260;
+    var myright = -390;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (myright == -140) {
+        clearInterval(id);
+      } else {
+        myright++;
+        elem.style.right = myright + 'px';
+      }
+    }
+
+  }
+
+  function myIntein1Move() {
+  var elem = document.getElementById("myGFP1");
+  var mytop = 260;
+  var myright = -100;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (myright == -70) {
+      clearInterval(id);
+    } else {
+      myright++;
+      elem.style.right = myright + 'px';
+    }
+  }
+
+  anotherfunction3();
+  anotherfunction4();
+  anotherfunction5();
+}
+
+  function anotherfunction3(){
+    var elem = document.getElementById("myInteinRC1");
+    var mybottom: 260;
+    var myright: -70;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (mybottom == 425) {
+        clearInterval(id);
+      } else {
+        mybottom++;
+        elem.style.bottom= mybottom + 'px';
+      }
+    }
+  }
+
+  function anotherfunction4(){
+    var elem = document.getElementById("myInteinGN1");
+    var mybottom = 260;
+    var myright = -85;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (mybottom == 425) {
+        clearInterval(id);
+      } else {
+        mybottom++;
+        elem.style.bottom= mybottom + 'px';
+      }
+    }
+  }
+
+  function anotherfunction5(){
+    var elem = document.getElementById("myInteinGC1");
+    var mytop = 0;
+    var myright = 1000;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (myright == 1027) {
+        clearInterval(id);
+      } else {
+        myright++;
+        elem.style.right = myright + 'px';
+      }
+    }
+  }
+
+  function myRFP2Move() {
+    var elem = document.getElementById("myRFP2");
+    var mytop1 = 255;
+    var myright1 = 795;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (myright1 == 973){
+      if (mytop1 == 250) {
+        clearInterval(id);
+      }} else {
+        myright1++;
+        mytop1++;
+        elem.style.right = myright1 + 'px';
+        elem.style.top = mytop1 + 'px';
+      }
+  }
+    anotherfunction7();
+    anotherfunction8();
+    anotherfunction9();
+    anotherfunction10();
+    anotherfunction11();
+    }
+
+    function anotherfunction7() {
+      var elem = document.getElementById("myInteinRN2");
+      var mytop = 265;
+      var myright = 839;
+      var id = setInterval(frame, 5);
+      function frame() {
+        elem.style.display="block";
+        if (myright == 1013) {
+          if (mytop==240){
+          clearInterval(id);
+        }} else {
+          myright++;
+          mytop++;
+          elem.style.right = myright + 'px';
+          elem.style.top = mytop + 'px';
+        }
+      }
+    }
+
+    function anotherfunction8() {
+      var elem = document.getElementById("myInteinRC2");
+      var mytop = 265;
+      var myright = 783;
+      var id = setInterval(frame, 5);
+      function frame() {
+        elem.style.display="block";
+        if (myright == 958) {
+          if (mytop==240){
+          clearInterval(id);
+        }} else {
+          myright++;
+          mytop++;
+          elem.style.right = myright + 'px';
+          elem.style.top = mytop + 'px';
+        }
+      }
+    }
+
+
+    function anotherfunction9() {
+      var elem = document.getElementById("myInteinGN2");
+      var mybottom = 56;
+      var myleft = 100;
+      var id = setInterval(frame, 7);
+      function frame() {
+        if (myleft == 303) {
+          if (mybottom==240){
+          clearInterval(id);
+        }} else {
+          myleft++;
+          mybottom++;
+          elem.style.left = myleft + 'px';
+          elem.style.bottom = mybottom + 'px';
+        }
+      }
+    }
+
+    function anotherfunction10() {
+      var elem = document.getElementById("myInteinGC2");
+      var mybottom = 56;
+      var myleft = 155;
+      var id = setInterval(frame, 7);
+      function frame() {
+        if (myleft == 358) {
+          if (mybottom==240){
+          clearInterval(id);
+        }} else {
+          myleft++;
+          mybottom++;
+          elem.style.left = myleft + 'px';
+          elem.style.bottom = mybottom + 'px';
+        }
+      }
+    }
+
+    function anotherfunction11() {
+      var elem = document.getElementById("myGFP2");
+      var mybottom = 46;
+      var myleft = 115;
+      var id = setInterval(frame, 7);
+      function frame() {
+        if (myleft == 318) {
+          if (mybottom==240){
+          clearInterval(id);
+        }} else {
+          myleft++;
+          mybottom++;
+          elem.style.left = myleft + 'px';
+          elem.style.bottom = mybottom + 'px';
+        }
+      }
+    }
+
+  </script>
+</div>
+
+</body>
+
+</html>
