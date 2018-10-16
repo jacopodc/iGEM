@@ -981,8 +981,10 @@ section.section2
  transition: 0.3s;
  margin-left: 2rem;
 }
-
-.active, .collapsible:hover {
+.activelol{
+  background-color: rgba(28,28,28,1)
+}
+.activelol, .collapsible:hover {
  background-color: #555;
 }
 
@@ -994,7 +996,7 @@ section.section2
  margin-left: 5px;
 }
 
-.active:after {
+.activelol:after {
  content: "\2212";
 }
 .content {
@@ -1185,8 +1187,35 @@ tbody tr:hover
   color: black;
   transform: rotateY(180deg);
 }
+.carousel-item{
+  background-color: rgba(28,28,28,1);
 
-
+}
+.carousel-inner img {
+      width: 33vw;
+      height: 33vw;
+  }
+  .holysss{
+display:block;
+margin-left: auto;
+margin-right: auto;
+  }
+  .lmao{
+    padding-bottom: 2vh !important;
+  }
+  .lmaoo{
+    padding-bottom: 0.5vh !important;
+    margin-bottom: 5vh !important;
+  }
+  .fuq img{
+    width:100%;
+  }
+  .orange{
+    color:tomato;
+  }
+  .wwww{
+    background-color: rgba(28,28,28,1);
+  }
 /* FOOTER===============================================================================================================================================*/
 
 .footer {
