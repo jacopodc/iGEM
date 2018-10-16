@@ -977,8 +977,10 @@ section.section2
  margin-left: 2rem;
  width: 35vw;
 }
-
-.active, .collapsible:hover {
+.activelol{
+  background-color: rgba(28,28,28,1)
+}
+.activelol, .collapsible:hover {
  background-color: #555;
 }
 
@@ -989,7 +991,7 @@ section.section2
  float: right;
 }
 
-.active:after {
+.activelol:after {
  content: "\2212";
 }
 .collapsible_content {
@@ -1185,7 +1187,10 @@ tbody tr:hover
   color: black;
   transform: rotateY(180deg);
 }
+.carousel-item{
+  background-color: rgba(28,28,28,1);
 
+<<<<<<< HEAD
 .list-group-item_igem {
   color: white;
   background-color: rgb(255, 133, 102);
@@ -1196,6 +1201,34 @@ tbody tr:hover
     height: auto;
 }
 
+=======
+}
+.carousel-inner img {
+      width: 33vw;
+      height: 33vw;
+  }
+  .holysss{
+display:block;
+margin-left: auto;
+margin-right: auto;
+  }
+  .lmao{
+    padding-bottom: 2vh !important;
+  }
+  .lmaoo{
+    padding-bottom: 0.5vh !important;
+    margin-bottom: 5vh !important;
+  }
+  .fuq img{
+    width:100%;
+  }
+  .orange{
+    color:tomato;
+  }
+  .wwww{
+    background-color: rgba(28,28,28,1);
+  }
+>>>>>>> 2f33a100b0e0054ec2f1c6f5e3d335132bd249b3
 /* FOOTER===============================================================================================================================================*/
 
 .footer {
