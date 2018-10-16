@@ -1203,9 +1203,7 @@ tbody tr:hover
 
 <<<<<<< HEAD
 
-=======
->>>>>>> 88c9588d9658a3463d0cfca2c05a371366e9b986
-}
+
 .carousel-inner img {
       width: 33vw;
       height: 33vw;
@@ -1231,11 +1229,99 @@ margin-right: auto;
   .wwww{
     background-color: rgba(28,28,28,1);
   }
-<<<<<<< HEAD
-
+.sucks{
+  width:30vh;
+  border-radius: 50%;
+  border:green 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: green 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.sucks2{
+  width:30vh;
+  height:30vh;
+  border-radius: 50%;
+  border:rgb(54, 173, 224) 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks2:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: rgb(54, 173, 224) 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.sucks3{
+  width:30vh;
+  height:30vh;
+  border-radius: 50%;
+  border:rgba(28,28,28,1) 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks3:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: rgba(28,28,28,1) 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.sucks4{
+  width:30vh;
+  height:30vh;
+  border-radius: 50%;
+  border:rgba(21, 38, 98, 1) 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks4:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: rgba(21, 38, 98, 1) 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.sucks5{
+  width:30vh;
+  height:30vh;
+  border-radius: 50%;
+  border:red 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks5:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: red 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.sucks6{
+  width:30vh;
+  height:30vh;
+  border-radius: 50%;
+  border:rgba(50, 223, 156, 1) 5px solid;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.sucks6:hover{
+  width:30vh;
+  border-radius: 50%;
+  border: rgba(50, 223, 156, 1) 5px solid;
+  transition:0.3s;
+  opacity: 1;
+}
+.elimination{
+  padding-bottom: 0 !important;
+}
 /* FOOTER===============================================================================================================================================*/
-=======
->>>>>>> 88c9588d9658a3463d0cfca2c05a371366e9b986
 
 .footer {
    position: relative;
