@@ -656,10 +656,6 @@ section.section2
     margin-bottom: 1rem;
 }
 
-.list-group-item:hover {
-    background-color: rgb(230, 230, 230);
-    color: rgb(0, 0, 0);
-}
 
 .sidenav {
     width: 200px;
@@ -971,7 +967,6 @@ section.section2
  color: white;
  cursor: pointer;
  padding: 1rem;
- width: 100%;
  border: none;
  text-align: center;
  outline: none;
@@ -980,6 +975,7 @@ section.section2
  font-family: 'Quicksand', sans-serif;
  transition: 0.3s;
  margin-left: 2rem;
+ width: 35vw;
 }
 
 .active, .collapsible:hover {
@@ -991,13 +987,12 @@ section.section2
  color: white;
  font-weight: bold;
  float: right;
- margin-left: 5px;
 }
 
 .active:after {
  content: "\2212";
 }
-.content {
+.collapsible_content {
  max-height: 0;
  overflow: hidden;
  transition: max-height 0.2s ease-out;
@@ -1005,8 +1000,15 @@ section.section2
  padding-left: 2.5vw;
  padding-right: 2.5vw;
  border-radius: 0.5rem !important;
-
+ margin-left: 2rem;
 }
+
+@media screen and (max-width: 1399px) {
+    .collapsible, .collapsible_content {
+        margin-left: 7rem;
+    }
+}
+
 .specialp
 {
  margin-top: 0.5rem !important;
@@ -1023,8 +1025,6 @@ tbody tr:hover
 .tableleft
 {
   text-align: left;
->>>>>>> ad953d620d48783fcff0fdbc7953043a268da95e
-
 }
 .tableright{
   text-align: right;
@@ -1186,6 +1186,15 @@ tbody tr:hover
   transform: rotateY(180deg);
 }
 
+.list-group-item_igem {
+  color: white;
+  background-color: rgb(255, 133, 102);
+}
+
+.infographic_igem {
+    width: 90vw;
+    height: auto;
+}
 
 /* FOOTER===============================================================================================================================================*/
 
