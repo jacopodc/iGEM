@@ -1448,8 +1448,24 @@ figcaption{
 }
 
 .gifs{
-  width:20vw;
+  width:15vw;
   margin:1rem;
+  border-radius: 1rem;
+}
+.yyyyy{
+  background-color: white;
+  transition: 0.3s;
+}
+.yyyyy:hover{
+  background-color: rgb(214, 214, 214);
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+.marrrgin{
+  margin-left: 10vw;
+}
+.marrgin{
+  margin-right: 10vw;
 }
 /* FOOTER===============================================================================================================================================*/
 
