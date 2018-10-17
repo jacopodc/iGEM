@@ -143,6 +143,7 @@ function myFunction() {
 </script>
 
 
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
 
 <script>
 (function(){
@@ -204,16 +205,21 @@ function myFunction() {
 }());
 </script>
 
-
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 250 });
+});
+</script>
 
 <!-- CONTENT******************************************************************************************************************************************************* -->
 <div class="container container_igem">
     <div class="container container_igem">
+        <img class="wow fadeInUp subpage_img_igem1" src="../resources/Images/parts_design.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
         <div class="h1_igem_subpage">Parts</div>
     </div>
 
     <div class="container container_igem">
-        <div class="sidenav">
+        <div id="sidenav" class="sidenav">
               <a href="#Overview">Overview</a>
               <a href="#Final_Brick">Final Brick</a>
               <a href="#Intein_Passenger">Intein Passenger</a>
@@ -258,6 +264,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/FB.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -281,6 +290,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/IP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -304,6 +316,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/GFP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -327,6 +342,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/RFP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
