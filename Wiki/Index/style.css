@@ -615,10 +615,10 @@ section.section2
 .subpage_img_igem {
     margin-right: auto;
     margin-left: auto;
-    width: 70vh;
-    height: 70vh;
-    margin-top: 5rem;
+    width: 80vh;
+    height: 80vh;
     display: block;
+    margin-top: 1rem;
 }
 
 .card-title h4 {
