@@ -539,7 +539,10 @@ section.section2
     background-color:rgba(0, 0, 0, 0.0);
     padding-left: 5vw;
 }
-
+.container_igem2 {
+    padding-bottom: 1rem;
+    background-color:rgba(0, 0, 0, 0.0);
+}
 .card_igem {
     animation-duration: 1.5s;
     animation-iteration-count: 1;
