@@ -186,7 +186,7 @@ function myFunction() {
           <a href="#CGE">Cell Growth and Expression</a>
           <a href="#Protein_Polymerisation">Protein Polymerisation</a>
           <a href="#WORM">W.O.R.M.</a>
-          <a href="#LAMMPS">Mechanical Simulation</a>
+          <a href="#Mech">Mechanical Simulation</a>
 
         </div>
 
@@ -486,7 +486,7 @@ Protein degradation rate and dilution factor
 
 
 
-        <section id="Protein_Polymerisation mrfont">
+        <section id="Protein_Polymerisation">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Protein Polymerisation</h4>
@@ -672,8 +672,8 @@ Maximum repeat number in a polymer</th>
 
 
 
-        <section>
-            <div class="ohwow card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+        <section id="Mech">
+            <div class="mrfont ohwow card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Mechanical Simulation</h4>
                 </div>
@@ -687,23 +687,53 @@ Maximum repeat number in a polymer</th>
 </p>
 <br>
 <p>Here is our initial designed sequence, a spider silk protein in repeats of four:</p>
-<br>
-<p></p><a class="nodec"href="#">
+<a class="nodec"href="#">
 GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA</a>
+<br><br><br>
+The respective sequence is then quantitatively analysed for their hydrophobicity and hydrophilicity and plotted.
+<br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/1/19/T--UCL--m7.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 07. Kyte-Doolittle-Hydropathy plot. The vertical axis is the measure of hydrophobicity in each amino acid in the sequence, with higher score means greater degree of hydrophobicity. With the help of ProtScale from ExPASy.
+  </figcaption>
+</center>
+<br><br>
+<p>In this particular sequence, we can observe that the hydrophobic and hydrophilic parts alternate inside the spider silk fiber, which will form aggregates and bridge connections to achieve desired tensile and toughness due to the hydrophobic interactions.
+</p>
+<br>
+<p>
+  This alternating pattern seen in the figure allows us to simplify proteins as the hydrophobic domains and hydrophilic domains. These domains are then represented as a collection of the so-called ‘beads’, and depending on relative molecular volume of each domain, the coarse-grained model is then scaled and measured into an estimate of three amino acid residues per bead.
+</p>
+<br>
+<p>This system is composed from 3 components: water, hydrophilic and hydrophobic beads. Every 9 water molecules is represented as a single bead, so its 270 Å size (each water molecule is about 30 Å) is proportional to the protein beads. </p>
+<br>
+<p>We then introduce LAMMPS as our software, which is an abbreviation of Large-scale Atomic/Molecular Massively Parallel Simulator, to simulate the behaviour of our ‘beads’ collection in a single compartment and thus gave us an insight into the physical property of the recombinant spider silk.</p>
 <br><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="card-title text-center mrfont2">
+  <h1 class="orange">Simulations</h1>
+  <h5>Hover to compare the 2 sides.</h5>
+</div>
+<br><br>
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+        <img class="gifs"src="http://2018.igem.org/wiki/images/3/30/T--UCL--4e.gif" />
+        <img class="gifs"src="http://2018.igem.org/wiki/images/d/da/T--UCL--8e.gif" />
+        <img class="gifs"src="http://2018.igem.org/wiki/images/9/9d/T--UCL--12e.gif" />
+    </p>
+</div>
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+</div>
+</div>
                                 </p>
                             </div>
                         </div>
