@@ -585,6 +585,7 @@ section.section2
         margin-left: 0rem;
     }
 }
+
 .h1_igem_subpage {
     font-weight: 400;
     font-family: "Quicksand", sans-serif;
@@ -600,6 +601,12 @@ section.section2
     color: rgba(242, 77, 25,1);
     text-align: center;
     padding-top: 7rem;
+}
+
+@media screen and (max-width: 401px) {
+    .h1_igem_subpage, .h1_igem_subpage1{
+        font-size: 3rem;
+    }
 }
 
 .subpage_img_igem {
