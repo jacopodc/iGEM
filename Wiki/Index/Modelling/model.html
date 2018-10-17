@@ -173,15 +173,24 @@ function myFunction() {
 }());
 </script>
 
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 250 });
+});
+</script>
+
 
 <!-- CONTENT******************************************************************************************************************************************************* -->
 <div class="container">
 
     <div class="container">
+        <img class="wow fadeInUp subpage_img_igem1" src="../resources/Images/model.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
         <div class="h1_igem_subpage">Models</div>
     </div>
     <div class="container containter-fluid container_igem">
-        <div class="sidenav">
+        <div id="sidenav" class="sidenav">
           <a href="#Overview">Overview</a>
           <a href="#CGE">Cell Growth and Expression</a>
           <a href="#Protein_Polymerisation">Protein Polymerisation</a>

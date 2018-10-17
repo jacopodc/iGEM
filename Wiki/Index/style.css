@@ -1150,6 +1150,14 @@ tbody tr:hover
   border-radius: 3rem;
 }
 
+.cards_logos3{
+  width:100%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 .customise{
   position: relative;
   width: 100vw;
@@ -1213,8 +1221,13 @@ tbody tr:hover
   color:tomato;
 }
 
-.wwww{
-
+.h3_insta {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: center;
+     background-color: white;
+     width: 15rem;
 }
 
 .flippy
