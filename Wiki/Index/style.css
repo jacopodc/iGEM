@@ -742,17 +742,18 @@ section.section2
     left: 0;
     background-color: rgb(13, 13, 13, 0.9);
     overflow-x: hidden;
-    padding-top: 45px;
+    padding-top: 20px;
 
 }
 
 .sidenav_accordion a {
-    padding: 10px 3px 3px 1px;
+    padding: 4px 2px 2px 1px;
     text-decoration: none;
     font-size: 0.8rem;
     color: #737373;
     display: block;
     text-align: center;
+    line-height: 1rem;
 }
 
 .sidenav_accordion a:hover {
@@ -762,12 +763,15 @@ section.section2
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
 }
 .accordion_row:after {
     content: "";
     display: table;
     clear: both;
+}
+.accordion_image{
+    width:80%;
+    margin: 5vh;
 }
 
 @media screen and (max-height: 450px) {
