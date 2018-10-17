@@ -135,7 +135,6 @@ body
 .dropdown_igem {
     float:left;
     overflow: hidden;
-
 }
 
 .dropdown_igem .dropbtn_igem {
@@ -151,6 +150,7 @@ body
     width:160px;
     height:60px;
 }
+
 .navbarzindex.black .dropdown_igem .dropbtn_igem {
   color:rgba(255, 255, 255, 1);
 }
@@ -1038,6 +1038,9 @@ tbody tr:hover
 {
   text-align: left;
 }
+.tablecenter{
+  text-align: center;
+}
 .tableright{
   text-align: right;
 }
@@ -1343,8 +1346,50 @@ margin-right: auto;
 .elimination{
   padding-bottom: 0 !important;
 }
+<<<<<<< HEAD
 .eeeee{
     margin-bottom: 1.5vh;
+=======
+.ohwow{
+  margin-bottom: 15vh;
+}
+.mmmm{
+  margin-left: auto;
+  margin-right: auto;
+}
+.removedec{
+  text-decoration: none;
+}
+.mrfont{
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300;
+  line-height: 1.6em;
+  text-align: justify !important;
+}
+.mrfont2{
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300;
+  line-height: 1.6em;
+  text-align: center !important;
+}
+.card_igem.mmmmm p{
+    text-align: justify !important;
+}
+.ooooo{
+  border: 2px solid rgba(138, 138, 138, 1);
+}
+.oooo th{
+  width:300px;
+}
+figcaption{
+  font-size: 11px;
+}
+.m1{
+  width:25vw;
+}
+.nodec{
+  text-decoration: none;
+>>>>>>> cba3a81cca599a9d316abef95e13216b90f7a0b4
 }
 /* FOOTER===============================================================================================================================================*/
 
