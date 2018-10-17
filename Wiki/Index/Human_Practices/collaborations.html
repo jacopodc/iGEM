@@ -170,15 +170,22 @@ function myFunction() {
     }
 }());
 </script>
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 150 });
+});
+</script>
 <!--BODY==================================================================== -->
 <body>
         <div class="container">
             <div class="container">
-                <img class="wow fadeInUp subpage_img_igem" src="../resources/Images/collabs2.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
+                <img class="wow fadeInUp subpage_img_igem" src="http://2018.igem.org/wiki/images/e/ec/T--UCL--collabs4.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
                 <div class="h1_igem_subpage">Collaborations</div>
             </div>
             <div class="container containter-fluid container_igem">
-                <div class="sidenav">
+                <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                   <a href="#EW">Exeter & Warwick</a>
                   <a href="#AH">Aalto-Helsinki</a>
                   <a href="#IKW">Imperial College, KCL & Westminster</a>

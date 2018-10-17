@@ -171,6 +171,13 @@ function myFunction() {
 }());
 </script>
 
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 150 });
+});
+</script>
 
 <!--BODY==================================================================== -->
 <body>
@@ -183,7 +190,7 @@ function myFunction() {
                 <div class="h1_igem_subpage">Human Practices</div>
             </div>
             <div class="container containter-fluid container_igem">
-                <div class="sidenav wow fadeInUp">
+                <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                   <a href="#Overview">Overview</a>
                   <a href="#BoltThreads">Bolt Threads</a>
                   <a href="#Modularity">Modularity in Biology</a>
