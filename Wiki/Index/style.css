@@ -590,7 +590,12 @@ section.section2
     font-size: 5rem;
     color: rgba(242, 77, 25,1);
     text-align: center;
-    padding-top: 10rem;
+}
+
+.subpage_img_igem {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 2rem;
 }
 
 .card-title h4 {
@@ -628,9 +633,14 @@ section.section2
     bottom: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    vertical-align:bottom;
+    vertical-align:middle !important;
+    align-items: center !important;
 }
 
+.h4_sponsor {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
 .animatedhover {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -664,8 +674,8 @@ section.section2
     border-radius: 1rem;
     overflow-x: hidden;
     overflow-y: scroll;
-    position: fixed;
     vertical-align: middle;
+    position: fixed;
 }
 
 .sidenav a {
@@ -1191,18 +1201,30 @@ tbody tr:hover
   background-color: rgba(28,28,28,1);
 }
 
-.list-group-item_igem {
+.list-group-item_igem1 {
   color: white;
   background-color: rgb(255, 133, 102);
+}
+
+.list-group-item_igem2 {
+  color: white;
+  background-color: rgb(255, 219, 77);
+}
+
+.list-group-item_igem3 {
+  color: white;
+  background-color: rgb(255, 77, 77);
+}
+
+.list-group-item_igem4 {
+  color: white;
+  background-color: rgb(255, 166, 77);
 }
 
 .infographic_igem {
     width: 90vw;
     height: auto;
 }
-
-<<<<<<< HEAD
-
 
 .carousel-inner img {
       width: 33vw;
@@ -1321,6 +1343,9 @@ margin-right: auto;
 .elimination{
   padding-bottom: 0 !important;
 }
+.eeeee{
+    margin-bottom: 1.5vh;
+}
 /* FOOTER===============================================================================================================================================*/
 
 .footer {
@@ -1355,6 +1380,11 @@ margin-right: auto;
   opacity: 0.5;
 
 }
+
+/* PARALLAX================================================================== */
+
+
+
 /* ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE========ANIMATE===== */
 
 @charset "UTF-8";
