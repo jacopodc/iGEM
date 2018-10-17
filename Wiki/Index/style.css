@@ -782,7 +782,7 @@ section.section2
     color: #737373;
     display: block;
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.1rem;
 }
 
 .sidenav_accordion a:hover {
