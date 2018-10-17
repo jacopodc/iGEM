@@ -39,7 +39,7 @@ $(document).ready(function(){
     <script>
         new WOW().init();
     </script>
-    
+
 <body>
 <div class="background_img_igem">
   <div class="navbarzindex">
@@ -173,20 +173,30 @@ function myFunction() {
 }());
 </script>
 
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 150 });
+});
+</script>
+
 
 <!-- CONTENT******************************************************************************************************************************************************* -->
 <div class="container">
 
     <div class="container">
+        <img class="wow fadeInUp subpage_img_igem" src="http://2018.igem.org/wiki/images/a/a0/T--UCL--model.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
         <div class="h1_igem_subpage">Models</div>
     </div>
     <div class="container containter-fluid container_igem">
-        <div class="sidenav">
+        <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
           <a href="#Overview">Overview</a>
-          <a href="#Intein">Intein</a>
-          <a href="#Intein_Polymerisation">Intein Polymerisation</a>
-          <a href="#LAMMPS">LAMMPS</a>
-          <a href="#Scale_Up">Scale Up</a>
+          <a href="#CGE">Cell Growth and Expression</a>
+          <a href="#Protein_Polymerisation">Protein Polymerisation</a>
+          <a href="#WORM">W.O.R.M.</a>
+          <a href="#Mech">Mechanical Simulation</a>
+
         </div>
 
         <section id="Overview">
@@ -197,14 +207,10 @@ function myFunction() {
                 <div class="card-body text-justify">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="mmmm col-sm-10">
                                 <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  One of the challenges for biomaterial application is to manufacture large scale protein production economically and efficiently. In our model, we integrated several levels of modelling to optimise the productivity of the whole system.
+
                                 </p>
                             </div>
                         </div>
@@ -212,22 +218,272 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Intein">
+
+
+        <section id="CGE">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
-                    <h4>Intein</h4>
+                    <h4>Cell Growth and Expression</h4>
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-10 mmmm mrfont">
                                 <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              <p>
+
+                  Verhulst and Pearl and Reed play a huge part on developing a theory of logistic population growth. The rate considers an additional inhibition factor proportional to  from Malthus population model.
+</p>
+                                    <center>
+
+
+<br />
+                              <img src="https://latex.codecogs.com/gif.latex?\frac{dy}{dx}=kx(1-bx)" title="\frac{dy}{dx}=kx(1-bx)" /></center>
+<br />
+                              <center>
+                                where
+                                <img src="https://latex.codecogs.com/gif.latex?x(0)=x_{{o}}" title="x(0)=x_{{o}}" />
+</center>
+<br /><br /><br />
+                            <p>
+
+                       This Riccati equation can then be solved analytically into:
+                     </p>
+                              <br />
+                              <center>
+
+
+                              <img src="https://latex.codecogs.com/gif.latex?x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" title="x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" />                        </center>
+                              <br /><br /><br /><p>
+
+
+                              We fit our data into the first-order ordinary differential equation model, and the sigmoidal curve that we get has a property of stationary area which is determined by 1/b.</p>
+
+
+                              <table class="table ooooo">
+                                  <thead>
+                                      <tr>
+                                          <th class="tableleft">Symbols</th>
+                                          <th class="tablecenter">Values and Units</th>
+                                          <th class="tablecenter">Descriptions</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="tableleft"><i>t</i></td>
+                                          <td class="tablecenter"><i>hr</i></td>
+                                          <td class="tablecenter">Time</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>x</i></td>
+                                          <td class="tablecenter">No unit</td>
+                                          <td class="tablecenter">Optical density of a cell at 600 nm wavelength</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>b</i></td>
+                                          <td class="tablecenter">No unit</td>
+                                          <td class="tablecenter">
+Inhibiting factor, which is inversely proportional to maximum cell population size.
+</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>k</i></td>
+                                          <td class="tablecenter">
+                                          <img src="https://latex.codecogs.com/gif.latex?hr^{-1}" title="hr^{-1}" /></td>
+                                          <td class="tablecenter">
+Population growth rate
+</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <center>
+                              <figcaption>
+                                Table 01: Additional information.
+                              </figcaption>
+                              </center>
+<br /><p>
+  We then analysed the protein production using differential equations above. Our lab data were fitted and a non-linear regression was made by estimating the parameters using Trust Region algorithm.
+<br />
+<p>We determined the better growth media from the two broth we had available, which were TB and LB.
+</p>
+<br>
+<center>
+<img class="m1"src="http://2018.igem.org/wiki/images/a/a0/T--UCL--m1.png"alt="oops! You can't see our image.">
+</center>
+<center>
+
+
+<figcaption>
+  Figure 01. Comparing TB and LB as E. coli growth medium.
+</figcaption>
+</center>
+<br><br />
+<p>The fitted equations tells us the inhibiting factors (b) for TB and LB, which are 0.3 and 0.4077, respectively. This is as predicted as TB has less inhibition compared to LB because of the nutrient abundance, carrier capacity, and toxicity level caused by the waste side-products of the cells. The same trend is also observed in maximum population, that TB provides better environment for larger cell population in longer cultivations. Meanwhile, for earlier growth rate (k), cells in LB grow quicker before achieving stationary phase, which is 0.44h<sup>-1</sup> compared with 0.24h<sup>-1</sup>in TB. </p>
+</p>
+<br><br>
+<center>
+<img class="m1"src="http://2018.igem.org/wiki/images/4/44/T--UCL--m2.png"alt="oops! You can't see our image."></center>
+<center>
+<figcaption>
+  Figure 02. Optical density measurements of each cell induction.
+</figcaption>
+</center>
+<br><br>
+<center>
+<img class="m1"src="http://2018.igem.org/wiki/images/6/64/T--UCL--m3.png"alt="oops! You can't see our image."></center>
+<center>
+<figcaption>
+  Figure 03. Population growth rate (k) in hr<sup>-1</sup> against IPTG concentration.
+</figcaption>
+</center>
+
+<br><br><br>
+
+<table class="table ooooo">
+    <thead>
+        <tr>
+            <th class="tableleft">IPTG Conc.</th>
+            <th class="tablecenter">400mM</th>
+            <th class="tablecenter">500mM</th>
+            <th class="tablecenter">600mM</th>
+            <th class="tablecenter">700mM</th>
+            <th class="tablecenter">800mM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="tableleft"><i>k</i></td>
+            <td class="tablecenter">0.4215</td>
+            <td class="tablecenter">0.4649</td>
+            <td class="tablecenter">0.4735</td>
+            <td class="tablecenter">0.4773</td>
+            <td class="tablecenter">0.4759</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>b</i></td>
+            <td class="tablecenter">0.4361</td>
+            <td class="tablecenter">0.4227</td>
+            <td class="tablecenter">0.4208</td>
+            <td class="tablecenter">0.4097</td>
+            <td class="tablecenter">0.4069</td>
+        </tr>
+    </tbody>
+</table>
+
+<center>
+<figcaption>
+  Table 02: the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
+</figcaption>
+</center>
+
+
+<br><br><p>
+We then build up the kinetics inside a cell and integrate it with lab data analysis to understand protein production to get an effective lab plan for our E. coli system. The <i>P</i> term of protein production is in fluorescence units <i>F</i> normalized with the fluorescence of control <i>F<sub>o</sub></i>.
+</p>
+<center>
+
+
+<br /><img src="https://latex.codecogs.com/gif.latex?p=\frac{F}{F_{{o}}}" title="p=\frac{F}{F_{{o}}}" />
+</center>
+<br><br><br>
+<p>The first-order system of linear differential equations are:
+</p>
+<br>
+<center>
+<img src="https://latex.codecogs.com/gif.latex?\frac{dm}{dt}=\alpha&space;x-\beta&space;m" title="\frac{dm}{dt}=\alpha x-\beta m" />
+</center>
+<br><br><br>
+<p>The first equation represents the mRNA system in a cell with the assumption of constant gene concentration.
+</p>
+<br>
+<center><img src="https://latex.codecogs.com/gif.latex?\frac{dp}{dt}=\gamma&space;m-\delta&space;p" title="\frac{dp}{dt}=\gamma m-\delta p" /></center>
+<br><br><br>
+<p>Meanwhile the second equation is the protein system which are dependent to the first equation.
+</p>
+<br>
+<center>
+<img class="m1"src="http://2018.igem.org/wiki/images/6/6e/T--UCL--m4.png"alt="oops! You can't see our image."></center>
+<center>
+<figcaption>
+  Figure 04: Concentration of mRNA and intein-​ XX​ as a protein in each ​ E. coli ​ cell.
+</figcaption>
+</center>
+<br><br><br>
+<table class="table ooooo">
+    <thead>
+        <tr>
+            <th class="tableleft">Symbols</th>
+            <th class="tablecenter">Values and Units</th>
+            <th class="tablecenter">Descriptions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="tableleft"><i>t</i></td>
+            <td class="tablecenter"><i>s</i></td>
+            <td class="tablecenter">Time</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>x</i></td>
+            <td class="tablecenter">200</td>
+            <td class="tablecenter">
+Plasmid copy number of pSB1C3
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>m</i></td>
+            <td class="tablecenter">No unit</td>
+            <td class="tablecenter">
+Respective mRNA concentration in each cell
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>p</i></td>
+            <td class="tablecenter">
+            No unit</td>
+            <td class="tablecenter">
+              Protein concentration in each cell
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft">&alpha;</td>
+            <td class="tablecenter"><i>s <sup>-1</sup></i></td>
+            <td class="tablecenter">
+Gene transcription rate or mRNA production rate
+
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>&beta;</i></td>
+            <td class="tablecenter"><i>s <sup>-1</sup></i></td>
+            <td class="tablecenter">
+mRNA degradation rate and dilution factor
+
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft">&gamma;</td>
+            <td class="tablecenter"><i>s <sup>-1</sup></i></td>
+            <td class="tablecenter">
+Protein translation rate
+
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft">&delta;</td>
+            <td class="tablecenter"><i>s <sup>-1</sup></i></td>
+            <td class="tablecenter">
+Protein degradation rate and dilution factor
+
+</td>
+        </tr>
+    </tbody>
+</table>
+<center>
+<figcaption>
+  Table 03: Additional information.
+</figcaption>
+</center>
                                 </p>
                             </div>
                         </div>
@@ -235,45 +491,318 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Intein_Polymerisation">
+
+
+
+
+        <section id="Protein_Polymerisation">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
-                    <h4>Intein Polymerisation</h4>
+                    <h4>Protein Polymerisation</h4>
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+                            <div class="mmmm col-sm-10 mrfont">
+                              <br><br>
+<p>A model entirely of in vitro polymerisation was made.
+</p><br>
+<center>
+<img src="https://latex.codecogs.com/gif.latex?\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" title="\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" />
+</center>
+<br><br>
+<p>The polymer formation rate of each species (Pn) were then modelled in Python and plotted. The first term describes the polymer Pn forming from the sum of all reactions of its possible constituents, and the second term represents the Pn polymerisation building up into larger structures.
+</p>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/5/59/T--UCL--m5.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 05. Concentration of each polymer species in a function of time.
+  </figcaption>
+</center>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/a/a7/T--UCL--m6.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 06. Concentration of each polymer species over time.
+  </figcaption>
+</center>
+<br><br><br>
+<table class="table ooooo">
+    <thead>
+        <tr>
+            <th class="tableleft">Symbols</th>
+            <th class="tablecenter">Values and Units</th>
+            <th class="tablecenter">Descriptions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="tableleft"><i>t</i></td>
+            <td class="tablecenter">s</td>
+            <td class="tablecenter">Time</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>n</i></td>
+            <td class="tablecenter">No unit</td>
+            <td class="tablecenter">
+Number of repeats, defining a certain species of polymer
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>P<sub>n</sub></i></td>
+            <td class="tablecenter">mol L<sup>-1</sup></td>
+            <td class="tablecenter">
+              Polymer species n
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>k</i></td>
+            <td class="tablecenter">
+          L mol<sup>-1</sup> S<sup>-1></sup></td>
+            <td class="tablecenter">
+              Rate constants of Intein activity
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>n<sub>max</sub></i></th>
+            <td class="tablecenter">No unit</th>
+            <td class="tablecenter">
+Maximum repeat number in a polymer</th>
+        </tr>
+    </tbody>
+</table>
+<center>
+<figcaption>
+  Table 04: Additional information.
+</figcaption>
+</center>
+<br><br><br>
+<p>Basically each intein rate of reaction (<i>k</i>) differs with each intein system we use.</p>
+<br />
+<table class="table ooooo">
+    <thead>
+        <tr>
+            <th class="tableleft">Intein</th>
+            <th class="tablecenter">Values and Units</th>
+            <th class="tablecenter">Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="tableleft"><i>Npu</i> DNA-E</td>
+            <td class="tablecenter">1.1x10<sup>-2</sup></td>
+            <td class="tablecenter">7</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>Ssp</i>DNA-E</td>
+            <td class="tablecenter">3.3x10<sup>-4</sup></td>
+            <td class="tablecenter">
+8
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>Npu</i> DNA-E(N) + <i>Ssp</i>DNA-E</td>
+            <td class="tablecenter">2.8x10<sup>-5</sup></td>
+            <td class="tablecenter">
+  9
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>Sce</i>VMA</td>
+            <td class="tablecenter">
+        2.0x10<sup>-3</sup></td>
+            <td class="tablecenter">
+            10
+</td>
+        </tr>
+        <tr>
+            <td class="tableleft"><i>Ssp</i>DNA-B</th>
+            <td class="tablecenter">9.9x10<sup>-4</sup></th>
+            <td class="tablecenter">11
+</th>
+        </tr>
+    </tbody>
+</table>
+<center>
+<figcaption>
+  Table 05: Additional information.
+</figcaption>
+</center>
+<br><br><br><br><br>
+<div id="WORM"class="card-title text-center">
+    <h4>Intein Polymerisation</h4>
+    <br>
+    <h3 class="orange mrfont2">W.O.R.M.</h3>
+</div>
+<br><br>
+<p>
+  To further model the polymerisation of our proteins, we devised a simplified proof of concept of our project using reporter proteins RFP and GFP to predict the polymerisation capabilities of split inteins. Each reporter protein is flanked by orthogonal inteins, which match up to the other reporter’s inteins to allow RFP and GFP to continuously link up into various lengths of polymers.
+</p>
+<br>
+<p>Example figure of intein splicing (will make this depiction better!):
+</p>
+
+<video width="100%" controls>
+  <source src="http://2018.igem.org/wiki/images/6/61/T--UCL--worm.mp4" type="video/mp4" />
+  Your browser does not support this video.
+</video>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </div>
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="LAMMPS">
-            <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+
+
+
+
+
+
+        <section id="Mech">
+            <div class="mrfont ohwow card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
-                    <h4>LAMMPS</h4>
+                    <h4>Mechanical Simulation</h4>
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-10 mmmm mrfont">
                                 <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  <br>
+                                    <p>In this part, we also modeled the biomaterials’ micro-structure of the coarse-grained system. We predicted the structure of different spider silk repeats (tetramer, octamer and dodecamer) both after stretching and shearing. This method is a deterministic approach to foresee the network structure of spider silk repeats prior to the actual lab experiment and helps us to understand the design of the actual protein that we are going to produce afterwards.
+</p>
+<br>
+<p>Here is our initial designed sequence, a spider silk protein in repeats of four:</p>
+<a class="nodec"href="#">
+GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA</a>
+<br><br><br>
+The respective sequence is then quantitatively analysed for their hydrophobicity and hydrophilicity and plotted.
+<br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/1/19/T--UCL--m7.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 07. Kyte-Doolittle-Hydropathy plot. The vertical axis is the measure of hydrophobicity in each amino acid in the sequence, with higher score means greater degree of hydrophobicity. With the help of ProtScale from ExPASy.
+  </figcaption>
+</center>
+<br><br>
+<p>In this particular sequence, we can observe that the hydrophobic and hydrophilic parts alternate inside the spider silk fiber, which will form aggregates and bridge connections to achieve desired tensile and toughness due to the hydrophobic interactions.
+</p>
+<br>
+<p>
+  This alternating pattern seen in the figure allows us to simplify proteins as the hydrophobic domains and hydrophilic domains. These domains are then represented as a collection of the so-called ‘beads’, and depending on relative molecular volume of each domain, the coarse-grained model is then scaled and measured into an estimate of three amino acid residues per bead.
+</p>
+<br>
+<p>This system is composed from 3 components: water, hydrophilic and hydrophobic beads. Every 9 water molecules is represented as a single bead, so its 270 Å size (each water molecule is about 30 Å) is proportional to the protein beads. </p>
+<br>
+<p>We then introduce LAMMPS as our software, which is an abbreviation of Large-scale Atomic/Molecular Massively Parallel Simulator, to simulate the behaviour of our ‘beads’ collection in a single compartment and thus gave us an insight into the physical property of the recombinant spider silk.</p>
+<br><br>
+
+<div class="card-title text-center mrfont2">
+  <h1 class="orange">Simulations</h1>
+  <h5>Hover to compare the 2 sides.</h5>
+  <br><br>
+  <h6><span class="marrrgin"style="float:left">Equal</span> <span class="marrgin"style="float:right">Stretch</span></h6>
+</div>
+<br>
+<div class="col-sm-12">
+  <hr />
+  <div class="card-title text-center mrfont2">
+    <center><h5>Tetramer</h5></center>
+  </div>
+  <hr />
+<div class="row yyyyy">
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/3/30/T--UCL--4e.gif" />
+      </center>
+    </p>
+</div>
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/6/64/T--UCL--4s.gif" />
+      </center>
+    </p>
+</div>
+</div>
+<hr>
+<div class="card-title text-center mrfont2">
+  <center><h5>Octamer</h5></center>
+</div>
+<hr>
+<div class="row yyyyy">
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/d/da/T--UCL--8e.gif" />
+      </center>
+    </p>
+</div>
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/3/39/T--UCL--8s.gif" />
+      </center>
+    </p>
+</div>
+</div>
+<hr>
+<div class="card-title text-center mrfont2">
+  <center><h5>Dodecamer</h5></center>
+</div>
+<hr>
+<div class="row yyyyy">
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/9/9d/T--UCL--12e.gif" />
+      </center>
+    </p>
+</div>
+<div class="col-sm-6">
+    <p class="card-text card-text_igem text-justify">
+      <center>
+        <img class="gifs"src="http://2018.igem.org/wiki/images/5/51/T--UCL--12s.gif" />
+      </center>
+    </p>
+</div>
+</div>
+
+</div>
+
+<br><br>
+<p>For these simulation results, the configurations of spider silk fiber after applying a constant engineering strain rate (7.5 × 10<sup>-6</sup> τ<sup>-1</sup> along the x-axis) and at equilibrium after shear flow (0.01 τ<sup>-1</sup> along x axis for 420000 shear steps). The red nodes show hydrophobic aggregated protein clusters and the blue lines are the bridge connecting two clusters. Uniform distribution and high density of clusters and bridges represent the better mechanical property, higher tensile and toughness. For stretch testing. we can analyse the tetramer structure which consists of large and frequent cavity in the fiber. The octamer and dodecamer is predicted to be able to tolerate this strain, which means they have a considerable threshold of mechanical strain. In order to examine which structure is the best, we apply shear flow. In this case, it is observed that only the dodecamer still keeps its original structure but others break at different levels. In conclusion, dodecamer is the best configuration required in making desired fibers.
+</p>
+
                                 </p>
                             </div>
                         </div>
@@ -281,29 +810,12 @@ function myFunction() {
                 </div>
             </div>
         </section>
-        <section id="Scale_Up">
-            <div class="card card_igem wow fadeInUp specialmargin" data-wow-duration="2s" data-wow-delay="0.1s">
-                <div class="card-title text-center">
-                    <h4>Scale Up</h4>
-                </div>
-                <div class="card-body text-justify">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="card-text card-text_igem text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+
+
+
+
     </div>
 </div>
 </div>

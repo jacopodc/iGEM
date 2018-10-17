@@ -177,7 +177,7 @@ function myFunction() {
 <script>
 (function(){
     var dropDownClass = 'panel';
-    var showClass = 'accordion';
+    var showClass = 'accordion_parts';
     var dropDowns = document.getElementsByClassName('panel');
 
     var open = function(e){
@@ -204,16 +204,23 @@ function myFunction() {
 }());
 </script>
 
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
 
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 150 });
+});
+</script>
 
 <!-- CONTENT******************************************************************************************************************************************************* -->
 <div class="container container_igem">
     <div class="container container_igem">
+        <img class="wow fadeInUp subpage_img_igem" src="../resources/Images/parts_design22.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
         <div class="h1_igem_subpage">Parts</div>
     </div>
 
     <div class="container container_igem">
-        <div class="sidenav">
+        <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
               <a href="#Overview">Overview</a>
               <a href="#Final_Brick">Final Brick</a>
               <a href="#Intein_Passenger">Intein Passenger</a>
@@ -258,6 +265,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/FB.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -281,6 +291,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/IP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -304,6 +317,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/GFP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -327,6 +343,9 @@ function myFunction() {
                 </div>
                 <div class="card-body text-justify">
                     <div class="container">
+                        <div class="col-sm-10 mmmm">
+                            <img class="cards_logos" src="../resources/Images/RFP.png" />
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
@@ -435,11 +454,10 @@ function myFunction() {
                 </div>
             </div>
         </section>
-<center>
 
         <section id="Basic_Parts">
             <button class="collapsible wow fadeInUp basicparts">Our Basic Parts</button>
-                <div class="content">
+                <div class="collapsible_content">
 
                         <table class="table">
                             <thead>
@@ -475,15 +493,10 @@ function myFunction() {
 
                 </div>
         </section>
-      </center>
       <br />
-
-      <center>
-
         <section id="Composite_Parts">
             <button class="collapsible wow fadeInUp">Our Composite Parts</button>
-                <div class="content">
-
+                <div class="collapsible_content">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -518,6 +531,9 @@ function myFunction() {
                 </div>
         </section>
 
+        </div>
+      </div>
+    </div>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -525,7 +541,7 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("activelol");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
