@@ -608,14 +608,7 @@ section.section2
     width: 70vh;
     height: 70vh;
     margin-top: 5rem;
-}
-
-.subpage_img_igem1 {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 70%;
-    margin-top: 5rem;
+    display: block;
 }
 
 .card-title h4 {
