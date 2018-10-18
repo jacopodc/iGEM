@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UCL SETA - Results</title>
+    <title>UCL SETA - Part Design</title>
     <link rel="icon" href="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png">
     <link rel="stylesheet" href="../resources/css/bootstrap1.css"  />
     <link rel="stylesheet" href="../style.css"  />
@@ -170,9 +170,169 @@ function myFunction() {
     }
 }());
 </script>
+
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/ScrollToFixed?action=raw&ctype=text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 250 });
+});
+</script>
+
 <!--BODY==================================================================== -->
 <body>
-    <div class="background_img_igem">
+        <div class="container container_igem">
+            <div class="container container_igem">
+                <div class="h1_igem_subpage1">Results</div>
+            </div>
+
+            <div class="container container_igem">
+                <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <a href="#MP">Modular Platform</a>
+                    <a href="#BB">BioBrick 2.0</a>
+                    <a href="#IEP">Integrated Human Practices</a>
+                    <a href="#IM">Integrated Modelling</a>
+                  </div>
+
+
+                <section id="MP">
+                    <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                        <div class="card-title text-center">
+                            <h4>Modular Platform </h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10 mmmm mrfont">
+<br>
+<p>Starting from the an idea centered around spider silk and its applications, after an insightful conversation with the CSO of Bolt Threads, we devised and developed a tunable construct which brings modular protein engineering in the realm of biomaterials. First, we considered using the spytag-spycatcher system, but we realised that there would have been a much better method to reach our objective. Spliced inteins contribute to the assembly of fusion proteins through directed covalent bonding, in the same fashion as spytag and spycatcher[1]. However, spytag and spycatcher risk to influence the folding and polymerisation process of biomaterials regulated by tight structural constraints through steric hindrance due to their size. Split-inteins avoid this type of issue by splicing out and leaving a permanent covalent bond in a short time, which varies slightly according to literature[2]. In order to simulate the association and potential polymerization through split inteins, we designed a green-red split-inteins system which alternates well characterised chromogenic proteins: GFP, and RFP [3]. Additionally, we devised an Intein Passenger construct to host any peptide of interest to functionalise the biopolymer characterised by an mScarlet report. We obtained plate reader data on the fluorescence of our mScarlet, which confirmed its superiority as an efficient reporter, especially if compared with another intein reporter construct uploaded on the registry by Heidelberg’s iGEM team in 2014.</p>
+<br>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/f/f0/T--UCL--r11.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 1: Fluorescence comparison between BBa_K284269 and
+BBa_K1362101 showing substantially higher fluorescence of
+BBa_K284269N0
+  </figcaption>
+</center>
+<br><br>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="BB">
+                    <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                        <div class="card-title text-center">
+                            <h4>BioBrick 2.0</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10 mmmm mrfont">
+<br>
+<p>Having singled out time constraints as the most concerning issue for the majority of iGEM teams, we designed a shortcut to solve this problem and increase design flexibility.  Our proposed BioBrick2.0 enables cloning through BioBrick, Golden Gate and Gibson assembly. We demonstrated this through a colony forming unit experiment comparing the average number of white to blue colonies between BioBrick and Golden Gate assembly (Table 1).
+</p><br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/2/28/T--UCL--rrr111.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Table 1: A comparison of the Colony forming units (CFU) between the two assembly techniques standard biobrick assembly, and Golden gate using Biobrick2.0.
+  </figcaption>
+</center>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/3/3c/T--UCL--rr22.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 2: Representative Plates of BBa_K2842669 cloned into BioBrick2.0 <br>
+(1) Golden Gate Assembly undiluted <br>
+(2) BioBrick Assembly undiluted <br>
+(3) Golden Gate Assembly 10x dilution <br>
+(4) BioBrick Assembly 10x dilution <br>
+(5) Golden Gate Assembly 100x dilution <br>
+(6) BioBrick Assembly 100x dilution <br>
+
+  </figcaption>
+</center>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/d/d8/T--UCL--rr33.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 3: Digestion of pSB1C3 BioBrick2.0 to show correct functioning of the new restriction sites. <br>
+(1) BsaI digested BioBrick2.0 (Golden Gate Assembly) <br>
+(2) EcoRI+PstI digested BioBrick2.0 (BioBrick Assembly) <br>
+(3) undigested BioBrick2.0 <br>
+
+  </figcaption>
+</center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="IEP">
+                    <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                        <div class="card-title text-center">
+                            <h4>Integrated Human Practices</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10 mmmm mrfont">
+<br>
+<p>The benefits of our project on society would come from direct interactions with the manufacturing industry. If spider silk polymerisation and functionalisation could be made possible but also cheaper, it would reflect on the cost of production and hence selling. This is why we decided to target Bolt Threads first which gave us a huge insight on the biomaterials industry. This impacted on the way we thought about and designed our project. Our experiments were based on spider silk alone initially but we ended up inventing a modular platform for all biomaterials in the end. This tunable platform is made of 3 main parts which can be made to plug-and-play with different biomaterials. We changed our experiments to polymerise other proteins rather than spider silk alone. Other conversations made us look into the way we’d apply a spider silk filter in a community and other functionalizing proteins we could apply to our biomaterials.
+</p>
+<br><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="IM">
+                    <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                        <div class="card-title text-center">
+                            <h4>Integrated Modelling</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10 mmmm mrfont">
+<br>
+<p>We integrated all of our models into our work - the first kinetic model we looked at how varying IPTG concentrations and cell broth would affect gene and protein expression as we scaled up our project. The result of our first model is using 500 mM of IPTG which the model suggests as the most efficient option, and choosing TB as the medium with better carrying capacity.
+</p>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/4/4a/T--UCL--graph1.png"alt="oops!You can't load our image.">
+</center>
+<br><br>
+<p>We found that the maximum protein fold-change as 42.8 ratio over control. It can be achieved by inoculating the cells just over 25 hours. This is really important to know the maximum yield of the process and even determine the efficiency of the protein extraction in the next steps.</p>
+<br>
+<p>The second model is the intein polymerisation, it gives us the estimate time required to produce the certain length of polymer before doing the actual experiment. From the results using specifically our intein, we then know 15 minutes are enough time to get about 90% of minimum polymer species 12 (dodecamer). Then molecular dynamics simulations are done to give an insight on the structure of our protein fiber to determine the desired polymer length to achieve good mechanical properties, the result is then fed back into the BioBrick design so we are able to construct the polymer without doing an actual lab experiment and hence reduce unnecessary steps, time and energy spent. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
+
     </div>
     <!--FOOTER================================================================== -->
 
@@ -203,7 +363,6 @@ function myFunction() {
                         <a href="https://www.facebook.com/UCLiGEM/"class="contacticons">
                             <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding-top:1em;" height="62rem;"/>
                         </a>
-
                         <a href="https://twitter.com/ucligem?lang=en"class="contacticons">
                             <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
                         </a>
