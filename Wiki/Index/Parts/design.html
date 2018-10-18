@@ -350,54 +350,100 @@ Regulatory elements: We introduced a lac operator to further control gene expres
                                           <div class="h4_cards">Overview of Intein Passenger</div>
                                       </div>
                                         <p class="card-text card-text_igem text-justify">
-                                          The intein passenger construct is the framework used to insert functional proteins into our highly modular platform. The design of the Biobrick allows it to flank any protein with inteins and, therefore, to functionalise biomaterials with a high degree of freedom.
-Design notes:
+                                          The intein passenger construct is the framework used to insert functional proteins into our highly modular platform. The design of the Biobrick allows it to flank any protein with inteins and, therefore, to functionalise biomaterials with a high degree of freedom. Design notes:
 
                                         </p>
                                         <br>
-                                        <br>
-                                        <center><b>Intein</b></center>
+                                          <div class="card-title text-center">
+                                        <div class="h4_cards"><b>Intein</b></div>
+                                    </div>
                                         <br>
                                         <p>The choice of intein is important because we need to leave as small a fragment as possible at the sister construct.  We picked the AceL-TerL intein (DOI 10.1002/anie.201307969) since its C-terminal section is 125 amino acids long and the N-terminal section only 11. </p>
                                         <br>
                                         <br>
-                                        <cen></cen>
+                                          <div class="card-title text-center">
+                                        <div class="h4_cards"><b>Reporter</b></div>
+                                    </div>
+<br>
+<p>mScarlet was chosen as it is one of the brightest RFPs available and it is a fast folder.</p>
+<br><br>  <div class="card-title text-center">
+<div class="h4_cards"><b>Golden Gate Set-Up</b></div>
+</div>
+<br>
+<p>To make it compatible with the Golden Gate assembly approach incorporated in the BioBrick2.0, we decided to use SapI. The chosen design allows the lowest impact on the linker sequence. An advantage of using SapI is that any downstream design will be simpler by maintaining the overhang in frame. SapI sites were coded as GRA and SSS. It uses GGC (upstream) and GAG (downstream) overhangs.</p>
+<br><br>  <div class="card-title text-center">
+<div class="h4_cards"><b>Promoter
+</b></div>
+</div>
+<br>
+<p>We needed high-level expression but too much expression would make  the spider silk insoluble, so we used a T7 promote with a middle of the road RBS. This is based on part BBa_K525998 (T7 promoter and RBS).</p>
+<br><br>  <div class="card-title text-center">
+<div class="h4_cards"><b>Terminator</b></div>
+</div>
+<br>
+<p>The BBa_B1006 terminator was chosen because of its termination probability above 90%  and the many reported cases.
+</p>
+<br><br>  <div class="card-title text-center">
+<div class="h4_cards"><b>Additional regulation
+</b></div>
+</div>
+<br>
+<p>We picked a lac operator for improved silencing and reducing leaky expression situated downstream of the T7 promoter.</p>
+<br><br>  <div class="card-title text-center">
+<div class="h4_cards"><b>Spacers
+</b></div></div>
+<br>
+<p>Spacers were added based on estimates of translation calculated on Salis Lab RBS calculator </p>
+<br><br>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="BB">
+                <section id="NIKR">
                     <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                         <div class="card-title text-center">
-                            <h4>BioBrick 2.0</h4>
+                            <h4>NikR</h4>
                         </div>
                         <div class="card-body text-justify">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-10 mmmm mrfont">
                                         <p class="card-text card-text_igem text-justify">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            Nickel is a naturally occurring substance in ground water; in very low concentrations it is beneficial to the growth of plants. Factory waste and sewage disposal can result in leakage of this substance, which increases the concentration in water making it dangerous to humans. As a solution, we hereby propose a Nickel binding construct integrated with our project.
                                         </p>
+                                        <br>
+                                        <p>A hexahistidine tag is the most obvious Nickel binding protein available but it does not have a particularly high affinity. In solution, Ni-NTA has an affinity of 10μM for a single hexahistidine tag. A double histidine tag (6xHis + short spacer + 6xHis) showed an affinity nearly 10 times higher. However, an even higher binding affinity is achieved by the enzyme NikR which is a transcription activator that responds to Nickel. Additionally, E. coli has a NikR enzyme that  is very well characterised (https://www.uniprot.org/uniprot/P0A6Z6).</p>
+                                        <br>
+                                        <p>NikR is a small 133 amino acid long molecule of known structure [1] with an affinity of 6.8 pM. It has two domains and the C-terminal domain alone, which is made of 86 residues from Gly48 to Asp133, is sufficient to bind nickel tightly at 2.2 pM [2].</p>
+                                        <br>
+                                        <p>We inserted NikR in our BioBrick2.0 construct to standardise it. This can now be used to modularly characterise biomaterials through our innovative system. Materials functionalised with our NikR construct could be applied as filters to purify water from Nickel which is a very common pollutant. Together with our endocrine disruptor construct, these are an example of how our plug and play split inteins system is not only a method that could greatly help in research, but it is also aimed at real world applications that could affect millions of people.</p>
+                                        <br><br>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="BB">
+                <section id="ER">
                     <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                         <div class="card-title text-center">
-                            <h4>BioBrick 2.0</h4>
+                            <h4>Estrogen Receptor</h4>
                         </div>
                         <div class="card-body text-justify">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-10 mmmm mrfont">
                                         <p class="card-text card-text_igem text-justify">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                          Endocrine disruptors are chemical substances that can interact with parts of the endocrine systems and, at high concentrations, compromise their functions. Dangerous quantities of these chemicals have been registered multiple times in sources of water that are accessible to the public like rivers and springs. The concentration of estradiol 2 (17 β-estradiol) in the river Ahr at Blankenheim is on the order of 4–12 ng/L and 122–631 ng/L in Rio de la Plata, Argentina[1]. A concentration of 15.1 ± 0.3 ng/L of E2 was measured in a sample obtained from a food production process, and 8.8 ± 0.7 ng/L in a sample from the Adriatic Sea[2].
                                         </p>
+                                        <br>
+                                        <p>In order to deal with this health and environmental risk, we developed an endocrine disruptor binder that works with our intein passenger system. The construct is based on the M421F mutated version of the estrogen receptor protein which was shown have higher binding affinities and stability than the normal enzyme[3]. These characteristics make it a well performing potential bionsensor as suggested by Ferrero et al. </p>
+                                        <br>
+                                        <p>We inserted ER in our Final Brick to standardise it and this can now be used to modularly characterise biomaterials through our innovative system. Materials characterised with our ER construct could be applied as filters to purify water from dangerous quantities of estrogen which is a very common pollutant. Together with our nickel binding construct, these are an example of how our plug and play split inteins system is not only a method that could greatly help in research, but it is also aimed at real world applications which could affect millions of people.
+</p>
+<br><br>
                                     </div>
                                 </div>
                             </div>
