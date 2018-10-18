@@ -748,22 +748,62 @@ Maximum repeat number in a polymer</th>
   To further model the polymerisation of our proteins, we devised a simplified proof of concept of our project using reporter proteins RFP and GFP to predict the polymerisation capabilities of split inteins. Each reporter protein is flanked by orthogonal inteins, which match up to the other reporter’s inteins to allow RFP and GFP to continuously link up into various lengths of polymers.
 </p>
 <br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/c/c5/T--UCL--iii1.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 10: Polymerisation of intein flanked reporter proteins. <br>
+Npu-N intein on GFP splices out with the Npu-C intein on RFP. Similarly, the TerL-N intein on the RFP splices out with the TerL-C intein on the GFP. This reaction results in the polymerisation of GFP and RFP.
+
+  </figcaption>
+</center>
+<br>
 We used the python libraries PyGame and PyMunk to create an animated and interactive agent-based model of intein polymerisation. Acronymed WORM, this model depicts a Wonderful Oligomerisation Reaction Model.
 <br><br>
-<p>Example figure of intein splicing (will make this depiction better!):
-</p>
 
 <video width="100%" controls>
   <source src="http://2018.igem.org/wiki/images/6/61/T--UCL--worm.mp4" type="video/mp4" />
   Your browser does not support this video.
 </video>
+<br><br>
+<p>Depicted in the video is a snapshot of the model WORM that shows intein polymerisation. The yellow and orange rectangles represent an split intein pair, as do the blue and cyan rectangles. The red and green rectangles represent the reporter proteins, RFP and GFP, respectively. </p>
+<br>
+<p>As an agent-based mode, WORM was created based on the following rules: <br>
+  1)Particles diffuse with random angular and lateral velocity, <br>
+  2)Velocity increases with temperature (based on average kinetic energy)
+<br>
+<center><img src="https://latex.codecogs.com/gif.latex?(\frac{1}{2}mv^{2})=\frac{3}{2}kT" title="(\frac{1}{2}mv^{2})=\frac{3}{2}kT" /></center>
+<p>   Where: <br>
+		m= mass (kg) <br>
+		v= velocity <br>
+		k= Boltzmann constant <br>
+    T= temperature (K) <br>
+
+</p>
 
 
 
+<br><br>
+3)Like reacts with unlike (RFP reacts with GFP), <br>
+4)Particles are polarised (Npu-N [A1]→ Npu-C [B3], TerL-N [B1]→ TerL-C [A3]) <br>
+5)Splicing removes 1+3 on reaction (removes the inteins), <br>
+6)Steric hindrance by particles   <br>
+<br><br>
 
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/7/73/T--UCL--f111.png"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    FIGURE 11: Distribution of polymer lengths after 20 runs. <br>
+WORM was run for 5 minutes, 20 times. The distribution of total polymers for each polymer lengths from 1-20, and lengths over 20, were plotted. The error was plotted as the square root of the total polymers in each polymer length.
 
-
-
+  </figcaption>
+</center>
+<br><br>
+<p>The interactive components of the WORM model include user’s choice of temperature and protein mass to selectively model the reaction conditions and functionalized protein of interest. These applications can be used by running the code found in our GitHub. The combination of predictive experimental data and the visually appealing computational model makes a user friendly platform for the public to better understand biology and modelling.</p>
+<br><br>
 
 
 
