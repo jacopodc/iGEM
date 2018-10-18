@@ -39,7 +39,7 @@ $(document).ready(function(){
     <script>
         new WOW().init();
     </script>
-  
+
 <body>
 <div class="background_img_igem">
   <div class="navbarzindex">
@@ -67,7 +67,7 @@ $(document).ready(function(){
     <div class="dropdown-content_igem"id="dropdownproject_igem">
         <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
         <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/POC">Proof of Concept</a>
+        <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
         <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
         <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
     </div>
@@ -170,16 +170,26 @@ function myFunction() {
     }
 }());
 </script>
+
+<script type="text/javascript" src="../resources/js/scrolltofixed.js"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/ScrollToFixed?action=raw&ctype=text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+    $('#sidenav').scrollToFixed({ marginTop: 250 });
+});
+</script>
+
 <!--BODY==================================================================== -->
 <body>
-    <div class="background_img_igem">
         <div class="container container_igem">
             <div class="container container_igem">
-                <div class="h1_igem_subpage">Parts</div>
+                <img class="wow fadeInUp subpage_img_igem" src="../resources/Images/part_design2.svg" data-wow-duration="2s" data-wow-delay="0.1s"/>
+                <div class="h1_igem_subpage">Part Design</div>
             </div>
 
             <div class="container container_igem">
-                <div class="sidenav">
+                <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                     <a href="#Overview">Overview</a>
                     <a href="#FBS">Final Brick Standardisation</a>
                     <a href="#IT">Intein Technology</a>

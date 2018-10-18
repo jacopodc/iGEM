@@ -621,6 +621,30 @@ section.section2
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 401px) {
+    .subpage_img_igem{
+        width: 30vh;
+        height: 30vh;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .subpage_img_igem{
+        width: 40vh;
+        height: 40vh;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .subpage_img_igem{
+        width: 50vh;
+        height: 50vh;
+        margin-top: 5rem;
+    }
+}
+
 .card-title h4 {
     font-size: 2.5rem;
     font-family: 'Quicksand', sans-serif;
@@ -1019,7 +1043,7 @@ section.section2
  font-family: 'Quicksand', sans-serif;
  transition: 0.3s;
  margin-left: 2rem;
- width: 35vw;
+ width: 50vw;
 }
 .activelol{
   background-color: rgba(28,28,28,1)
@@ -1038,6 +1062,42 @@ section.section2
 .activelol:after {
  content: "\2212";
 }
+
+.collapsible1 {
+ background-color: #777;
+ color: white;
+ cursor: pointer;
+ border: none;
+ text-align: center;
+ outline: none;
+ font-size: 2rem;
+ border-radius: 0.5rem;
+ font-family: 'Quicksand', sans-serif;
+ transition: 0.3s;
+ width: 50vw;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+}
+.activelol1{
+  background-color: rgba(28,28,28,1)
+}
+.activelol1, .collapsible1:hover {
+ background-color: #555;
+}
+
+.collapsible1:after {
+ content: '\002B';
+ color: white;
+ font-weight: bold;
+ float: right;
+}
+
+.activelol1:after {
+ content: "\2212";
+}
+
 .collapsible_content {
  max-height: 0;
  overflow: hidden;
@@ -1047,6 +1107,14 @@ section.section2
  padding-right: 2.5vw;
  border-radius: 0.5rem !important;
  margin-left: 2rem;
+}
+
+.collapsible_content1 {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ background-color: #f1f1f1;
+ border-radius: 0.5rem !important;
 }
 
 @media screen and (max-width: 1399px) {
