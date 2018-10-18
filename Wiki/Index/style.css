@@ -806,7 +806,7 @@ section.section2
     color: #737373;
     display: block;
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.1rem;
 }
 
 .sidenav_accordion a:hover {
@@ -1288,12 +1288,14 @@ tbody tr:hover
 }
 .sshh{
   text-decoration: none;
-  color:tomato;
+  color:black;
+  transition: 0.15s;
 }
 
 .sshh:hover{
   text-decoration: none;
   color:tomato;
+  transition: 0.15s;
 }
 
 .h3_insta {
@@ -1554,6 +1556,9 @@ figcaption{
 }
 .marrgin{
   margin-right: 10vw;
+}
+.margintopp{
+  margin-top: 5vh;
 }
 /* FOOTER===============================================================================================================================================*/
 
