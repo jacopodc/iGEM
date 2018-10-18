@@ -196,7 +196,7 @@ $(document).ready(function() {
           <a href="#Protein_Polymerisation">Protein Polymerisation</a>
           <a href="#WORM">W.O.R.M.</a>
           <a href="#Mech">Mechanical Simulation</a>
-
+          <a href="#Bibliography">Bibliography</a>
         </div>
 
         <section id="Overview">
@@ -611,8 +611,27 @@ Protein degradation rate and dilution factor
   </figcaption>
 </center>
 <br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/6/6d/T--UCL--8.jpg"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 8. Ratio of monomer distribution species over time in Npu DnaE(N) + <i>Ssp</i> DnaE(C) split inteins combination. Frame rates do not represent real-time.
 
-<br>
+  </figcaption>
+</center>
+<br><br>
+<center>
+  <img class="m1"src="http://2018.igem.org/wiki/images/3/31/T--UCL--9.gif"alt="oops!You can't load our image.">
+</center>
+<center>
+  <figcaption>
+    Figure 9. Ratio of monomer distribution species over time in <i>Ssp</i> DnaE inteins. Frame rates do not represent real-time.
+
+  </figcaption>
+</center>
+<br><br>
+
 <table class="table ooooo">
     <thead>
         <tr>
@@ -722,6 +741,8 @@ Maximum repeat number in a polymer</th>
   To further model the polymerisation of our proteins, we devised a simplified proof of concept of our project using reporter proteins RFP and GFP to predict the polymerisation capabilities of split inteins. Each reporter protein is flanked by orthogonal inteins, which match up to the other reporter’s inteins to allow RFP and GFP to continuously link up into various lengths of polymers.
 </p>
 <br>
+We used the python libraries PyGame and PyMunk to create an animated and interactive agent-based model of intein polymerisation. Acronymed WORM, this model depicts a Wonderful Oligomerisation Reaction Model.
+<br><br>
 <p>Example figure of intein splicing (will make this depiction better!):
 </p>
 
@@ -763,7 +784,7 @@ Maximum repeat number in a polymer</th>
 
 
         <section id="Mech">
-            <div class="mrfont ohwow card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+            <div class="mrfont card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
                     <h4>Mechanical Simulation</h4>
                 </div>
@@ -777,8 +798,8 @@ Maximum repeat number in a polymer</th>
 </p>
 <br>
 <p>Here is our initial designed sequence, a spider silk protein in repeats of four:</p>
-<a class="nodec"href="#">
-GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA</a>
+<span class="nodec">
+GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA</span>
 <br><br><br>
 The respective sequence is then quantitatively analysed for their hydrophobicity and hydrophilicity and plotted.
 <br>
@@ -889,7 +910,66 @@ The respective sequence is then quantitatively analysed for their hydrophobicity
             </div>
         </section>
 
+        <section id="Bibliography">
+            <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                <div class="card-title text-center">
+                    <h4>Bibliography</h4>
+                </div>
+                <div class="card-body text-justify">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-10 mmmm mrfont">
+                                <p class="card-text card-text_igem text-justify">
+                                    <ol>
+                                        <li>
+                                            Verhulst PF. Notice sur la loi que la population poursuit dans son accroissement. Correspondance mathématique et physique. 1838;10:113–21.
+                                        </li>
+                                        <li>
+                                          Pearl R, Reed L. On the Rate of Growth of the Population of the United States since 1790 and Its Mathematical Representation. Proceedings of the National Academy of Sciences. 1920;6(6):275-288.
 
+                                        </li>
+                                        <li>
+                                          Bailey J, Ollis D. Biochemical engineering fundamentals. 2nd ed. New York: McGraw-Hill; 1944.
+
+                                        </li>
+                                        <li>
+                                            Part:pSB1C3 - parts.igem.org [Internet]. Parts.igem.org. 2008. Available from: http://parts.igem.org/Part:pSB1C3
+                                        </li>
+
+                                        <li>
+                                            Zettler J, Schütz V, Mootz HD. The naturally split Npu DnaE intein exhibits an extraordinarily high rate in the protein trans-splicing reaction. FEBS Letters 2009;583:909–14.
+                                        </li>
+                                        <li>
+                                            Nichols NM, Benner JS, Martin DD, Evans TC. Zinc Ion Effects on Individual Ssp DnaE Intein Splicing Steps: Regulating Pathway Progression. Biochemistry 2003;42:5301–11.
+                                        </li>
+                                        <li>
+                                            Al-Ali H, Ragan TJ, Gao X, Harris TK. Reconstitution of Modular PDK1 Functions on Trans-Splicing of the Regulatory PH and Catalytic Kinase Domains. Bioconjugate Chemistry 2007;18:1294–302.
+                                        </li>
+                                        <li>
+                                          Brenzel S, Kurpiers T, Mootz HD. Engineering Artificially Split Inteins for Applications in Protein Chemistry:  Biochemical Characterization of the Split Ssp DnaB Intein and Comparison to the Split Sce VMA Intein. Biochemistry 2006;45:1571–8.
+                                        </li>
+
+                                        <li>
+                                            Kyte J, Doolittle RFA. simple method for displaying the hydropathic character of a protein. Journal of Molecular Biology. 1982;157(1):105–32.
+                                        </li>
+                                        <li>
+                                            ExPASy - ProtScale [Internet]. Web.expasy.org. Available from: https://web.expasy.org/protscale/
+                                        </li>
+                                        <li>
+                                            Rim N, Roberts E, Ebrahimi D, Dinjaski N, Jacobsen M, Martín-Moldes Z, Buehler M, Kaplan D and Wong J. Predicting Silk Fiber Mechanical Properties through Multiscale Simulation and Protein Design. ACS Biomaterials Science & Engineering. 2017;3(8), pp.1542-1556.
+                                        </li>
+                                        <li>
+                                          Lin S, Ryu S, Tokareva O, Gronau G, Jacobsen M, Huang W, Rizzo D, Li D, Staii C, Pugno N, Wong J, Kaplan D and Buehler M. Predictive modelling-based design and experiments for synthesis and spinning of bioinspired silk fibres. Nature Communications. 2015;6(1).
+
+                                        </li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
