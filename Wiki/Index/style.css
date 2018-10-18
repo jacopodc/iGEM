@@ -1220,12 +1220,14 @@ tbody tr:hover
 }
 .sshh{
   text-decoration: none;
-  color:tomato;
+  color:black;
+  transition: 0.15s;
 }
 
 .sshh:hover{
   text-decoration: none;
   color:tomato;
+  transition: 0.15s;
 }
 
 .h3_insta {
