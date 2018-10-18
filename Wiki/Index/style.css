@@ -524,7 +524,7 @@ section.section2
 
 /* SUBPAGE===============================================================================================================================================*/
 .background_img_igem {
-    background-image: url('resources/Images/silkbackground2.svg') !important;
+    background-image: url('http://2018.igem.org/wiki/images/9/98/T--UCL--silkbackground2.svg') !important;
     min-height: 100% !important;
     width: 100% !important;
     background-attachment: fixed !important;
@@ -595,6 +595,7 @@ section.section2
     font-size: 5rem;
     color: rgba(242, 77, 25,1);
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .h1_igem_subpage1 {
@@ -604,6 +605,7 @@ section.section2
     color: rgba(242, 77, 25,1);
     text-align: center;
     padding-top: 7rem;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 401px) {
