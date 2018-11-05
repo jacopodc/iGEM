@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UCL SETA - Particles</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap1.css"  />
+    <link rel="icon" href="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png">
+    <link rel="stylesheet" href="../style.css"  />
+    <link rel="stylesheet" href="../favicon.css"
+</head>
+
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/BootstrapJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/JQuery?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="http://2018.igem.org/Template:UCL/WowJS?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="../resources/js/bootstrapscript.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<script src="../resources/js/wow1.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+<!-- CONTENT**************************************************************************************************************************************************** -->
+  <section id="particles-js" class="sec1">
+
+  </section>
+
+<script src="http://2018.igem.org/Template:UCL/js/particles?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="../resources/js/particles.js"></script>
+  <script>
+      particlesJS('particles-js',{
+        "particles": {
+          "number": {
+            "value": 60,
+            "density": {
+              "enable": true,
+              "value_area": 2000
+            }
+          },
+          "color": {
+            "value": "000000"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#f95c2c"
+            },
+            "polygon": {
+              "nb_sides": 50
+            },
+            "image": {
+              "src": "#",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.2,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0,
+              "sync": true
+            }
+          },
+          "size": {
+            "value": 1,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "size_min": 0,
+              "sync": true
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 1000,
+            "color": "#ebebeb",
+            "opacity": 0.50625,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode":"bounce",
+            "bounce": false,
+            "attract": {
+              "enable": true,
+              "rotateX": 150000,
+              "rotateY": 150000
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 1000,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 800,
+              "size": 80,
+              "duration": 2,
+              "opacity": 0.8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 400,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 5
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": false
+      },function(){
+                console.log('Particles.js loaded..');
+              });
+  </script>
+</body>
+</html>
