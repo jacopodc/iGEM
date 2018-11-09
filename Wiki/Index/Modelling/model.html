@@ -306,68 +306,61 @@ $(document).ready(function() {
                               <p class="card-text card-text_igem text-justify">
                                   The fitted equations tells us the inhibiting factor <i>b</i> for TB and LB, which are 0.3 and 0.4077, respectively. This is as predicted because TB has less inhibition compared to LB because of the nutrient abundance, carrier capacity, and toxicity level caused by the waste side-products of the cells. The same trend is also observed in maximum population, that TB provides a better environment for larger cell population in longer cultivations. Meanwhile for earlier growth rate <i>k</i>, cells in LB grow quicker before achieving stationary phase, which is 0.44hr<sup>-1</sup> compared with 0.24hr<sup>-1</sup> in TB.
                               </p>
-<br><br>
-<center>
-<img class="m1"src="http://2018.igem.org/wiki/images/4/44/T--UCL--m2.png"alt="oops! You can't see our image."></center>
-<center>
-<figcaption>
-  Figure 02. Optical density measurements of each cell induction.
-</figcaption>
-</center>
-<br><br>
-<center>
-<img class="m1"src="http://2018.igem.org/wiki/images/6/64/T--UCL--m3.png"alt="oops! You can't see our image."></center>
-<center>
-<figcaption>
-  Figure 03. Population growth rate (<i>k</i>) for each IPTG concentration.
-</figcaption>
-</center>
-
-<br><br><br>
-
-<table class="table ooooo">
-    <thead>
-        <tr>
-            <th class="tableleft">IPTG Conc.</th>
-            <th class="tablecenter">400mM</th>
-            <th class="tablecenter">500mM</th>
-            <th class="tablecenter">600mM</th>
-            <th class="tablecenter">700mM</th>
-            <th class="tablecenter">800mM</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="tableleft"><i>k</i></td>
-            <td class="tablecenter">0.4215</td>
-            <td class="tablecenter">0.4649</td>
-            <td class="tablecenter">0.4735</td>
-            <td class="tablecenter">0.4773</td>
-            <td class="tablecenter">0.4759</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>b</i></td>
-            <td class="tablecenter">0.4361</td>
-            <td class="tablecenter">0.4227</td>
-            <td class="tablecenter">0.4208</td>
-            <td class="tablecenter">0.4097</td>
-            <td class="tablecenter">0.4069</td>
-        </tr>
-    </tbody>
-</table>
-
-<center>
-<figcaption>
-  Table 02: the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
-</figcaption>
-</center>
-
-
-<br><br><p>
-  We then build up the kinetics inside a cell and integrate it with lab data analysis to understand protein production and get an effective lab plan for our E. coli system. GFP, RFP, and Intein Passenger fluorescence data of 544/590 nm filtering wavelengths were then extracted and processed. Each dependent value is described as protein-fold change post induction, which is normalised with the same system but uninduced, based on the fraction below:
-
-</p>
-<center>
+                              <center>
+                                  <img class="m1 model_img"src="http://2018.igem.org/wiki/images/4/44/T--UCL--m2.png"alt="oops! You can't see our image.">
+                              </center>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Figure 02. Optical density measurements of each cell induction.
+                                  </figcaption>
+                              </center>
+                              <center>
+                                  <img class="m1 model_img"src="http://2018.igem.org/wiki/images/6/64/T--UCL--m3.png"alt="oops! You can't see our image.">
+                              </center>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Figure 03. Population growth rate (<i>k</i>) for each IPTG concentration.
+                                  </figcaption>
+                              </center>
+                              <table class="table ooooo">
+                                  <thead>
+                                      <tr>
+                                          <th class="tableleft">IPTG Conc.</th>
+                                          <th class="tablecenter">400mM</th>
+                                          <th class="tablecenter">500mM</th>
+                                          <th class="tablecenter">600mM</th>
+                                          <th class="tablecenter">700mM</th>
+                                          <th class="tablecenter">800mM</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="tableleft"><i>k</i></td>
+                                          <td class="tablecenter">0.4215</td>
+                                          <td class="tablecenter">0.4649</td>
+                                          <td class="tablecenter">0.4735</td>
+                                          <td class="tablecenter">0.4773</td>
+                                          <td class="tablecenter">0.4759</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>b</i></td>
+                                          <td class="tablecenter">0.4361</td>
+                                          <td class="tablecenter">0.4227</td>
+                                          <td class="tablecenter">0.4208</td>
+                                          <td class="tablecenter">0.4097</td>
+                                          <td class="tablecenter">0.4069</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Table 02: the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
+                                  </figcaption>
+                              </center>
+                              <p>
+                                  We then build up the kinetics inside a cell and integrate it with lab data analysis to understand protein production and get an effective lab plan for our E. coli system. GFP, RFP, and Intein Passenger fluorescence data of 544/590 nm filtering wavelengths were then extracted and processed. Each dependent value is described as protein-fold change post induction, which is normalised with the same system but uninduced, based on the fraction below:
+                              </p>
+                              <center>
 
 
 <br /><img src="https://latex.codecogs.com/gif.latex?p=\frac{F}{F_{{o}}}" title="p=\frac{F}{F_{{o}}}" />
