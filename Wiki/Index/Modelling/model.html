@@ -206,9 +206,10 @@ $(document).ready(function() {
                         <div class="row">
                             <div class="mmmm col-sm-10">
                                 <p class="card-text card-text_igem text-justify">
-                                  One of the challenges for biomaterial application is to manufacture large scale protein production economically and efficiently. In our model, we integrated several levels of modelling to optimise the productivity of the whole system.
-<br><br>
-For our biomaterial production, we use split intein technology instead of genetic modification to gain longer protein polymers. Split inteins have a specific working temperature and pH condition for sufficient reaction rate. In our models, in addition to basic cell growth and protein expression model, we introduce intein polymerisation model (WORM) and fiber mechanical property simulation. Integrating these models, we can estimate the time required for desired protein polymerisation and thus provide the fiber with strong mechanical properties.
+                                    One of the challenges for biomaterial application is to manufacture large scale protein production economically and efficiently. In our model, we integrated several levels of modelling to optimise the productivity of the whole system.
+                                </p>
+                                <p class="card-text card-text_igem text-justify">
+                                    For our biomaterial production, we use split intein technology instead of genetic modification to gain longer protein polymers. Split inteins have a specific working temperature and pH condition for sufficient reaction rate. In our models, in addition to basic cell growth and protein expression model, we introduce intein polymerisation model (WORM) and fiber mechanical property simulation. Integrating these models, we can estimate the time required for desired protein polymerisation and thus provide the fiber with strong mechanical properties.
                                 </p>
                             </div>
                         </div>
@@ -228,35 +229,26 @@ For our biomaterial production, we use split intein technology instead of geneti
                         <div class="row">
                             <div class="col-md-10 mmmm mrfont">
                                 <p class="card-text card-text_igem text-justify">
-                              <p>
-
                                 Verhulst and Pearl and Reed played a huge part in developing a theory on logistic population growth. The rate considers an additional inhibition factor proportional to <i>x<sup>2</sup></i> from the Malthus population model.
-
-</p>
-                                    <center>
-
-
-<br />
-                              <img src="https://latex.codecogs.com/gif.latex?\frac{dy}{dx}=kx(1-bx)" title="\frac{dy}{dx}=kx(1-bx)" /></center>
-<br />
-                              <center>
-                                where
-                                <img src="https://latex.codecogs.com/gif.latex?x(0)=x_{{o}}" title="x(0)=x_{{o}}" />
-</center>
-<br /><br /><br />
-                            <p>
-
-                       This Riccati equation can then be solved analytically into:
-                     </p>
-                              <br />
-                              <center>
-
-
-                              <img src="https://latex.codecogs.com/gif.latex?x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" title="x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" />                        </center>
-                              <br /><br /><br /><p>
-
-
-                              We fit our data into the first-order ordinary differential equation model, and the sigmoidal curve that we get has a property of stationary area which is determined by 1/b.</p>
+                                </p>
+                                <center>
+                                    <img class="model_img" src="https://latex.codecogs.com/gif.latex?\frac{dy}{dx}=kx(1-bx)" title="\frac{dy}{dx}=kx(1-bx)" />
+                                </center>
+                                <center>
+                                    where
+                                </center>
+                                <center>
+                                    <img class="model_img" src="https://latex.codecogs.com/gif.latex?x(0)=x_{{o}}" title="x(0)=x_{{o}}" />
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    This Riccati equation can then be solved analytically into:
+                                </p>
+                                <center>
+                                    <img class="model_img" src="https://latex.codecogs.com/gif.latex?x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" title="x=\frac{x_{{o}}e^{kt}}{1-bx_{{o}}(1-e^{kt})}" />
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    We fit our data into the first-order ordinary differential equation model, and the sigmoidal curve that we get has a property of stationary area which is determined by 1/b.
+                                </p>
 
 
                               <table class="table ooooo">
@@ -282,42 +274,38 @@ For our biomaterial production, we use split intein technology instead of geneti
                                           <td class="tableleft"><i>b</i></td>
                                           <td class="tablecenter">dimensionless</td>
                                           <td class="tablecenter">
-Inhibiting factor, which is inversely proportional to maximum cell population size.
-</td>
+                                              Inhibiting factor, which is inversely proportional to maximum cell population size.
+                                          </td>
                                       </tr>
                                       <tr>
                                           <td class="tableleft"><i>k</i></td>
                                           <td class="tablecenter">
                                           <img src="https://latex.codecogs.com/gif.latex?hr^{-1}" title="hr^{-1}" /></td>
                                           <td class="tablecenter">
-Population growth rate
-</td>
+                                              Population growth rate
+                                          </td>
                                       </tr>
                                   </tbody>
                               </table>
                               <center>
-                              <figcaption>
+                              <figcaption class="card-text_igem2">
                                 Table 01: Additional information.
                               </figcaption>
                               </center>
-<br /><br>
-<p>We determined the better growth media from the two broth we had available, which were Terrific Broth (TB) and Lysogeny Broth (LB).
-
-</p>
-<br>
-<center>
-<img class="m1"src="http://2018.igem.org/wiki/images/a/a0/T--UCL--m1.png"alt="oops! You can't see our image.">
-</center>
-<center>
-
-
-<figcaption>
-  Figure 01. Comparing TB and LB as E. coli growth medium.
-</figcaption>
-</center>
-<br><br />
-<p>The fitted equations tells us the inhibiting factor <i>b</i> for TB and LB, which are 0.3 and 0.4077, respectively. This is as predicted because TB has less inhibition compared to LB because of the nutrient abundance, carrier capacity, and toxicity level caused by the waste side-products of the cells. The same trend is also observed in maximum population, that TB provides a better environment for larger cell population in longer cultivations. Meanwhile for earlier growth rate <i>k</i>, cells in LB grow quicker before achieving stationary phase, which is 0.44hr<sup>-1</sup> compared with 0.24hr<sup>-1</sup> in TB.
-</p>
+                              <p class="card-text card-text_igem text-justify">
+                                  We determined the better growth media from the two broth we had available, which were Terrific Broth (TB) and Lysogeny Broth (LB).
+                              </p>
+                              <center>
+                                  <img class="model_img" class="m1"src="http://2018.igem.org/wiki/images/a/a0/T--UCL--m1.png"alt="oops! You can't see our image.">
+                              </center>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Figure 01. Comparing TB and LB as E. coli growth medium.
+                                  </figcaption>
+                              </center>
+                              <p class="card-text card-text_igem text-justify">
+                                  The fitted equations tells us the inhibiting factor <i>b</i> for TB and LB, which are 0.3 and 0.4077, respectively. This is as predicted because TB has less inhibition compared to LB because of the nutrient abundance, carrier capacity, and toxicity level caused by the waste side-products of the cells. The same trend is also observed in maximum population, that TB provides a better environment for larger cell population in longer cultivations. Meanwhile for earlier growth rate <i>k</i>, cells in LB grow quicker before achieving stationary phase, which is 0.44hr<sup>-1</sup> compared with 0.24hr<sup>-1</sup> in TB.
+                              </p>
 <br><br>
 <center>
 <img class="m1"src="http://2018.igem.org/wiki/images/4/44/T--UCL--m2.png"alt="oops! You can't see our image."></center>

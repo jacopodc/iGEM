@@ -569,6 +569,14 @@ section.section2
     margin-bottom: 1rem !important;
     margin-top: 2rem !important;
 }
+
+.card-text_igem2 {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    line-height: 1.6em;
+    margin-bottom: 0.1rem !important;
+    margin-top: 0.2rem !important;
+}
 .basicparts{
   margin-top: 5vh;
 }
@@ -684,6 +692,10 @@ section.section2
     margin-bottom: 2rem;
     vertical-align:middle !important;
     align-items: center !important;
+}
+
+.model_img{
+    padding:1rem;
 }
 
 .h4_sponsor {
