@@ -1257,6 +1257,22 @@ tbody tr:hover
   margin-bottom: 1rem;
 }
 
+.cards_logos5{
+  width:80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.cards_logos6{
+  width:88.4%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 .customise{
   position: relative;
   width: 100vw;
