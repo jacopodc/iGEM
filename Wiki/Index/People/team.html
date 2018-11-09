@@ -17,7 +17,8 @@
 <script type="text/javascript" src="http://2018.igem.org/Template:UCL/BootstrapJS?action=raw&ctype=text/javascript"></script>
 <script type="text/javascript" src="http://2018.igem.org/Template:UCL/JQuery?action=raw&ctype=text/javascript"></script>
 <script type="text/javascript" src="http://2018.igem.org/Template:UCL/WowJS?action=raw&ctype=text/javascript"></script>
-
+<script type="text/javascript" src="../resources/js/bootstrapscript.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -66,7 +67,7 @@ $(document).ready(function(){
     <div class="dropdown-content_igem"id="dropdownproject_igem">
         <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
         <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
+        <a href="http://2018.igem.org/Team:UCL/POC">Proof of Concept</a>
         <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
         <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
     </div>
@@ -87,13 +88,17 @@ $(document).ready(function(){
     </button>
     <div class="dropdown-content_igem"id="dropdownmodelling_igem">
         <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein">Intein</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Intein_Polymerisation">Intein Polymerisation</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#LAMMPS">LAMMPS</a>
+        <a href="http://2018.igem.org/Team:UCL/Model#Scale_Up">Scale Up</a>
     </div>
   </div>
   <div class="dropdown_igem">
     <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
 
     </button>
-    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+    <div class="dropdown-content_igem"id"dropdownhumanpractices_igem">
         <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
         <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
         <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
@@ -179,19 +184,37 @@ function myFunction() {
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/ab/T--UCL--agata.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: The Fencing Queen<br>
+                                      <b>AGE</b>: 22<br>
+                                      <b>WHERE ARE YOU FROM</b>: Polandball<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Doing laundry<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Sorry I’m late”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/b/b0/T--UCL--Catherine.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: Cat (I’m a kitty cat)<br>
+                                      <b>AGE</b>: 21<br>
+                                      <b>WHERE ARE YOU FROM</b>: A cold place...Canada<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Drink my sorrows away <br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “oof”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/e/e6/T--UCL--eloise.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: The non-agar pourer<br>
+                                      <b>AGE</b>: 22<br>
+                                      <b>WHERE ARE YOU FROM</b>: The Queen’s Garden <br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Hoarding my karma<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Don’t say the G word”<br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -201,19 +224,37 @@ function myFunction() {
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/53/T--UCL--gio.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: G-G-G-Gio<br>
+                                      <b>AGE</b>: 21<br>
+                                      <b>WHERE ARE YOU FROM</b>: A pasta place in London, UK<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: criGEM<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Gio is so beautiful”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/5f/T--UCL--jdc1.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: DC - District of Columbia<br>
+                                      <b>AGE</b>: 22<br>
+                                      <b>WHERE ARE YOU FROM</b>: Pizza Hut, Turin, Italy<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: On the phone with his grandma<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “I’m not on the phone with my grandma”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d3/T--UCL--jg.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: Baby Jacopo<br>
+                                      <b>AGE</b>: 19<br>
+                                      <b>WHERE ARE YOU FROM</b>: A pasta place on top of a hill in Italy<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Fall off a penny board <br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Put some pants on”<br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -223,19 +264,39 @@ function myFunction() {
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/3/3d/T--UCL--_mat.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: The best :)<br>
+                                      <b>AGE</b>: 20<br>
+                                      <b>WHERE ARE YOU FROM</b>: Yebluana??<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Buy Jagerbombs<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Shots anyone?”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d0/T--UCL--Idan.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: Damn Daniel!<br>
+                                      <b>AGE</b>: 19<br>
+                                      <b>WHERE ARE YOU FROM</b>: The British part of China<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Going bankrupt eating salmon<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Want some gum?”<br>
+
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/4/42/T--UCL--pen.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: Emperor Penguin<br>
+                                      <b>AGE</b>: 21<br>
+                                      <b>WHERE ARE YOU FROM</b>: A magical place in the Far Orient<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: “Pretend to be Japanese”<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Holy shh-”<br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -245,19 +306,37 @@ function myFunction() {
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/6/66/T--UCL--st.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: I don’t have a nickname<br>
+                                      <b>AGE</b>: 19<br>
+                                      <b>WHERE ARE YOU FROM</b>: South of the Far Orient<br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Deciding between Matlab and Python<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “ENTOT?”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/1/15/T--UCL--stef.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: Shhhhhh-tef<br>
+                                      <b>AGE</b>: 22<br>
+                                      <b>WHERE ARE YOU FROM</b>: A mountain in Switzerland <br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Eats chocolate and pets alpacas<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “He's like a vegetable”<br>
+                                    </p>
                                 </div>
                             </div>
                             <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                                 <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/52/T--UCL--vik.jpg" />
                                 <div class="card-body text-justify">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="card-text">
+                                      <b>NICKNAME</b>: The Hungarian?<br>
+                                      <b>AGE</b>: 20<br>
+                                      <b>WHERE ARE YOU FROM</b>: Not Hungary <br>
+                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Getting £2 coffee and cake deal<br>
+                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Bring back £2 coffee and cake”<br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -270,19 +349,19 @@ function myFunction() {
                         <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                             <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/a5/T--UCL--steffi.jpg" />
                             <div class="card-body text-justify">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                         <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                             <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/9/9e/T--UCL--vitor.jpg" />
                             <div class="card-body text-justify">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                         <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                             <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/df/T--UCL--noell.jpg" />
                             <div class="card-body text-justify">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                     </div>
