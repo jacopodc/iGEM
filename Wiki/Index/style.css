@@ -1249,6 +1249,14 @@ tbody tr:hover
   margin-bottom: 1rem;
 }
 
+.cards_logos4{
+  width:105%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 .customise{
   position: relative;
   width: 100vw;
