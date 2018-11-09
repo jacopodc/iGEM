@@ -217,8 +217,6 @@ $(document).ready(function() {
                 </div>
             </div>
         </section>
-
-
         <section id="CGE">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
@@ -289,7 +287,7 @@ $(document).ready(function() {
                               </table>
                               <center>
                               <figcaption class="card-text_igem2">
-                                Table 01: Additional information.
+                                <div class="model_caption_title_igem">Table 1.</div> Additional information.
                               </figcaption>
                               </center>
                               <p class="card-text card-text_igem text-justify">
@@ -300,7 +298,7 @@ $(document).ready(function() {
                               </center>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Figure 01. Comparing TB and LB as E. coli growth medium.
+                                      <div class="model_caption_title_igem">Figure 1.</div>Comparing TB and LB as E. coli growth medium.
                                   </figcaption>
                               </center>
                               <p class="card-text card-text_igem text-justify">
@@ -311,7 +309,7 @@ $(document).ready(function() {
                               </center>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Figure 02. Optical density measurements of each cell induction.
+                                      <div class="model_caption_title_igem">Figure 2.</div> Optical density measurements of each cell induction.
                                   </figcaption>
                               </center>
                               <center>
@@ -319,7 +317,7 @@ $(document).ready(function() {
                               </center>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      <b>Figure 03.</b> Population growth rate (<i>k</i>) for each IPTG concentration.
+                                      <div class="model_caption_title_igem">Figure 3.</div>Population growth rate (<i>k</i>) for each IPTG concentration.
                                   </figcaption>
                               </center>
                               <table class="table ooooo table_text_igem">
@@ -354,7 +352,7 @@ $(document).ready(function() {
                               </table>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Table 02: the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
+                                     <div class="model_caption_title_igem">Table 2.</div> the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
                                   </figcaption>
                               </center>
                               <p class="card-text card-text_igem text-justify">
@@ -380,7 +378,7 @@ $(document).ready(function() {
                               </center>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Figure 04: Fluorescence of Intein Passenger induced with 400 mM IPTG and normalised in each ​ E. coli ​cell. The rest of induced cultures are fitted in the same equation.
+                                      <div class="model_caption_title_igem">Figure 4.</div> Fluorescence of Intein Passenger induced with 400 mM IPTG and normalised in each ​ E. coli ​cell. The rest of induced cultures are fitted in the same equation.
                                   </figcaption>
                               </center>
                               <table class="table ooooo table_text_igem">
@@ -439,7 +437,7 @@ $(document).ready(function() {
                               </table>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Table 03: Parameter values estimation using Trust Region Algorithm of curve fitting.
+                                      <div class="model_caption_title_igem">Table 3.</div> Parameter values estimation using Trust Region Algorithm of curve fitting.
                                   </figcaption>
                               </center>
                               <table class="table ooooo table_text_igem">
@@ -513,7 +511,7 @@ $(document).ready(function() {
                                   </table>
                                   <center>
                                       <figcaption class="card-text_igem2">
-                                          Table 03: Additional information.
+                                          <div class="model_caption_title_igem">Table 4.</div> Additional information.
                                       </figcaption>
                                   </center>
                                   <p class="card-text card-text_igem text-justify">
@@ -524,7 +522,7 @@ $(document).ready(function() {
                                   </center>
                                   <center>
                                       <figcaption class="card-text_igem2">
-                                          Figure 05: Fluorescence model of Intein Passenger induced with IPTG 400 mM. Fold-change in protein concentration reaches maximum at 42.8 ratio in longer duration of cell cultivation.
+                                          <div class="model_caption_title_igem">Figure 5.</div> Fluorescence model of Intein Passenger induced with IPTG 400 mM. Fold-change in protein concentration reaches maximum at 42.8 ratio in longer duration of cell cultivation.
                                       </figcaption>
                                   </center>
                                   <p class="card-text card-text_igem text-justify">
@@ -536,10 +534,6 @@ $(document).ready(function() {
                 </div>
             </div>
         </section>
-
-
-
-
         <section id="Protein_Polymerisation">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
@@ -549,254 +543,235 @@ $(document).ready(function() {
                     <div class="container">
                         <div class="row">
                             <div class="mmmm col-sm-10 mrfont">
-                              <br><br>
-<p>To better accommodate the integrated model and identify bottlenecks, we further develop a model entirely of in vitro polymerisation as it is indispensable to the overall process of biopolymer production.
+                                <p class="card-text card-text_igem text-justify">
+                                    To better accommodate the integrated model and identify bottlenecks, we further develop a model entirely of in vitro polymerisation as it is indispensable to the overall process of biopolymer production.
+                                </p>
+                                <center>
+                                    <img class="model_img" src="https://latex.codecogs.com/gif.latex?\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" title="\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" />
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    Each single protein is interpreted as a monomer with an irreversible polymerising capacity until it reaches an assumed maximum size. Polymer formation rate of each species (P<sub>n</sub>) were then modelled in Python and plotted. The first term describes the polymer species formation from the sum of all reactions in the range of its possible constituents, and the second term represents the further polymerisation of the respective species as a substrate, which build up into larger repeats.
+                                </p>
+                                <center>
+                                    <img class="m1 model_img" src="http://2018.igem.org/wiki/images/7/78/T--UCL--m11.png"alt="oops!You can't load our image.">
+                                </center>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Figure 6.</div> Monomer distribution in each species as a function of time for <i>Npu</i> DnaE(N) + <i>Ssp</i> DnaE(C) split inteins. Starting solution only consists of monomers, modeled as they merge and accumulate into larger species of polymer.
+                                    </figcaption>
+                                </center>
+                                <center>
+                                    <img class="m1 model_img"src="http://2018.igem.org/wiki/images/4/40/T--UCL--m12.png"alt="oops!You can't load our image.">
+                                </center>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Figure 7.</div> Monomer distribution in each species as a function of time <i>Ssp</i> DnaE inteins. Starting solution only consists of monomers, modeled as they merge and accumulate into larger species of polymer.
+                                    </figcaption>
+                                </center>
+                                <center>
+                                    <video class="video_igem" width="100%" controls>
+                                        <source src="http://2018.igem.org/wiki/images/3/30/T--UCL--abc.mp4" type="video/mp4" />
+                                        Your browser does not support this video.
+                                    </video>
+                                </center>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Figure 8.</div> Ratio of monomer distribution species over time in Npu DnaE(N) + <i>Ssp</i> DnaE(C) split inteins combination. Frame rates do not represent real-time.
+                                    </figcaption>
+                                </center>
+                                <center>
+                                    <video class="video_igem" width="100%" controls>
+                                        <source src="http://2018.igem.org/wiki/images/3/31/T--UCL--cbb.mp4" type="video/mp4" />
+                                        Your browser does not support this video.
+                                    </video>
+                                </center>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Figure 9.</div> Ratio of monomer distribution species over time in <i>Ssp</i> DnaE inteins. Frame rates do not represent real-time.
+                                    </figcaption>
+                                </center>
+                                <table class="table ooooo table_text_igem">
+                                    <thead>
+                                        <tr>
+                                            <th class="tableleft">Symbols</th>
+                                            <th class="tablecenter">Values and Units</th>
+                                            <th class="tablecenter">Descriptions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tableleft"><i>t</i></td>
+                                            <td class="tablecenter">s</td>
+                                            <td class="tablecenter">Time</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>n</i></td>
+                                            <td class="tablecenter">dimensionless</td>
+                                            <td class="tablecenter">
+                                                Number of repeats, defining a certain species of polymer
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>P<sub>n</sub></i></td>
+                                            <td class="tablecenter">mol L<sup>-1</sup></td>
+                                            <td class="tablecenter">
+                                                Polymer species <i>n</i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>k</i></td>
+                                            <td class="tablecenter">
+                                                L mol<sup>-1</sup> S<sup>-1></sup>
+                                            </td>
+                                            <td class="tablecenter">
+                                                Rate constants of Intein activity of a certain intein
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>n<sub>max</sub></i></td>
+                                            <td class="tablecenter">dimensionless</td>
+                                            <td class="tablecenter">
+                                                Maximum repeat number in a polymer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <center>
+                                <figcaption class="card-text_igem2">
+                                    <div class="model_caption_title_igem">Table 5.</div> Additional information.
+                                </figcaption>
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    Basically each intein rate of reaction (<i>k</i>) differs with each intein system we use.
+                                </p>
+                                <table class="table ooooo table_text_igem">
+                                    <thead>
+                                        <tr>
+                                            <th class="tableleft">Intein</th>
+                                            <th class="tablecenter">Rate of reaction (s<sup>-1</sup>)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tableleft"><i>Npu</i> DNA-E</td>
+                                            <td class="tablecenter">1.1x10<sup>-2</sup></td>
 
-</p><br>
-<center>
-<img src="https://latex.codecogs.com/gif.latex?\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" title="\frac{dP_{n}}{dt}=\sum_{i=1}^{n} \kappa\left [ P_{i} \right ]\left [ P_{n-1} \right ]-\sum_{i=1}^{n_{max}-n}\kappa\left [ P_{n} \right ]\left [ P_{i} \right ]" />
-</center>
-<br><br>
-<p>Each single protein is interpreted as a monomer with an irreversible polymerising capacity until it reaches an assumed maximum size. Polymer formation rate of each species (P<sub>n</sub>) were then modelled in Python and plotted. The first term describes the polymer species formation from the sum of all reactions in the range of its possible constituents, and the second term represents the further polymerisation of the respective species as a substrate, which build up into larger repeats.
-</p>
-<br><br>
-<center>
-  <img class="m1"src="http://2018.igem.org/wiki/images/7/78/T--UCL--m11.png"alt="oops!You can't load our image.">
-</center>
-<center>
-  <figcaption>
-    Figure 06. Monomer distribution in each species as a function of time for <i>Npu</i> DnaE(N) + <i>Ssp</i> DnaE(C) split inteins. Starting solution only consists of monomers, modeled as they merge and accumulate into larger species of polymer.
-  </figcaption>
-</center>
-<br><br>
-<center>
-  <img class="m1"src="http://2018.igem.org/wiki/images/4/40/T--UCL--m12.png"alt="oops!You can't load our image.">
-</center>
-<center>
-  <figcaption>
-    Figure 07. Monomer distribution in each species as a function of time <i>Ssp</i> DnaE inteins. Starting solution only consists of monomers, modeled as they merge and accumulate into larger species of polymer.
-
-  </figcaption>
-</center>
-<br><br>
-<center>
-  <video width="100%" controls>
-    <source src="http://2018.igem.org/wiki/images/3/30/T--UCL--abc.mp4" type="video/mp4" />
-    Your browser does not support this video.
-  </video>
-</center>
-<center>
-  <figcaption>
-    Figure 8. Ratio of monomer distribution species over time in Npu DnaE(N) + <i>Ssp</i> DnaE(C) split inteins combination. Frame rates do not represent real-time.
-
-  </figcaption>
-</center>
-<br><br>
-<center>
-  <video width="100%" controls>
-    <source src="http://2018.igem.org/wiki/images/3/31/T--UCL--cbb.mp4" type="video/mp4" />
-    Your browser does not support this video.
-  </video>
-</center>
-<center>
-  <figcaption>
-    Figure 9. Ratio of monomer distribution species over time in <i>Ssp</i> DnaE inteins. Frame rates do not represent real-time.
-
-  </figcaption>
-</center>
-<br><br>
-
-<table class="table ooooo table_text_igem">
-    <thead>
-        <tr>
-            <th class="tableleft">Symbols</th>
-            <th class="tablecenter">Values and Units</th>
-            <th class="tablecenter">Descriptions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="tableleft"><i>t</i></td>
-            <td class="tablecenter">s</td>
-            <td class="tablecenter">Time</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>n</i></td>
-            <td class="tablecenter">dimensionless</td>
-            <td class="tablecenter">
-Number of repeats, defining a certain species of polymer
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>P<sub>n</sub></i></td>
-            <td class="tablecenter">mol L<sup>-1</sup></td>
-            <td class="tablecenter">
-              Polymer species <i>n</i>
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>k</i></td>
-            <td class="tablecenter">
-          L mol<sup>-1</sup> S<sup>-1></sup></td>
-            <td class="tablecenter">
-              Rate constants of Intein activity of a certain intein
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>n<sub>max</sub></i></th>
-            <td class="tablecenter">dimensionless</th>
-            <td class="tablecenter">
-Maximum repeat number in a polymer</th>
-        </tr>
-    </tbody>
-</table>
-<center>
-<figcaption>
-  Table 04: Additional information.
-</figcaption>
-</center>
-<br><br><br>
-<p>Basically each intein rate of reaction (<i>k</i>) differs with each intein system we use.</p>
-<br />
-<table class="table ooooo table_text_igem">
-    <thead>
-        <tr>
-            <th class="tableleft">Intein</th>
-            <th class="tablecenter">Rate of reaction (s<sup>-1</sup>)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="tableleft"><i>Npu</i> DNA-E</td>
-            <td class="tablecenter">1.1x10<sup>-2</sup></td>
-
-        </tr>
-        <tr>
-            <td class="tableleft"><i>Ssp</i>DNA-E</td>
-            <td class="tablecenter">3.3x10<sup>-4</sup></td>
-
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>Npu</i> DNA-E(N) + <i>Ssp</i>DNA-E</td>
-            <td class="tablecenter">2.8x10<sup>-5</sup></td>
-
-
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>Sce</i>VMA</td>
-            <td class="tablecenter">
-        2.0x10<sup>-3</sup></td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>Ssp</i>DNA-B</th>
-            <td class="tablecenter">9.9x10<sup>-4</sup></th>
-        </tr>
-    </tbody>
-</table>
-<center>
-<figcaption>
-  Table 05. Specific activity of each inteins. Rate of reaction are collected from the references mentioned in the bottom of the page.
-</figcaption>
-</center>
-<br><br>
-<p>
-  The results we get from the example runs of <i>Npu</i> DnaE(N) and <i>Ssp</i> DnaE(C) intein combinations are after 10 minutes of the simulated experiment, only 3.45% of monomers are in the form of the top 25% longest polymer species. However for <i>Ssp</i> DnaE inteins, in the course of 10 minutes, 72.3% of the monomers are polymerised into the same top 25% of the longest polymer region. This really shows how the intein polymerisation will require much less time compared to the cell culture and protein production. Further improvements will be introducing more parameters into the estimation function to represent more accurate results.
-</p>
-<br><br><br>
-<div id="WORM"class="card-title text-center">
-    <h4>Intein Polymerisation</h4>
-    <br>
-    <h3 class="orange mrfont2">W.O.R.M.</h3>
-</div>
-<br><br>
-<p>
-  To further model the polymerisation of our proteins, we devised a simplified proof of concept of our project using reporter proteins RFP and GFP to predict the polymerisation capabilities of split inteins. Each reporter protein is flanked by orthogonal inteins, which match up to the other reporter’s inteins to allow RFP and GFP to continuously link up into various lengths of polymers.
-</p>
-<br>
-<center>
-  <img class="m1"src="http://2018.igem.org/wiki/images/c/c5/T--UCL--iii1.png"alt="oops!You can't load our image.">
-</center>
-<center>
-  <figcaption>
-    Figure 10: Polymerisation of intein flanked reporter proteins. <br>
-Npu-N intein on GFP splices out with the Npu-C intein on RFP. Similarly, the TerL-N intein on the RFP splices out with the TerL-C intein on the GFP. This reaction results in the polymerisation of GFP and RFP.
-
-  </figcaption>
-</center>
-<br>
-We used the python libraries PyGame and PyMunk to create an animated and interactive agent-based model of intein polymerisation. Acronymed WORM, this model depicts a Wonderful Oligomerisation Reaction Model.
-<br><br>
-
-<video width="100%" controls>
-  <source src="http://2018.igem.org/wiki/images/6/61/T--UCL--worm.mp4" type="video/mp4" />
-  Your browser does not support this video.
-</video>
-<br><br>
-<p>Depicted in the video is a snapshot of the model WORM that shows intein polymerisation. The yellow and orange rectangles represent an split intein pair, as do the blue and cyan rectangles. The red and green rectangles represent the reporter proteins, RFP and GFP, respectively. </p>
-<br>
-<p>As an agent-based mode, WORM was created based on the following rules: <br>
-  1)Particles diffuse with random angular and lateral velocity, <br>
-  2)Velocity increases with temperature (based on average kinetic energy)
-<br>
-<center><img src="https://latex.codecogs.com/gif.latex?(\frac{1}{2}mv^{2})=\frac{3}{2}kT" title="(\frac{1}{2}mv^{2})=\frac{3}{2}kT" /></center>
-<p>   Where: <br>
-		m= mass (kg) <br>
-		v= velocity <br>
-		k= Boltzmann constant <br>
-    T= temperature (K) <br>
-
-</p>
-
-
-
-<br><br>
-3)Like reacts with unlike (RFP reacts with GFP), <br>
-4)Particles are polarised (Npu-N [A1]→ Npu-C [B3], TerL-N [B1]→ TerL-C [A3]) <br>
-5)Splicing removes 1+3 on reaction (removes the inteins), <br>
-6)Steric hindrance by particles   <br>
-<br><br>
-
-<center>
-  <img class="m1"src="http://2018.igem.org/wiki/images/7/73/T--UCL--f111.png"alt="oops!You can't load our image.">
-</center>
-<center>
-  <figcaption>
-    FIGURE 11: Distribution of polymer lengths after 20 runs. <br>
-WORM was run for 5 minutes, 20 times. The distribution of total polymers for each polymer lengths from 1-20, and lengths over 20, were plotted. The error was plotted as the square root of the total polymers in each polymer length.
-
-  </figcaption>
-</center>
-<br><br>
-<p>The interactive components of the WORM model include user’s choice of temperature and protein mass to selectively model the reaction conditions and functionalized protein of interest. These applications can be used by running the code found in our GitHub. The combination of predictive experimental data and the visually appealing computational model makes a user friendly platform for the public to better understand biology and modelling.</p>
-<br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>Ssp</i>DNA-E</td>
+                                            <td class="tablecenter">3.3x10<sup>-4</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>Npu</i> DNA-E(N) + <i>Ssp</i>DNA-E</td>
+                                            <td class="tablecenter">2.8x10<sup>-5</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>Sce</i>VMA</td>
+                                                <td class="tablecenter">2.0x10<sup>-3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableleft"><i>Ssp</i>DNA-B</td>
+                                            <td class="tablecenter">9.9x10<sup>-4</sup></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Table 6.</div> Specific activity of each inteins. Rate of reaction are collected from the references mentioned in the bottom of the page.
+                                    </figcaption>
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    The results we get from the example runs of <i>Npu</i> DnaE(N) and <i>Ssp</i> DnaE(C) intein combinations are after 10 minutes of the simulated experiment, only 3.45% of monomers are in the form of the top 25% longest polymer species. However for <i>Ssp</i> DnaE inteins, in the course of 10 minutes, 72.3% of the monomers are polymerised into the same top 25% of the longest polymer region. This really shows how the intein polymerisation will require much less time compared to the cell culture and protein production. Further improvements will be introducing more parameters into the estimation function to represent more accurate results.
+                                </p>
+                                <div id="WORM"class="card-title text-center">
+                                    <h4>Intein Polymerisation</h4>
+                                    <h3 class="orange mrfont2">W.O.R.M.</h3>
+                                </div>
+                                <p class="card-text card-text_igem text-justify">
+                                    To further model the polymerisation of our proteins, we devised a simplified proof of concept of our project using reporter proteins RFP and GFP to predict the polymerisation capabilities of split inteins. Each reporter protein is flanked by orthogonal inteins, which match up to the other reporter’s inteins to allow RFP and GFP to continuously link up into various lengths of polymers.
+                                </p>
+                                <center>
+                                    <img class="m1"src="http://2018.igem.org/wiki/images/c/c5/T--UCL--iii1.png"alt="oops!You can't load our image.">
+                                </center>
+                                <center>
+                                    <figcaption>
+                                        <div class="model_caption_title_igem">Figure 10.</div> Polymerisation of intein flanked reporter proteins. Npu-N intein on GFP splices out with the Npu-C intein on RFP. Similarly, the TerL-N intein on the RFP splices out with the TerL-C intein on the GFP. This reaction results in the polymerisation of GFP and RFP.
+                                    </figcaption>
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    We used the python libraries PyGame and PyMunk to create an animated and interactive agent-based model of intein polymerisation. Acronymed WORM, this model depicts a Wonderful Oligomerisation Reaction Model.
+                                </p>
+                                <video class="video_igem" width="100%" controls>
+                                    <source src="http://2018.igem.org/wiki/images/6/61/T--UCL--worm.mp4" type="video/mp4" />
+                                        Your browser does not support this video.
+                                </video>
+                                <p class="card-text card-text_igem text-justify">
+                                    Depicted in the video is a snapshot of the model WORM that shows intein polymerisation. The yellow and orange rectangles represent an split intein pair, as do the blue and cyan rectangles. The red and green rectangles represent the reporter proteins, RFP and GFP, respectively.
+                                </p>
+                                <p class="card-text card-text_igem text-justify">
+                                    As an agent-based mode, WORM was created based on the following rules:
+                                </p>
+                                <ol>
+                                    <li>
+                                        Particles diffuse with random angular and lateral velocity;
+                                    </li>
+                                    <li>
+                                        Velocity increases with temperature (based on average kinetic energy):
+                                    <center>
+                                        <img class="model_img" src="https://latex.codecogs.com/gif.latex?(\frac{1}{2}mv^{2})=\frac{3}{2}kT" title="(\frac{1}{2}mv^{2})=\frac{3}{2}kT" />
+                                        <p class="card-text card-text_igem text-center">Where:</p>
+                                    </center>
+                                        <div class="row list_padding_igem">
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li>
+                                                        m= mass (kg)
+                                                    </li>
+                                                    <li>
+                                                        v= velocity
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li>
+                                                        k= Boltzmann constant
+                                                    </li>
+                                                    <li>
+                                                        T= temperature (K)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Like reacts with unlike (RFP reacts with GFP);
+                                    </li>
+                                    <li>
+                                        Particles are polarised (Npu-N [A1]→ Npu-C [B3], TerL-N [B1]→ TerL-C [A3]);
+                                    </li>
+                                    <li>
+                                        Splicing removes 1+3 on reaction (removes the inteins);
+                                    </li>
+                                    <li>
+                                        Steric hindrance by particles.
+                                    </li>
+                                <center>
+                                    <img class="m1 model_img"src="http://2018.igem.org/wiki/images/7/73/T--UCL--f111.png"alt="oops!You can't load our image.">
+                                </center>
+                                <center>
+                                    <figcaption class="card-text_igem2">
+                                        <div class="model_caption_title_igem">Figure 11.</div> Distribution of polymer lengths after 20 runs. WORM was run for 5 minutes, 20 times. The distribution of total polymers for each polymer lengths from 1-20, and lengths over 20, were plotted. The error was plotted as the square root of the total polymers in each polymer length.
+                                    </figcaption>
+                                </center>
+                                <p class="card-text card-text_igem text-justify">
+                                    The interactive components of the WORM model include user’s choice of temperature and protein mass to selectively model the reaction conditions and functionalized protein of interest. These applications can be used by running the code found in our GitHub. The combination of predictive experimental data and the visually appealing computational model makes a user friendly platform for the public to better understand biology and modelling.
+                                </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
         <section id="Mech">
             <div class="mrfont card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
@@ -806,190 +781,196 @@ WORM was run for 5 minutes, 20 times. The distribution of total polymers for eac
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-10 mmmm mrfont">
-                                <p class="card-text card-text_igem text-justify">
-                                  <br>
-                                    <p>In this part, we also modeled the biomaterials’ micro-structure of the coarse-grained system. We predicted the structure of different spider silk repeats (tetramer, octamer and dodecamer) both after stretching and shearing. This method is a deterministic approach to foresee the network structure of spider silk repeats prior to the actual lab experiment and helps us to understand the design of the actual protein that we are going to produce afterwards.
-</p>
-<br>
-<p>Here is our initial designed sequence, a spider silk protein in repeats of four:</p>
-<span class="nodec">
-GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA</span>
-<br><br><br>
-The respective sequence is then quantitatively analysed for their hydrophobicity and hydrophilicity and plotted.
-<br>
-<center>
-  <img class="m1"src="http://2018.igem.org/wiki/images/1/19/T--UCL--m7.png"alt="oops!You can't load our image.">
-</center>
-<center>
-  <figcaption>
-    Figure 11. Kyte-Doolittle-Hydropathy plot. The vertical axis is the measure of hydrophobicity in each amino acid in the sequence, with higher score means greater degree of hydrophobicity. With the help of ProtScale from ExPASy.
-  </figcaption>
-</center>
-<br><br>
-<p>In this particular sequence, we can observe that the hydrophobic and hydrophilic parts alternate inside the spider silk fiber, which will form aggregates and bridge connections to achieve desired tensile and toughness due to the hydrophobic interactions.
-</p>
-<br>
-<p>
-  This alternating pattern seen in the figure allows us to simplify proteins as the hydrophobic domains and hydrophilic domains. These domains are then represented as a collection of the so-called ‘beads’, and depending on relative molecular volume of each domain, the coarse-grained model is then scaled and measured into an estimate of three amino acid residues per bead.
-</p>
-<br>
-<p>This system is composed from 3 components: water, hydrophilic and hydrophobic beads. Every 9 water molecules is represented as a single bead, so its 270 Å size (each water molecule is about 30 Å) is proportional to the protein beads. </p>
-<br>
-<p>We then introduce LAMMPS as our software, which is an abbreviation of Large-scale Atomic/Molecular Massively Parallel Simulator, to simulate the behaviour of our ‘beads’ collection in a single compartment and thus gave us an insight into the physical property of the recombinant spider silk.</p>
-<br><br>
-
-<div class="card-title text-center mrfont2">
-  <h1 class="orange">Simulations</h1>
-  <h5>Hover to compare the 2 sides.</h5>
-  <br><br>
-  <h6><span class="marrrgin"style="float:left">Equal</span> <span class="marrgin"style="float:right">Stretch</span></h6>
-</div>
-<br>
-<div class="col-sm-12">
-  <hr />
-  <div class="card-title text-center mrfont2">
-    <center><h5>Tetramer</h5></center>
-  </div>
-  <hr />
-<div class="row yyyyy">
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/3/30/T--UCL--4e.gif" />
-      </center>
-    </p>
-</div>
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/6/64/T--UCL--4s.gif" />
-      </center>
-    </p>
-</div>
-</div>
-<hr>
-<div class="card-title text-center mrfont2">
-  <center><h5>Octamer</h5></center>
-</div>
-<hr>
-<div class="row yyyyy">
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/d/da/T--UCL--8e.gif" />
-      </center>
-    </p>
-</div>
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/3/39/T--UCL--8s.gif" />
-      </center>
-    </p>
-</div>
-</div>
-<hr>
-<div class="card-title text-center mrfont2">
-  <center><h5>Dodecamer</h5></center>
-</div>
-<hr>
-<div class="row yyyyy">
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/9/9d/T--UCL--12e.gif" />
-      </center>
-    </p>
-</div>
-<div class="col-sm-6">
-    <p class="card-text card-text_igem text-justify">
-      <center>
-        <img class="gifs"src="http://2018.igem.org/wiki/images/5/51/T--UCL--12s.gif" />
-      </center>
-    </p>
-</div>
-</div>
-
-</div>
-
-<br><br>
-<p>For these simulation results, the configurations of spider silk fiber after applying a constant engineering strain rate (7.5 × 10<sup>-6</sup> τ<sup>-1</sup> along the x-axis) and at equilibrium after shear flow (0.01 τ<sup>-1</sup> along x axis for 420000 shear steps). The red nodes show hydrophobic aggregated protein clusters and the blue lines are the bridge connecting two clusters. Uniform distribution and high density of clusters and bridges represent the better mechanical property, higher tensile and toughness. For stretch testing. we can analyse the tetramer structure which consists of large and frequent cavity in the fiber. The octamer and dodecamer is predicted to be able to tolerate this strain, which means they have a considerable threshold of mechanical strain. In order to examine which structure is the best, we apply shear flow. In this case, it is observed that only the dodecamer still keeps its original structure but others break at different levels. In conclusion, dodecamer is the best configuration required in making desired fibers.
-</p>
-
-                                </p>
+                                    <p class="card-text card-text_igem text-justify">
+                                        In this part, we also modeled the biomaterials’ micro-structure of the coarse-grained system. We predicted the structure of different spider silk repeats (tetramer, octamer and dodecamer) both after stretching and shearing. This method is a deterministic approach to foresee the network structure of spider silk repeats prior to the actual lab experiment and helps us to understand the design of the actual protein that we are going to produce afterwards.
+                                    </p>
+                                    <p class="card-text card-text_igem text-justify">
+                                        Here is our initial designed sequence, a spider silk protein in repeats of four:
+                                    </p>
+                                    <center>
+                                        <div class="col-sm-7">
+                                            <code class="nodec">
+                                                GQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAAGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGAGQGGYGGLGSQGAGRGGLGGQGAGAAAAAAAAGGA
+                                            </code>
+                                        </div>
+                                    </center>
+                                    <p class="card-text card-text_igem text-justify">
+                                        The respective sequence is then quantitatively analysed for their hydrophobicity and hydrophilicity and plotted.
+                                    </p>
+                                    <center>
+                                        <img class="m1 model_img" src="http://2018.igem.org/wiki/images/1/19/T--UCL--m7.png"alt="oops!You can't load our image.">
+                                    </center>
+                                    <center>
+                                        <figcaption class="card-text_igem2">
+                                            <div class="model_caption_title_igem">Figure 12.</div> Kyte-Doolittle-Hydropathy plot. The vertical axis is the measure of hydrophobicity in each amino acid in the sequence, with higher score means greater degree of hydrophobicity. With the help of ProtScale from ExPASy.
+                                        </figcaption>
+                                    </center>
+                                    <p class="card-text card-text_igem text-justify">
+                                        In this particular sequence, we can observe that the hydrophobic and hydrophilic parts alternate inside the spider silk fiber, which will form aggregates and bridge connections to achieve desired tensile and toughness due to the hydrophobic interactions.
+                                    </p>
+                                    <p class="card-text card-text_igem text-justify">
+                                        This alternating pattern seen in the figure allows us to simplify proteins as the hydrophobic domains and hydrophilic domains. These domains are then represented as a collection of the so-called ‘beads’, and depending on relative molecular volume of each domain, the coarse-grained model is then scaled and measured into an estimate of three amino acid residues per bead.
+                                    </p>
+                                    <p class="card-text card-text_igem text-justify">
+                                        This system is composed from 3 components: water, hydrophilic and hydrophobic beads. Every 9 water molecules is represented as a single bead, so its 270 Å size (each water molecule is about 30 Å) is proportional to the protein beads.
+                                    </p>
+                                    <p class="card-text card-text_igem text-justify">
+                                        We then introduce LAMMPS as our software, which is an abbreviation of Large-scale Atomic/Molecular Massively Parallel Simulator, to simulate the behaviour of our ‘beads’ collection in a single compartment and thus gave us an insight into the physical property of the recombinant spider silk.
+                                    </p>
+                                        <div class="card-title text-center mrfont2">
+                                            <h3 class="orange mrfont2">Simulations</h3>
+                                            <h5 class="mrfont2">Hover to compare the 2 sides.</h5>
+                                            <div class="model_h6">
+                                                <span class="marrrgin"style="float:left">Equal</span>
+                                                <span class="marrgin"style="float:right">Stretch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <hr />
+                                        <div class="card-title text-center mrfont2">
+                                            <center>
+                                                <h5 class="mrfont2">
+                                                    Tetramer
+                                                </h5>
+                                            </center>
+                                        </div>
+                                        <hr />
+                                        <div class="row yyyyy">
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/3/30/T--UCL--4e.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/6/64/T--UCL--4s.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="card-title text-center mrfont2">
+                                                <center>
+                                                    <h5 class="mrfont2">
+                                                        Octamer
+                                                    </h5>
+                                                </center>
+                                        </div>
+                                        <hr />
+                                        <div class="row yyyyy">
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/d/da/T--UCL--8e.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/3/39/T--UCL--8s.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="card-title text-center mrfont2">
+                                                <center>
+                                                    <h5 class="mrfont2">
+                                                        Dodecamer
+                                                    </h5>
+                                                </center>
+                                        </div>
+                                        <hr />
+                                        <div class="row yyyyy">
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/9/9d/T--UCL--12e.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="card-text card-text_igem text-justify">
+                                                    <center>
+                                                        <img class="gifs"src="http://2018.igem.org/wiki/images/5/51/T--UCL--12s.gif" />
+                                                    </center>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <p class="card-text card-text_igem text-justify">
+                                            For these simulation results, the configurations of spider silk fiber after applying a constant engineering strain rate (7.5 × 10<sup>-6</sup> τ<sup>-1</sup> along the x-axis) and at equilibrium after shear flow (0.01 τ<sup>-1</sup> along x axis for 420000 shear steps). The red nodes show hydrophobic aggregated protein clusters and the blue lines are the bridge connecting two clusters. Uniform distribution and high density of clusters and bridges represent the better mechanical property, higher tensile and toughness. For stretch testing. we can analyse the tetramer structure which consists of large and frequent cavity in the fiber. The octamer and dodecamer is predicted to be able to tolerate this strain, which means they have a considerable threshold of mechanical strain. In order to examine which structure is the best, we apply shear flow. In this case, it is observed that only the dodecamer still keeps its original structure but others break at different levels. In conclusion, dodecamer is the best configuration required in making desired fibers.
+                                        </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="Bibliography">
+                <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <div class="card-title text-center">
+                        <h4>Bibliography</h4>
+                    </div>
+                    <div class="card-body text-justify">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 mmmm mrfont">
+                                    <p class="card-text card-text_igem text-justify">
+                                        <ol>
+                                            <li>
+                                                Verhulst PF. Notice sur la loi que la population poursuit dans son accroissement. Correspondance mathématique et physique. 1838;10:113–21.
+                                            </li>
+                                            <li>
+                                                Pearl R, Reed L. On the Rate of Growth of the Population of the United States since 1790 and Its Mathematical Representation. Proceedings of the National Academy of Sciences. 1920;6(6):275-288.
 
-        <section id="Bibliography">
-            <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                <div class="card-title text-center">
-                    <h4>Bibliography</h4>
-                </div>
-                <div class="card-body text-justify">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-10 mmmm mrfont">
-                                <p class="card-text card-text_igem text-justify">
-                                    <ol>
-                                        <li>
-                                            Verhulst PF. Notice sur la loi que la population poursuit dans son accroissement. Correspondance mathématique et physique. 1838;10:113–21.
-                                        </li>
-                                        <li>
-                                          Pearl R, Reed L. On the Rate of Growth of the Population of the United States since 1790 and Its Mathematical Representation. Proceedings of the National Academy of Sciences. 1920;6(6):275-288.
+                                            </li>
+                                            <li>
+                                                Bailey J, Ollis D. Biochemical engineering fundamentals. 2nd ed. New York: McGraw-Hill; 1944.
 
-                                        </li>
-                                        <li>
-                                          Bailey J, Ollis D. Biochemical engineering fundamentals. 2nd ed. New York: McGraw-Hill; 1944.
+                                            </li>
+                                            <li>
+                                                Part:pSB1C3 - parts.igem.org [Internet]. Parts.igem.org. 2008. Available from: http://parts.igem.org/Part:pSB1C3
+                                            </li>
 
-                                        </li>
-                                        <li>
-                                            Part:pSB1C3 - parts.igem.org [Internet]. Parts.igem.org. 2008. Available from: http://parts.igem.org/Part:pSB1C3
-                                        </li>
+                                            <li>
+                                                Zettler J, Schütz V, Mootz HD. The naturally split Npu DnaE intein exhibits an extraordinarily high rate in the protein trans-splicing reaction. FEBS Letters 2009;583:909–14.
+                                            </li>
+                                            <li>
+                                                Nichols NM, Benner JS, Martin DD, Evans TC. Zinc Ion Effects on Individual Ssp DnaE Intein Splicing Steps: Regulating Pathway Progression. Biochemistry 2003;42:5301–11.
+                                            </li>
+                                            <li>
+                                                Al-Ali H, Ragan TJ, Gao X, Harris TK. Reconstitution of Modular PDK1 Functions on Trans-Splicing of the Regulatory PH and Catalytic Kinase Domains. Bioconjugate Chemistry 2007;18:1294–302.
+                                            </li>
+                                            <li>
+                                                Brenzel S, Kurpiers T, Mootz HD. Engineering Artificially Split Inteins for Applications in Protein Chemistry:  Biochemical Characterization of the Split Ssp DnaB Intein and Comparison to the Split Sce VMA Intein. Biochemistry 2006;45:1571–8.
+                                            </li>
 
-                                        <li>
-                                            Zettler J, Schütz V, Mootz HD. The naturally split Npu DnaE intein exhibits an extraordinarily high rate in the protein trans-splicing reaction. FEBS Letters 2009;583:909–14.
-                                        </li>
-                                        <li>
-                                            Nichols NM, Benner JS, Martin DD, Evans TC. Zinc Ion Effects on Individual Ssp DnaE Intein Splicing Steps: Regulating Pathway Progression. Biochemistry 2003;42:5301–11.
-                                        </li>
-                                        <li>
-                                            Al-Ali H, Ragan TJ, Gao X, Harris TK. Reconstitution of Modular PDK1 Functions on Trans-Splicing of the Regulatory PH and Catalytic Kinase Domains. Bioconjugate Chemistry 2007;18:1294–302.
-                                        </li>
-                                        <li>
-                                          Brenzel S, Kurpiers T, Mootz HD. Engineering Artificially Split Inteins for Applications in Protein Chemistry:  Biochemical Characterization of the Split Ssp DnaB Intein and Comparison to the Split Sce VMA Intein. Biochemistry 2006;45:1571–8.
-                                        </li>
-
-                                        <li>
-                                            Kyte J, Doolittle RFA. simple method for displaying the hydropathic character of a protein. Journal of Molecular Biology. 1982;157(1):105–32.
-                                        </li>
-                                        <li>
-                                            ExPASy - ProtScale [Internet]. Web.expasy.org. Available from: https://web.expasy.org/protscale/
-                                        </li>
-                                        <li>
-                                            Rim N, Roberts E, Ebrahimi D, Dinjaski N, Jacobsen M, Martín-Moldes Z, Buehler M, Kaplan D and Wong J. Predicting Silk Fiber Mechanical Properties through Multiscale Simulation and Protein Design. ACS Biomaterials Science & Engineering. 2017;3(8), pp.1542-1556.
-                                        </li>
-                                        <li>
-                                          Lin S, Ryu S, Tokareva O, Gronau G, Jacobsen M, Huang W, Rizzo D, Li D, Staii C, Pugno N, Wong J, Kaplan D and Buehler M. Predictive modelling-based design and experiments for synthesis and spinning of bioinspired silk fibres. Nature Communications. 2015;6(1).
-
-                                        </li>
-                                    </ol>
-                                </p>
+                                            <li>
+                                                Kyte J, Doolittle RFA. simple method for displaying the hydropathic character of a protein. Journal of Molecular Biology. 1982;157(1):105–32.
+                                            </li>
+                                            <li>
+                                                ExPASy - ProtScale [Internet]. Web.expasy.org. Available from: https://web.expasy.org/protscale/
+                                            </li>
+                                            <li>
+                                                Rim N, Roberts E, Ebrahimi D, Dinjaski N, Jacobsen M, Martín-Moldes Z, Buehler M, Kaplan D and Wong J. Predicting Silk Fiber Mechanical Properties through Multiscale Simulation and Protein Design. ACS Biomaterials Science & Engineering. 2017;3(8), pp.1542-1556.
+                                            </li>
+                                            <li>
+                                                Lin S, Ryu S, Tokareva O, Gronau G, Jacobsen M, Huang W, Rizzo D, Li D, Staii C, Pugno N, Wong J, Kaplan D and Buehler M. Predictive modelling-based design and experiments for synthesis and spinning of bioinspired silk fibres. Nature Communications. 2015;6(1).
+                                            </li>
+                                        </ol>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-
-
+            </section>
+        </div>
     </div>
-</div>
 </div>
 <div class="footer">
     <div class="container">
@@ -998,7 +979,7 @@ The respective sequence is then quantitatively analysed for their hydrophobicity
                 <center>
                     <div class="h2_footer_igem">Our Location</div>
                     University College London<br />
-  Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                    Gower St, Bloomsbury<br />London <br />WC1E 6BT
                     <span></span>
 
                 </center>
@@ -1006,7 +987,7 @@ The respective sequence is then quantitatively analysed for their hydrophobicity
             <div class="col-lg-4">
                 <center>
                     <div class="h2_footer_igem">Contact Us</div>
-                  ucl.igem@ucl.ac.uk
+                    ucl.igem@ucl.ac.uk
                     <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
                         <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
                     </a>

@@ -1572,6 +1572,15 @@ figcaption{
   font-size: 11px;
 }
 
+.video_igem{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.list_padding_igem {
+    padding-bottom: 1.5rem;
+}
+
 .table_text_igem{
     font-family: 'Lato', sans-serif !important;
     font-weight: 300;
@@ -1607,6 +1616,25 @@ figcaption{
 }
 .margintopp{
   margin-top: 5vh;
+}
+
+.model_h6 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.model_caption_title_igem {
+    font-weight: bold;
+    color: tomato;
+}
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 /* FOOTER===============================================================================================================================================*/
 
