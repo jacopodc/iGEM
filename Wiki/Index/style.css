@@ -569,7 +569,9 @@ section.section2
     margin-bottom: 1rem !important;
     margin-top: 2rem !important;
 }
-
+.bypass{
+  text-align: center !important;
+}
 .card-text_igem2 {
     font-family: 'Lato', sans-serif !important;
     font-weight: 300;
