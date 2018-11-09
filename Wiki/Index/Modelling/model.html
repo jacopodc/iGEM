@@ -251,7 +251,7 @@ $(document).ready(function() {
                                 </p>
 
 
-                              <table class="table ooooo">
+                              <table class="table ooooo table_text_igem">
                                   <thead>
                                       <tr>
                                           <th class="tableleft">Symbols</th>
@@ -319,10 +319,10 @@ $(document).ready(function() {
                               </center>
                               <center>
                                   <figcaption class="card-text_igem2">
-                                      Figure 03. Population growth rate (<i>k</i>) for each IPTG concentration.
+                                      <b>Figure 03.</b> Population growth rate (<i>k</i>) for each IPTG concentration.
                                   </figcaption>
                               </center>
-                              <table class="table ooooo">
+                              <table class="table ooooo table_text_igem">
                                   <thead>
                                       <tr>
                                           <th class="tableleft">IPTG Conc.</th>
@@ -357,189 +357,179 @@ $(document).ready(function() {
                                       Table 02: the growth rate (k) and inhibitor factor (b) corresponding to different IPTG induction concentration.
                                   </figcaption>
                               </center>
-                              <p>
+                              <p class="card-text card-text_igem text-justify">
                                   We then build up the kinetics inside a cell and integrate it with lab data analysis to understand protein production and get an effective lab plan for our E. coli system. GFP, RFP, and Intein Passenger fluorescence data of 544/590 nm filtering wavelengths were then extracted and processed. Each dependent value is described as protein-fold change post induction, which is normalised with the same system but uninduced, based on the fraction below:
                               </p>
                               <center>
+                                  <img class="model_img" src="https://latex.codecogs.com/gif.latex?p=\frac{F}{F_{{o}}}" title="p=\frac{F}{F_{{o}}}" />
+                              </center>
+                              <p class="card-text card-text_igem text-justify">
+                                  The first-order system of linear differential equations are:
+                              </p>
+                              <center>
+                                  <img class="model_img" src="https://latex.codecogs.com/gif.latex?\frac{dm}{dt}=\alpha&space;x-\beta&space;m" title="\frac{dm}{dt}=\alpha x-\beta m" />
+                              </center>
+                              <center>
+                                  <img class="model_img" src="https://latex.codecogs.com/gif.latex?\frac{dp}{dt}=\gamma&space;m-\delta&space;p" title="\frac{dp}{dt}=\gamma m-\delta p" />
+                              </center>
+                              <p class="card-text card-text_igem text-justify">
+                                  The first equation represents the mRNA system in a cell with the assumption of constant gene concentration in each cell. Meanwhile the latter equation is the protein system which is dependent on the previous equation, and fitted to the data from the plate reader, using the Trust Region Algorithm with non-negative floating number as the boundary in each parameter.
+                              </p>
+                              <center>
+                                  <img class="m1 model_img" src="http://2018.igem.org/wiki/images/3/33/T--UCL--f4.png"alt="oops! You can't see our image.">
+                              </center>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Figure 04: Fluorescence of Intein Passenger induced with 400 mM IPTG and normalised in each ​ E. coli ​cell. The rest of induced cultures are fitted in the same equation.
+                                  </figcaption>
+                              </center>
+                              <table class="table ooooo table_text_igem">
+                                  <tdead>
+                                      <tr>
+                                          <th class="tableleft">IPTG Conc.(mM)</th>
+                                          <th class="tablecenter">400</th>
+                                          <th class="tablecenter">500</th>
+                                          <th class="tablecenter">600</th>
+                                          <th class="tablecenter">700</th>
+                                          <th class="tablecenter">800</th>
+                                      </tr>
+                                  </tdead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="tableleft"><i>x</i></td>
+                                          <td class="tablecenter">200</td>
+                                          <td class="tablecenter">200</td>
+                                          <td class="tablecenter">200</td>
+                                          <td class="tablecenter">200</td>
+                                          <td class="tablecenter">200</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>&alpha;</i></td>
+                                          <td class="tablecenter">0.02073</td>
+                                          <td class="tablecenter">0.02332</td>
+                                          <td class="tablecenter">0.02348</td>
+                                          <td class="tablecenter">0.02156</td>
+                                          <td class="tablecenter">0.02264</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>&beta;</i></td>
+                                          <td class="tablecenter">0.2482</td>
+                                          <td class="tablecenter">0.2644</td>
+                                          <td class="tablecenter">0.2642</td>
+                                          <td class="tablecenter">0.2665</td>
+                                          <td class="tablecenter">0.2777</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>&gamma;</i></td>
+                                          <td class="tablecenter">0.6564</td>
+                                          <td class="tablecenter">0.6799</td>
+                                          <td class="tablecenter">0.6668</td>
+                                          <td class="tablecenter">0.7346</td>
+                                          <td class="tablecenter">0.7449</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>&delta;</i></td>
+                                          <td class="tablecenter">0.2563</td>
+                                          <td class="tablecenter">0.2744</td>
+                                          <td class="tablecenter">0.2719</td>
+                                          <td class="tablecenter">0.2738</td>
+                                          <td class="tablecenter">0.2827</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <center>
+                                  <figcaption class="card-text_igem2">
+                                      Table 03: Parameter values estimation using Trust Region Algorithm of curve fitting.
+                                  </figcaption>
+                              </center>
+                              <table class="table ooooo table_text_igem">
+                                  <thead>
+                                      <tr>
+                                          <th class="tableleft">Symbols</th>
+                                          <th class="tablecenter">Units</th>
+                                          <th class="tablecenter">Descriptions</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="tableleft"><i>t</i></td>
+                                          <td class="tablecenter">hours</td>
+                                          <td class="tablecenter">Time</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>x</i></td>
+                                          <td class="tablecenter">200</td>
+                                          <td class="tablecenter">
+                                              Plasmid copy number of pSB1C3 in each cell
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>m</i></td>
+                                          <td class="tablecenter">dimensionless</td>
+                                          <td class="tablecenter">
+                                              Respective normalised mRNA concentration in each cell
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tableleft"><i>p</i></td>
+                                          <td class="tablecenter">
+                                              dimensionless</td>
+                                              <td class="tablecenter">
+                                                  Respective normalised protein concentration in each cell
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="tableleft">&alpha;</td>
+                                              <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
+                                              <td class="tablecenter">
+                                                  Gene transcription rate or mRNA production rate
 
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="tableleft"><i>&beta;</i></td>
+                                              <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
+                                              <td class="tablecenter">
+                                                  mRNA degradation rate and dilution factor
 
-<br /><img src="https://latex.codecogs.com/gif.latex?p=\frac{F}{F_{{o}}}" title="p=\frac{F}{F_{{o}}}" />
-</center>
-<br><br><br>
-<p>The first-order system of linear differential equations are:
-</p>
-<br>
-<center>
-<img src="https://latex.codecogs.com/gif.latex?\frac{dm}{dt}=\alpha&space;x-\beta&space;m" title="\frac{dm}{dt}=\alpha x-\beta m" />
-</center>
-<br><br>
-<center><img src="https://latex.codecogs.com/gif.latex?\frac{dp}{dt}=\gamma&space;m-\delta&space;p" title="\frac{dp}{dt}=\gamma m-\delta p" /></center>
-<br><br><br>
-<p>The first equation represents the mRNA system in a cell with the assumption of constant gene concentration in each cell. Meanwhile the latter equation is the protein system which is dependent on the previous equation, and fitted to the data from the plate reader, using the Trust Region Algorithm with non-negative floating number as the boundary in each parameter.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="tableleft">&gamma;</td>
+                                              <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
+                                              <td class="tablecenter">
+                                                  Protein translation rate
 
-</p>
-<br>
-<center>
-<img class="m1"src="http://2018.igem.org/wiki/images/3/33/T--UCL--f4.png"alt="oops! You can't see our image."></center>
-<center>
-<figcaption>
-  Figure 04: Fluorescence of Intein Passenger induced with 400 mM IPTG and normalised in each ​ E. coli ​cell. The rest of induced cultures are fitted in the same equation.
-</figcaption>
-</center>
-<br><br><br>
-<table class="table ooooo">
-    <tdead>
-        <tr>
-            <th class="tableleft">IPTG Conc.(mM)</th>
-            <th class="tablecenter">400</th>
-            <th class="tablecenter">500</th>
-            <th class="tablecenter">600</th>
-            <th class="tablecenter">700</th>
-            <th class="tablecenter">800</th>
-        </tr>
-    </tdead>
-    <tbody>
-      <tr>
-          <td class="tableleft"><i>x</i></td>
-          <td class="tablecenter">200</td>
-          <td class="tablecenter">200</td>
-          <td class="tablecenter">200</td>
-          <td class="tablecenter">200</td>
-          <td class="tablecenter">200</td>
-      </tr>
-      <tr>
-          <td class="tableleft"><i>&alpha;</i></td>
-          <td class="tablecenter">0.02073</td>
-          <td class="tablecenter">0.02332</td>
-          <td class="tablecenter">0.02348</td>
-          <td class="tablecenter">0.02156</td>
-          <td class="tablecenter">0.02264</td>
-      </tr>
-      <tr>
-          <td class="tableleft"><i>&beta;</i></td>
-          <td class="tablecenter">0.2482</td>
-          <td class="tablecenter">0.2644</td>
-          <td class="tablecenter">0.2642</td>
-          <td class="tablecenter">0.2665</td>
-          <td class="tablecenter">0.2777</td>
-      </tr>
-      <tr>
-          <td class="tableleft"><i>&gamma;</i></td>
-          <td class="tablecenter">0.6564</td>
-          <td class="tablecenter">0.6799</td>
-          <td class="tablecenter">0.6668</td>
-          <td class="tablecenter">0.7346</td>
-          <td class="tablecenter">0.7449</td>
-      </tr>
-      <tr>
-          <td class="tableleft"><i>&delta;</i></td>
-          <td class="tablecenter">0.2563</td>
-          <td class="tablecenter">0.2744</td>
-          <td class="tablecenter">0.2719</td>
-          <td class="tablecenter">0.2738</td>
-          <td class="tablecenter">0.2827</td>
-      </tr>
-    </tbody>
-</table>
-<center>
-<figcaption>
-  Table 03: Parameter values estimation using Trust Region Algorithm of curve fitting.
-</figcaption>
-</center>
-
-<br><br><br>
-<table class="table ooooo">
-    <thead>
-        <tr>
-            <th class="tableleft">Symbols</th>
-            <th class="tablecenter">Units</th>
-            <th class="tablecenter">Descriptions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="tableleft"><i>t</i></td>
-            <td class="tablecenter">hours</td>
-            <td class="tablecenter">Time</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>x</i></td>
-            <td class="tablecenter">200</td>
-            <td class="tablecenter">
-Plasmid copy number of pSB1C3 in each cell
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>m</i></td>
-            <td class="tablecenter">dimensionless</td>
-            <td class="tablecenter">
-Respective normalised mRNA concentration in each cell
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>p</i></td>
-            <td class="tablecenter">
-            dimensionless</td>
-            <td class="tablecenter">
-            Respective normalised protein concentration in each cell
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft">&alpha;</td>
-            <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
-            <td class="tablecenter">
-Gene transcription rate or mRNA production rate
-
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft"><i>&beta;</i></td>
-            <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
-            <td class="tablecenter">
-mRNA degradation rate and dilution factor
-
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft">&gamma;</td>
-            <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
-            <td class="tablecenter">
-Protein translation rate
-
-</td>
-        </tr>
-        <tr>
-            <td class="tableleft">&delta;</td>
-            <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
-            <td class="tablecenter">
-Protein degradation rate and dilution factor
-
-</td>
-        </tr>
-    </tbody>
-</table>
-<center>
-<figcaption>
-  Table 03: Additional information.
-</figcaption>
-</center>
-<br><br>
-<p>
-  The <i>&alpha;</i> and <i>&beta;</i> terms generally stay constant without a trend between IPTG concentrations which is explainable even though IPTG affects cell transcription activity. Since mRNA has a high rate of synthesis and degradation, it reaches equilibrium immediately as its stability closely follows inversely proportional to the mRNA concentration in the cell. The parameter <i>&gamma;</i> and <i>&delta;</i> give a small yet noticeable increasing trend in higher IPTG level, this is related to protein concentration equilibrium, but not to the extent of mRNA degradation rate since protein relatively ‘lives’ longer than mRNA.
-</p>
-<br>
-<center>
-<img class="m1"src="http://2018.igem.org/wiki/images/0/0e/T--UCL--f5.png"alt="oops! You can't see our image."></center>
-<center>
-<figcaption>
-  Figure 05: Fluorescence model of Intein Passenger induced with IPTG 400 mM. Fold-change in protein concentration reaches maximum at 42.8 ratio in longer duration of cell cultivation.
-
-</figcaption>
-</center>
-<br><br>
-<p>Generally IPTG does not give significant differences in high concentrations, so we chose 500 mM of IPTG which the model suggests as the most efficient with the similar expression level compared to the cells with higher concentration of IPTG. Further improvements of this model might include larger choices of medium and wider range of IPTG concentrations, together with cost analysis as it is an important factor in the larger scale production.
-</p>
-                                </p>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="tableleft">&delta;</td>
+                                              <td class="tablecenter"><i>hr<sup>-1</sup></i></td>
+                                              <td class="tablecenter">
+                                                  Protein degradation rate and dilution factor
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <center>
+                                      <figcaption class="card-text_igem2">
+                                          Table 03: Additional information.
+                                      </figcaption>
+                                  </center>
+                                  <p class="card-text card-text_igem text-justify">
+                                      The <i>&alpha;</i> and <i>&beta;</i> terms generally stay constant without a trend between IPTG concentrations which is explainable even though IPTG affects cell transcription activity. Since mRNA has a high rate of synthesis and degradation, it reaches equilibrium immediately as its stability closely follows inversely proportional to the mRNA concentration in the cell. The parameter <i>&gamma;</i> and <i>&delta;</i> give a small yet noticeable increasing trend in higher IPTG level, this is related to protein concentration equilibrium, but not to the extent of mRNA degradation rate since protein relatively ‘lives’ longer than mRNA.
+                                  </p>
+                                  <center>
+                                      <img class="m1 model_img" src="http://2018.igem.org/wiki/images/0/0e/T--UCL--f5.png"alt="oops! You can't see our image.">
+                                  </center>
+                                  <center>
+                                      <figcaption class="card-text_igem2">
+                                          Figure 05: Fluorescence model of Intein Passenger induced with IPTG 400 mM. Fold-change in protein concentration reaches maximum at 42.8 ratio in longer duration of cell cultivation.
+                                      </figcaption>
+                                  </center>
+                                  <p class="card-text card-text_igem text-justify">
+                                          Generally IPTG does not give significant differences in high concentrations, so we chose 500 mM of IPTG which the model suggests as the most efficient with the similar expression level compared to the cells with higher concentration of IPTG. Further improvements of this model might include larger choices of medium and wider range of IPTG concentrations, together with cost analysis as it is an important factor in the larger scale production.
+                                      </p>
                             </div>
                         </div>
                     </div>
@@ -616,7 +606,7 @@ Protein degradation rate and dilution factor
 </center>
 <br><br>
 
-<table class="table ooooo">
+<table class="table ooooo table_text_igem">
     <thead>
         <tr>
             <th class="tableleft">Symbols</th>
@@ -668,7 +658,7 @@ Maximum repeat number in a polymer</th>
 <br><br><br>
 <p>Basically each intein rate of reaction (<i>k</i>) differs with each intein system we use.</p>
 <br />
-<table class="table ooooo">
+<table class="table ooooo table_text_igem">
     <thead>
         <tr>
             <th class="tableleft">Intein</th>
