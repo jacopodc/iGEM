@@ -1249,6 +1249,14 @@ tbody tr:hover
   margin-bottom: 1rem;
 }
 
+.cards_logos4{
+  width:105%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 .customise{
   position: relative;
   width: 100vw;
@@ -1539,6 +1547,7 @@ margin-right: auto;
 }
 .ooooo{
   border: 2px solid rgba(138, 138, 138, 1);
+  margin-top: 2rem;
 }
 .oooo th{
   width:300px;
@@ -1546,6 +1555,13 @@ margin-right: auto;
 figcaption{
   font-size: 11px;
 }
+
+.table_text_igem{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
 .m1{
   width:25vw;
 }
