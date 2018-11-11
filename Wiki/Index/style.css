@@ -605,7 +605,8 @@ section.section2
     font-size: 5rem;
     color: rgba(242, 77, 25,1);
     text-align: center;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .h1_igem_subpage1 {
@@ -616,6 +617,14 @@ section.section2
     text-align: center;
     padding-top: 7rem;
     padding-bottom: 1rem;
+}
+
+.h1_igem_subpage2 {
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 5rem;
+    color: rgba(242, 77, 25,1);
+    text-align: center;
 }
 
 @media screen and (max-width: 401px) {
@@ -631,6 +640,14 @@ section.section2
     height: 80vh;
     display: block;
     margin-top: 1rem;
+}
+
+.subpage_img_igem1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vh;
+    height: 100vh;
+    display: block;
 }
 
 @media screen and (max-width: 401px) {
