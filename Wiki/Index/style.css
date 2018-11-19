@@ -568,6 +568,7 @@ section.section2
     line-height: 1.6em;
     margin-bottom: 1rem !important;
     margin-top: 2rem !important;
+    font-size: 1rem;
 }
 .bypass{
   text-align: center !important;
@@ -1061,6 +1062,7 @@ section.section2
     color: black;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 /*  */
 .collapsible {
