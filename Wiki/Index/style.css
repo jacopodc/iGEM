@@ -630,6 +630,16 @@ section.section2
     text-align: center;
 }
 
+.h1_igem_subpage3 {
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 5rem;
+    color: rgba(242, 77, 25,1);
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
 @media screen and (max-width: 401px) {
     .h1_igem_subpage, .h1_igem_subpage1{
         font-size: 3rem;
